@@ -1,24 +1,22 @@
 [
   {
-    "objectID": "03-heuristics.html",
-    "href": "03-heuristics.html",
-    "title": "3  Heuristics",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Problem Solving and Professional Skills",
     "section": "",
-    "text": "3.1 What is a heuristic?\nA heuristic is a problem-solving device or strategy that provides a way to seeing or approaching a problem. Choosing a suitable heuristic often leads us closer to a solution. These strategies are versatile, applying across a wide range of domains and topics. However, heuristics alone are not enough to solve a problem; they must be combined with relevant knowledge and a refined ability to select and deploy mathematical resources effectively. By explicitly discussing and reflecting on problem-solving strategies, we aim to bring the use of heuristics into your conscious awareness. This focus will help you create connections between different areas of mathematical knowledge and enhance your reasoning skills. By honing these abilities, you will be equipped with the tools necessary to become a proficient and literate problem solver.",
+    "text": "Introduction\nWelcome to PH11002 Problem Solving and Professional Skills at the University of Dundee.\nThese notes are available at dundeemath.github.io/PH11002/ as HTML and also as a PDF.",
     "crumbs": [
-      "Problem Solving",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
+      "Introduction"
     ]
   },
   {
-    "objectID": "03-heuristics.html#dictionary-of-heuristics",
-    "href": "03-heuristics.html#dictionary-of-heuristics",
-    "title": "3  Heuristics",
-    "section": "3.2 Dictionary of heuristics",
-    "text": "3.2 Dictionary of heuristics\nBelow we include a “dictionary” of common heuristics. Each of these heuristics should be viewed as a label for a closely related family of devices. That is, each heuristic in the dictionary is not precise enough to allow for unambiguous interpretation or application to a particular problem! Key challenges that arise when trying to apply any of these heuristics is firstly to select appropriately and second to decompose the heuristic into a targeted strategy that you can actually execute. Use the prompts to trigger action.\nFor each heuristic we have indicated a source: (P) = after Pólya (Pólya 1945); (M) = after Mahajan (Mahajan 2010); (MF) = after (Michalewicz and Fogel 2004); (Z) = after (Zeitz 2016). The dictionary is not exhaustive.\n\nVariation of the problem\n\n\n\n\n\n\nDecomposing and recombining (P, Z)\n\n\n\n\n\nBreak the task into subproblems (lemmas, cases), solve pieces, then reassemble.\nPrompts: What minimal subgoal would help? Can I prove a lemma that reduces the main load?\n\n\n\n\n\n\n\n\n\nEstablishing and using subgoals (P, Z)\n\n\n\n\n\nName intermediate targets that make progress observable.\nPrompts: What would I need to show to make the last step trivial?\n\n\n\n\n\n\n\n\n\nGeneralisation (P, Z)\n\n\n\n\n\nWiden the problem to expose structure (a parameter, a family).\nPrompts: If n were real/complex/d-dimensional, what pattern emerges?\n\n\n\n\n\n\n\n\n\nSpecialisation (P, Z)\n\n\n\n\n\nTest instructive instances (small, extreme, symmetric).\nPrompts: What happens for n = 1, 2, 3? For an extreme or degenerate case?\nNote: Trying special cases can suggest both direction and plausibility of a solution (S).\n\n\n\n\n\n\n\n\n\nAnalogy (P, M, Z)\n\n\n\n\n\nMap the problem to a known cousin and import its method.\nPrompts: What solved problem has the same backbone (invariant, recurrence, symmetry)?\n\n\n\n\n\nAuxiliary\n\n\n\n\n\n\nAuxiliary elements (P, Z)\n\n\n\n\n\nIntroduce a helper variable/point/construction (e.g., an extra line in a diagram, a slack variable).\nPrompts: What new object would make the relation linear or symmetric?\n\n\n\n\n\n\n\n\n\nAuxiliary problem (P, Z)\n\n\n\n\n\nSolve a carefully chosen easier or nearby problem, then adapt.\nPrompts: What relaxation or stronger statement is tractable?\n\n\n\n\n\nRepresentation\n\n\n\n\n\n\nNotation (P, Z)\n\n\n\n\n\nChoose symbols that expose structure (indices, function names, operators). Rename until the pattern is visible.\nPrompts: Can I re-index or re-parameterise to simplify sums or products?\n\n\n\n\n\n\n\n\n\nFigures (P, Z)\n\n\n\n\n\nDraw to think: diagrams, timelines, tables, state graphs. Iterate the figure as the plan evolves.\nPrompts: What picture would let me see the invariant or the bottleneck?\n\n\n\n\n\n\n\n\n\nSetting up equations (P, Z)\n\n\n\n\n\nTranslate words to algebra/constraints/recurrences. Define variables cleanly and encode conditions faithfully.\nPrompts: What are the unknowns, and what relations tie them together?\n\n\n\n\n\nVerification\n\n\n\n\n\n\nExamine your guess (P, Z)\n\n\n\n\n\nConjecture, then interrogate it (“invent then verify”). Try counterexamples or edge cases; refine if it survives.\nPrompts: What would falsify my guess quickest?\n\n\n\n\n\n\n\n\n\nCheck the result (P, Z)\n\n\n\n\n\nVerify against all conditions; try alternative derivations; sanity-check units and orders of magnitude.\nPrompts: Does this fail for any small or extreme case? Can I justify uniqueness or optimality?\n\n\n\n\n\n\n\n\n\nType checking and dimensional analysis (P, M)\n\n\n\n\n\nEnsure expressions have the right kind: units, dimensions, domains, monotonicity.\nPrompts: Do both sides have the same units/type? What scales does the answer depend on?\n\n\n\n\n\nInference\n\n\n\n\n\n\nWorking backwards (P, Z)\n\n\n\n\n\nStart from the goal and seek necessary predecessors. Useful for equations, constructions, and proofs by equivalence.\nPrompts: If the claim were true, what must also be true one step earlier?\n\n\n\n\n\n\n\n\n\nIndirect proof (P, Z)\n\n\n\n\n\nAssume the opposite; derive a contradiction (impossible inequality, parity clash, minimal counterexample loop).\nPrompts: What invariant would be violated if the claim were false?\nNote: also called reductio ad absurdum.\n\n\n\n\n\nModern/computational\n\n\n\n\n\n\nApproximation (M)\n\n\n\n\n\nReplace an intractable object with a manageable surrogate (linearisation, asymptotics, bounding, surrogate loss).\nPrompts: What can I ignore or approximate without changing the leading behaviour?\n\n\n\n\n\n\n\n\n\nEstimation (M)\n\n\n\n\n\nGet ballpark numbers (orders of magnitude, back-of-envelope). Use to choose plans and catch nonsense early.\nPrompts: What’s a plausible scale? Is my result within it?\n\n\n\n\n\n\n\n\n\nExhaustive search (MF)\n\n\n\n\n\nSystematically enumerate candidates (with pruning).\nPrompts: How can I bound the search space? What constraints let me cut branches?\n\n\n\n\n\n\n\n\n\nGreedy algorithms (MF)\n\n\n\n\n\nMake the best local choice at each step; accept that it may be suboptimal globally.\nPrompts: What local score aligns with the global objective?\n\n\n\n\n\n\n\n\n\nRandomisation and probabilistic methods (MF)\n\n\n\n\n\nUse randomness to prove existence, estimate quantities, or guide search.\nPrompts: What random construction has the right expectation? Can sampling expose the pattern?\n\n\n\n\n\n\n\n\n\nNeural Networks / learned heuristics (MF)\n\n\n\n\n\nUse a trained model to guide search and propose candidates or rank moves (proof search, construction hints).\nPrompts: What features or examples could a model learn from? How do I verify its suggestions?\n\n\n\n\n\n\n\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of Educated Guessing and Opportunistic Problem Solving. The MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed. Berlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nPólya, George. 1945. How to Solve It. Princeton University Press.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd ed. Wiley.",
+    "objectID": "index.html#licence",
+    "href": "index.html#licence",
+    "title": "Problem Solving and Professional Skills",
+    "section": "Licence",
+    "text": "Licence\n\nThis work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
     "crumbs": [
-      "Problem Solving",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
+      "Introduction"
     ]
   },
   {
@@ -77,33 +75,11 @@
     ]
   },
   {
-    "objectID": "04-control.html",
-    "href": "04-control.html",
-    "title": "4  Attitudes to Problem Solving",
-    "section": "",
-    "text": "Attitudes to problem solving. - Selecting and pursuing the right approach and recovering from inapproriate choices\n\n\n\n\n\n\nStill stuck?\n\n\n\nTry answering these questions (Schoenfeld 1985):\n\nWhat exactly are you doing? Can you describe it precisely?\nWhy are you doing it? How does it fit into the solution?\nHow does it help you? What will you do with the outcome when you obtain it?\n\n\n\n\n\n\n\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Academic Press. https://doi.org/10.1016/C2013-0-05012-8.",
-    "crumbs": [
-      "Problem Solving",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Attitudes to Problem Solving</span>"
-    ]
-  },
-  {
-    "objectID": "09-references.html",
-    "href": "09-references.html",
-    "title": "References",
-    "section": "",
-    "text": "Halmos, P. R. 1980. “The Heart of Mathematics.” The\nAmerican Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of\nEducated Guessing and Opportunistic Problem Solving. The MIT Press.\nhttps://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed.\nBerlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford\nUniversity Press.\n\n\nPólya, George. 1945. How to Solve\nIt. Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction\nand Analogy in Mathematics. Princeton, NJ: Princeton University\nPress.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic,\nSymbolic and Mathematical. Princeton, NJ: Princeton University\nPress.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving.\nAcademic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd\ned. Wiley.",
-    "crumbs": [
-      "Problem Solving",
-      "References"
-    ]
-  },
-  {
-    "objectID": "03-heuristics.html#what-is-a-hueristic",
-    "href": "03-heuristics.html#what-is-a-hueristic",
+    "objectID": "03-heuristics.html",
+    "href": "03-heuristics.html",
     "title": "3  Heuristics",
     "section": "",
-    "text": "Heuristics will not replace shaky mastery of a subject!\n\n\n\n“Despite the fact that their application cuts across various mathematical domains, the successful implementation of heuristic strategies in any particular domain often depends heavily on the possession of specific subject matter knowledge.” (Schoenfeld 1985)",
+    "text": "3.1 What is a heuristic?\nA heuristic is a problem-solving device or strategy that provides a way to seeing or approaching a problem. Choosing a suitable heuristic often leads us closer to a solution. These strategies are versatile, applying across a wide range of domains and topics. However, heuristics alone are not enough to solve a problem; they must be combined with relevant knowledge and a refined ability to select and deploy mathematical resources effectively. By explicitly discussing and reflecting on problem-solving strategies, we aim to bring the use of heuristics into your conscious awareness. This focus will help you create connections between different areas of mathematical knowledge and enhance your reasoning skills. By honing these abilities, you will be equipped with the tools necessary to become a proficient and literate problem solver.",
     "crumbs": [
       "Problem Solving",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
@@ -121,6 +97,17 @@
     ]
   },
   {
+    "objectID": "03-heuristics.html#dictionary-of-heuristics",
+    "href": "03-heuristics.html#dictionary-of-heuristics",
+    "title": "3  Heuristics",
+    "section": "3.2 Dictionary of heuristics",
+    "text": "3.2 Dictionary of heuristics\nBelow we include a “dictionary” of common heuristics. Each of these heuristics should be viewed as a label for a closely related family of devices. That is, each heuristic in the dictionary is not precise enough to allow for unambiguous interpretation or application to a particular problem! Key challenges that arise when trying to apply any of these heuristics is firstly to select appropriately and second to decompose the heuristic into a targeted strategy that you can actually execute. Use the prompts to trigger action.\nFor each heuristic we have indicated a source: (P) = after Pólya (Pólya 1945); (M) = after Mahajan (Mahajan 2010); (MF) = after (Michalewicz and Fogel 2004); (Z) = after (Zeitz 2016). The dictionary is not exhaustive.\n\nVariation of the problem\n\n\n\n\n\n\nDecomposing and recombining (P, Z)\n\n\n\n\n\nBreak the task into subproblems (lemmas, cases), solve pieces, then reassemble.\nPrompts: What minimal subgoal would help? Can I prove a lemma that reduces the main load?\n\n\n\n\n\n\n\n\n\nEstablishing and using subgoals (P, Z)\n\n\n\n\n\nName intermediate targets that make progress observable.\nPrompts: What would I need to show to make the last step trivial?\n\n\n\n\n\n\n\n\n\nGeneralisation (P, Z)\n\n\n\n\n\nWiden the problem to expose structure (a parameter, a family).\nPrompts: If n were real/complex/d-dimensional, what pattern emerges?\n\n\n\n\n\n\n\n\n\nSpecialisation (P, Z)\n\n\n\n\n\nTest instructive instances (small, extreme, symmetric).\nPrompts: What happens for n = 1, 2, 3? For an extreme or degenerate case?\nNote: Trying special cases can suggest both direction and plausibility of a solution (S).\n\n\n\n\n\n\n\n\n\nAnalogy (P, M, Z)\n\n\n\n\n\nMap the problem to a known cousin and import its method.\nPrompts: What solved problem has the same backbone (invariant, recurrence, symmetry)?\n\n\n\n\n\nAuxiliary\n\n\n\n\n\n\nAuxiliary elements (P, Z)\n\n\n\n\n\nIntroduce a helper variable/point/construction (e.g., an extra line in a diagram, a slack variable).\nPrompts: What new object would make the relation linear or symmetric?\n\n\n\n\n\n\n\n\n\nAuxiliary problem (P, Z)\n\n\n\n\n\nSolve a carefully chosen easier or nearby problem, then adapt.\nPrompts: What relaxation or stronger statement is tractable?\n\n\n\n\n\nRepresentation\n\n\n\n\n\n\nNotation (P, Z)\n\n\n\n\n\nChoose symbols that expose structure (indices, function names, operators). Rename until the pattern is visible.\nPrompts: Can I re-index or re-parameterise to simplify sums or products?\n\n\n\n\n\n\n\n\n\nFigures (P, Z)\n\n\n\n\n\nDraw to think: diagrams, timelines, tables, state graphs. Iterate the figure as the plan evolves.\nPrompts: What picture would let me see the invariant or the bottleneck?\n\n\n\n\n\n\n\n\n\nSetting up equations (P, Z)\n\n\n\n\n\nTranslate words to algebra/constraints/recurrences. Define variables cleanly and encode conditions faithfully.\nPrompts: What are the unknowns, and what relations tie them together?\n\n\n\n\n\nVerification\n\n\n\n\n\n\nExamine your guess (P, Z)\n\n\n\n\n\nConjecture, then interrogate it (“invent then verify”). Try counterexamples or edge cases; refine if it survives.\nPrompts: What would falsify my guess quickest?\n\n\n\n\n\n\n\n\n\nCheck the result (P, Z)\n\n\n\n\n\nVerify against all conditions; try alternative derivations; sanity-check units and orders of magnitude.\nPrompts: Does this fail for any small or extreme case? Can I justify uniqueness or optimality?\n\n\n\n\n\n\n\n\n\nType checking and dimensional analysis (P, M)\n\n\n\n\n\nEnsure expressions have the right kind: units, dimensions, domains, monotonicity.\nPrompts: Do both sides have the same units/type? What scales does the answer depend on?\n\n\n\n\n\nInference\n\n\n\n\n\n\nWorking backwards (P, Z)\n\n\n\n\n\nStart from the goal and seek necessary predecessors. Useful for equations, constructions, and proofs by equivalence.\nPrompts: If the claim were true, what must also be true one step earlier?\n\n\n\n\n\n\n\n\n\nIndirect proof (P, Z)\n\n\n\n\n\nAssume the opposite; derive a contradiction (impossible inequality, parity clash, minimal counterexample loop).\nPrompts: What invariant would be violated if the claim were false?\nNote: also called reductio ad absurdum.\n\n\n\n\n\nModern/computational\n\n\n\n\n\n\nApproximation (M)\n\n\n\n\n\nReplace an intractable object with a manageable surrogate (linearisation, asymptotics, bounding, surrogate loss).\nPrompts: What can I ignore or approximate without changing the leading behaviour?\n\n\n\n\n\n\n\n\n\nEstimation (M)\n\n\n\n\n\nGet ballpark numbers (orders of magnitude, back-of-envelope). Use to choose plans and catch nonsense early.\nPrompts: What’s a plausible scale? Is my result within it?\n\n\n\n\n\n\n\n\n\nExhaustive search (MF)\n\n\n\n\n\nSystematically enumerate candidates (with pruning).\nPrompts: How can I bound the search space? What constraints let me cut branches?\n\n\n\n\n\n\n\n\n\nGreedy algorithms (MF)\n\n\n\n\n\nMake the best local choice at each step; accept that it may be suboptimal globally.\nPrompts: What local score aligns with the global objective?\n\n\n\n\n\n\n\n\n\nRandomisation and probabilistic methods (MF)\n\n\n\n\n\nUse randomness to prove existence, estimate quantities, or guide search.\nPrompts: What random construction has the right expectation? Can sampling expose the pattern?\n\n\n\n\n\n\n\n\n\nNeural Networks / learned heuristics (MF)\n\n\n\n\n\nUse a trained model to guide search and propose candidates or rank moves (proof search, construction hints).\nPrompts: What features or examples could a model learn from? How do I verify its suggestions?\n\n\n\n\n\n\n\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of Educated Guessing and Opportunistic Problem Solving. The MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed. Berlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nPólya, George. 1945. How to Solve It. Princeton University Press.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd ed. Wiley.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
+    ]
+  },
+  {
     "objectID": "04-attitudes.html",
     "href": "04-attitudes.html",
     "title": "4  Attitudes",
@@ -129,17 +116,6 @@
     "crumbs": [
       "Problem Solving",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Attitudes</span>"
-    ]
-  },
-  {
-    "objectID": "04-attitudes.html#selecting-and-pursuing-an-approach",
-    "href": "04-attitudes.html#selecting-and-pursuing-an-approach",
-    "title": "4  Attitudes to Problem Solving",
-    "section": "",
-    "text": "Pólya, George. 1945. How to Solve It. Princeton University Press.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Academic Press. https://doi.org/10.1016/C2013-0-05012-8.",
-    "crumbs": [
-      "Problem Solving",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Attitudes to Problem Solving</span>"
     ]
   },
   {
@@ -154,23 +130,14 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Problem Solving and Professional Skills",
+    "objectID": "09-references.html",
+    "href": "09-references.html",
+    "title": "References",
     "section": "",
-    "text": "Introduction\nWelcome to PH11002 Problem Solving and Professional Skills at the University of Dundee.\nThese notes are available at dundeemath.github.io/PH11002/ and also as a PDF (visit the page and click on the PDF icon to download).",
+    "text": "Halmos, P. R. 1980. “The Heart of Mathematics.” The\nAmerican Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of\nEducated Guessing and Opportunistic Problem Solving. The MIT Press.\nhttps://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed.\nBerlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford\nUniversity Press.\n\n\nPólya, George. 1945. How to Solve\nIt. Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction\nand Analogy in Mathematics. Princeton, NJ: Princeton University\nPress.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic,\nSymbolic and Mathematical. Princeton, NJ: Princeton University\nPress.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving.\nAcademic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd\ned. Wiley.",
     "crumbs": [
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "index.html#licence",
-    "href": "index.html#licence",
-    "title": "Problem Solving and Professional Skills",
-    "section": "Licence",
-    "text": "Licence\n\nThis work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
-    "crumbs": [
-      "Introduction"
+      "Problem Solving",
+      "References"
     ]
   }
 ]

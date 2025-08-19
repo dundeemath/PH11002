@@ -4,7 +4,7 @@
 
 Welcome to PH11002 Problem Solving and Professional Skills at the University of Dundee.
 
-These notes are available at [dundeemath.github.io/PH11002/](https://dundeemath.github.io/PH11002/) and also as a PDF (visit the page and click on the PDF icon to download). 
+These notes are available at [dundeemath.github.io/PH11002/](https://dundeemath.github.io/PH11002/) as HTML and also as a PDF. 
 
 ## Licence
 
