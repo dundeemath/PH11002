@@ -12,11 +12,11 @@ A *heuristic* is a problem-solving device or strategy that provides a way to see
 "Despite the fact that their application cuts across various mathematical domains, the successful implementation of heuristic strategies in any particular domain often depends heavily on the possession of specific subject matter knowledge." [@Schoenfeld:1985ps]
 :::
 
-## Dictionary of heuristics
+## Compendium of heuristics
 
-Below we include a "dictionary" of common heuristics. Each of these heuristics should be viewed as a label for a closely related family of devices. That is, each heuristic in the dictionary is not precise enough to allow for unambiguous interpretation or application to a particular problem! Key challenges that arise when trying to apply any of these heuristics is firstly to select appropriately and second to decompose the heuristic into a targeted strategy that you can actually execute. Use the prompts to trigger action. 
+Below we include a collection of common heuristics, grouped by theme. Each of these heuristics should be viewed as a label for a closely related family of devices. That is, each heuristic in the compendium is not precise enough to allow for unambiguous interpretation or application to a particular problem! Key challenges that arise when trying to apply any of these heuristics is firstly to select appropriately and second to decompose the heuristic into a targeted strategy that you can actually execute. Use the prompts to trigger action. 
 
-For each heuristic we have indicated a source: (P) = after Pólya [@Polya:1945hu]; (M) = after Mahajan [@Mahajan:2010ps]; (MF) = after [@MichalewiczFogel:2004hu]; (Z) = after [@Zeitz:2016ps]. The dictionary is not exhaustive.
+For each heuristic we have indicated a source: (P) = after Pólya [@Polya:1945hu]; (M) = after Mahajan [@Mahajan:2010ps]; (MF) = after [@MichalewiczFogel:2004hu]; (Z) = after [@Zeitz:2016ps]. The list is not exhaustive.
 
 ### Variation of the problem {-}
 

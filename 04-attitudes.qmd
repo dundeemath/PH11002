@@ -15,10 +15,12 @@ Finally, watch for traction. You are on the right track if relations clarify, ex
 ## Still stuck?
 
 :::{.callout-important}
-## Try answering these questions [@Schoenfeld:1985ps]:
+## Try answering these questions:
 
   - What exactly are you doing? Can you describe it precisely?
   - Why are you doing it? How does it fit into the solution?
   - How does it help you? What will you do with the outcome when you obtain it?
+
+[see @Schoenfeld:1985ps].
 
 :::
