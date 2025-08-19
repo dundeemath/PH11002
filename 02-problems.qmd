@@ -1,0 +1,87 @@
+{{< include preamble.qmd >}}
+
+# Problems {#sec-problems}
+
+> "Problem. A doubtful or difficult question; a matter of inquiry, discussion, or thought; a question that exercises the mind." [@OED:1989ps]
+
+Problems often involve more complexity than straightforward exercises in that the method of solution is not proscribed. We will differentiate between two  types of problems and present a general framework, introduced by Pólya in a series of monographs [@Polya:1945hu; @Polya:1954oi; @Polya:1954ii], for understanding problem solving. This framework is intended to serve as a foundation for analysing your approach to problem solving.
+
+## Two Types of Problems
+
+We distinguish between different types of problems based on the desired goal. 
+
+**Problems to find.** The task is to produce or create an object that satisfies specified conditions, which may include a number, function, construction, example, counterexample, or algorithm. 
+Common prompts for these tasks include terms such as determine, compute, construct, and classify. The success of these endeavors is evaluated based on criteria such as correctness, completeness, and in some cases, optimality or uniqueness.
+
+:::{.callout-note}
+## Example of a problem to find
+
+Find all integers $n$ such that $n(n+1)$ is a perfect square.
+:::
+
+**Problems to prove.** The task is to justify a claim beyond reasonable doubt. Typical prompts include: show, prove, disprove, establish, and deduce. To be successful, one must ensure validity, clarity, and appropriate use of definitions and prior results.
+
+:::{.callout-note}
+## Example of a problem to prove
+
+Prove there are infinitely many primes congruent to  $\;3\mod 4$.
+:::
+
+:::{.callout-warning}
+## Many problems mix both tasks! 
+
+Find all objects with property $P$ and prove your list is complete.
+:::
+
+In this module, we will focus on _problems to find_. 
+
+## Problem solving framework
+
+The problem solving framework [see @Polya:1945hu] is a four-phase cycle for tackling open-ended problems. The phases of the problem solving framework are depicted in [@fig-phases]; the name of each phase is listed in bold text, with key terms in normal text. Knowing which phase of the framework you are in may help you choose the best prompt to move forward (see the table below in @sec-phases). 
+
+```{mermaid}
+%%| label: fig-phases
+%%| fig-cap: "Four phases of problem solving."
+%%| fig-alt: "Four-step flow: Understand → Plan → Carry out → Look back."
+%%{init: { "flowchart": { "htmlLabels": false } }}%%
+
+flowchart TB
+  U[**Understand the problem**<br>Unknowns, Data, Constraints]
+  P[**Devise a plan**<br>Heuristics]
+  C[**Carry out the plan**<br>Justify steps, Check subgoals]
+  L[**Look back**<br>Verify, Reflect, Generalise]
+
+  U --> P --> C --> L
+```
+
+The phases are roughly as follows. First, **understand the problem**: identify givens, unknowns, and conditions; restate it in your own words; sketch, tabulate, or probe small cases. Next, **devise a plan** by choosing a route. Possible routes are to work backward, look for patterns, simplify or specialise, use symmetry or invariants, introduce an auxiliary object, estimate or bound, change representation, or reduce to a known problem (we will investigate these problem solving _heuristics_ later in @sec-heuristics). Then **carry out _your_ plan**: execute cleanly, justify each step, check subgoals, and pivot if a step stalls. Finally, **look back**: verify the result, test edge cases, assess efficiency and clarity, and capture the key idea. The final phase is _essential_. Use the framework to reflect on what you learned so your future problem solving gets faster and more reliable.
+
+## Phases of problem solving {#sec-phases}
+
+Use Table @tbl-phases as a working checklist and a reflection guide, not a rigid recipe. As you tackle an open-ended problem, you might find that you are "stuck". First, don't panic! Decide which phase of the problem solving framework you are in and scan the prompts in that row. Answering the prompt may lead to a concrete next action. Reflect on this new action for a few minutes; if it stalls, return to the table, pick a different prompt, or take a break. Over time, the prompts will become more familiar and the process of solving an open-ended problme will be less daunting. 
+
+```{r}
+#| label: tbl-phases
+#| tbl-cap: "Phases of problem solving, adapted from [@Polya:1945hu, pp. xvi-xvii]."
+#| echo: false
+#| message: false
+#| warning: false
+library(readr)
+library(knitr)
+library(kableExtra)
+df <- read_csv("data/phases_table.csv")
+if (knitr::is_latex_output()) {
+  # PDF: LaTeX table with fixed column widths and wrapping
+  kbl(df, format = "latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
+  align = c("p{0.18\\linewidth}", "p{0.22\\linewidth}", "p{0.30\\linewidth}", "p{0.30\\linewidth}")) |>
+  landscape()
+} else {
+  # HTML: widths in CSS units
+  kbl(df, format = "html", escape = FALSE) |>
+    kable_styling(full_width = TRUE, bootstrap_options = c("striped", "condensed")) |>
+    column_spec(1, width = "12em") |>
+    column_spec(2, width = "16em") |>
+    column_spec(3, width = "24em") |>
+    column_spec(4, width = "24em")
+}
+```

@@ -1,0 +1,86 @@
+project:
+  type: "book"
+  output-dir: docs
+ 
+book: 
+  title: "Problem Solving and Professional Skills"
+  author: "Dr Eric Hall"
+  # css: "assets/style.css"
+  description: |
+     Notes for PH11002 - Problem Solving and Professional Skills, 
+     a first year module about problem solving at 
+     the University of Dundee.
+  site-url: https://dundeemath.github.io/PH11002
+  repo-url: https://github.com/dundeemath/PH11002/
+  repo-branch: master
+  cover-image: cover.png
+  cover-image-alt: "Cover for lecture note packet."
+  downloads: pdf
+  repo-actions: [issue]
+  # sharing: [twitter]
+  date: last-modified
+  date-format: iso
+  page-footer: "Copyright 2025, Eric Hall (University of Dundee)" 
+  page-navigation: true
+  search: true
+  # collapse-level: 1
+  chapters: 
+    - "index.qmd"
+    - part: "Problem Solving"
+      chapters:
+        - "01-purpose.qmd"
+        - "02-problems.qmd"
+        - "03-heuristics.qmd"
+        - "04-attitudes.qmd"
+        - "09-references.qmd"
+    - part: "Professional Skills"
+  # appendices: 
+  # margin-header: "Header Text"
+  sidebar:
+    alignment: left
+    logo: 'assets/images/uod_shield_rgb.png'
+    logo-alt: 'University of Dundee shield'
+    # footer: |
+    #   Last modified: {{< meta date >}}
+
+bibliography:
+  - ph11002.bib
+
+prefer-html: true
+  
+format: 
+  html: 
+    theme: 
+      light: flatly
+      dark: darkly
+      # - assets/style.css
+    # css: assets/mermaid-bootstrap.css
+    code-tools: true
+    code-background: true
+    code-fold: show
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    html-math-method: katex
+    include-in-header: header.qmd
+  pdf: 
+    code-overflow: wrap
+    documentclass: scrreprt
+    papersize: a4
+    include-in-header: preamble.tex
+    classoption: oneside
+    keep-tex: true
+    pdf-engine: xelatex
+    citation_method: natbib
+    link-citations: true
+    link-bibliography: true
+    cover-image: assets/images/cover_small.jpg
+    mermaid:
+      mermaid-format: svg
+      theme: neutral
+      themeVariables:
+        fontSize: "10px"
+    
+execute: 
+  freeze: auto
+    

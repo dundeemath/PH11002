@@ -1,0 +1,203 @@
+{{< include preamble.qmd >}}
+
+# Heuristics {#sec-heuristics}
+
+## What is a heuristic?
+
+A *heuristic* is a problem-solving device or strategy that provides a way to seeing or approaching a problem. Choosing a suitable heuristic often leads us closer to a solution. These strategies are versatile, applying across a wide range of domains and topics. However, heuristics alone are not enough to solve a problem; they must be combined with relevant knowledge and a refined ability to select and deploy mathematical resources effectively. By explicitly discussing and reflecting on problem-solving strategies, we aim to bring the use of heuristics into your conscious awareness. This focus will help you create connections between different areas of mathematical knowledge and enhance your reasoning skills. By honing these abilities, you will be equipped with the tools necessary to become a proficient and literate problem solver.
+
+::: callout-warning
+## Heuristics will not replace shaky mastery of a subject!
+
+"Despite the fact that their application cuts across various mathematical domains, the successful implementation of heuristic strategies in any particular domain often depends heavily on the possession of specific subject matter knowledge." [@Schoenfeld:1985ps]
+:::
+
+## Dictionary of heuristics
+
+Below we include a "dictionary" of common heuristics. Each of these heuristics should be viewed as a label for a closely related family of devices. That is, each heuristic in the dictionary is not precise enough to allow for unambiguous interpretation or application to a particular problem! Key challenges that arise when trying to apply any of these heuristics is firstly to select appropriately and second to decompose the heuristic into a targeted strategy that you can actually execute. Use the prompts to trigger action. 
+
+For each heuristic we have indicated a source: (P) = after Pólya [@Polya:1945hu]; (M) = after Mahajan [@Mahajan:2010ps]; (MF) = after [@MichalewiczFogel:2004hu]; (Z) = after [@Zeitz:2016ps]. The dictionary is not exhaustive.
+
+### Variation of the problem {-}
+
+::: {.callout-note icon=false collapse="true"}
+## Decomposing and recombining (P, Z) {#h-decomposing-recombining}
+
+Break the task into subproblems (lemmas, cases), solve pieces, then reassemble.
+
+_Prompts_: What minimal subgoal would help? Can I prove a lemma that reduces the main load?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Establishing and using subgoals (P, Z) {#h-establishing-subgoals}
+
+Name intermediate targets that make progress observable.
+
+_Prompts_: What would I need to show to make the last step trivial?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Generalisation (P, Z) {#h-generalisation}
+
+Widen the problem to expose structure (a parameter, a family).
+
+_Prompts_: If $n$ were real/complex/$d$-dimensional, what pattern emerges?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Specialisation (P, Z) {#h-specialisation}
+
+Test instructive instances (small, extreme, symmetric).
+
+_Prompts_: What happens for $n = 1, 2, 3$? For an extreme or degenerate case?
+  
+Note: Trying special cases can suggest both direction and plausibility of a solution (S).
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Analogy (P, M, Z) {#h-analogy}
+
+Map the problem to a known cousin and import its method.
+
+_Prompts_: What solved problem has the same backbone (invariant, recurrence, symmetry)?
+:::
+
+### Auxiliary {-}
+  
+::: {.callout-note icon=false collapse="true"}
+## Auxiliary elements (P, Z) {#h-auxiliary-elements}
+
+Introduce a helper variable/point/construction (e.g., an extra line in a diagram, a slack variable).
+
+_Prompts_: What new object would make the relation linear or symmetric?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Auxiliary problem (P, Z) {#h-auxiliary-problem}
+
+Solve a carefully chosen easier or nearby problem, then adapt.
+
+_Prompts_: What relaxation or stronger statement is tractable?
+:::
+  
+### Representation {-}
+  
+::: {.callout-note icon=false collapse="true"}
+## Notation (P, Z) {#h-notation}
+
+Choose symbols that expose structure (indices, function names, operators). Rename until the pattern is visible.
+
+_Prompts_: Can I re-index or re-parameterise to simplify sums or products?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Figures (P, Z) {#h-figures}
+
+Draw to think: diagrams, timelines, tables, state graphs. Iterate the figure as the plan evolves.
+
+_Prompts_: What picture would let me see the invariant or the bottleneck?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Setting up equations (P, Z) {#h-setting-equations}
+
+Translate words to algebra/constraints/recurrences. Define variables cleanly and encode conditions faithfully.
+
+_Prompts_: What are the unknowns, and what relations tie them together?
+:::
+  
+### Verification {-}
+  
+::: {.callout-note icon=false collapse="true"}
+## Examine your guess (P, Z) {#h-examine-guess}
+
+Conjecture, then interrogate it ("invent then verify"). Try counterexamples or edge cases; refine if it survives.
+
+_Prompts_: What would falsify my guess quickest?
+:::
+
+::: {.callout-note icon=false collapse="true"}
+## Check the result (P, Z) {#h-check-result}
+
+Verify against all conditions; try alternative derivations; sanity-check units and orders of magnitude.
+
+_Prompts_: Does this fail for any small or extreme case? Can I justify uniqueness or optimality?
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Type checking and dimensional analysis (P, M) {#h-type-checking}
+
+Ensure expressions have the right kind: units, dimensions, domains, monotonicity.
+
+_Prompts_: Do both sides have the same units/type? What scales does the answer depend on?
+:::
+  
+### Inference {-}
+  
+::: {.callout-note icon=false collapse="true"}
+## Working backwards (P, Z) {#h-working-backwards}
+
+Start from the goal and seek necessary predecessors. Useful for equations, constructions, and proofs by equivalence.
+
+_Prompts_: If the claim were true, what must also be true one step earlier?
+:::
+
+::: {.callout-note icon=false collapse="true"}
+## Indirect proof (P, Z) {#h-reductio}
+
+Assume the opposite; derive a contradiction (impossible inequality, parity clash, minimal counterexample loop).
+
+_Prompts_: What invariant would be violated if the claim were false?
+
+Note: also called _reductio ad absurdum_. 
+:::
+
+### Modern/computational {-}
+  
+::: {.callout-note icon=false collapse="true"}
+## Approximation (M) {#h-approximation}
+
+Replace an intractable object with a manageable surrogate (linearisation, asymptotics, bounding, surrogate loss).
+
+_Prompts_: What can I ignore or approximate without changing the leading behaviour?
+:::
+
+::: {.callout-note icon=false collapse="true"}
+## Estimation (M) {#h-estimation}
+
+Get ballpark numbers (orders of magnitude, back-of-envelope). Use to choose plans and catch nonsense early.
+
+_Prompts_: What’s a plausible scale? Is my result within it?
+:::
+
+::: {.callout-note icon=false collapse="true"}
+## Exhaustive search (MF) {#h-exhaustive-search}
+
+Systematically enumerate candidates (with pruning).
+
+_Prompts_: How can I bound the search space? What constraints let me cut branches?
+:::
+
+::: {.callout-note icon=false collapse="true"}
+## Greedy algorithms (MF) {#h-greedy}
+
+Make the best local choice at each step; accept that it may be suboptimal globally.
+
+_Prompts_: What local score aligns with the global objective? 
+:::
+  
+::: {.callout-note icon=false collapse="true"}
+## Randomisation and probabilistic methods (MF) {#h-prob-method}
+
+Use randomness to prove existence, estimate quantities, or guide search.
+
+_Prompts_: What random construction has the right expectation? Can sampling expose the pattern?
+:::
+
+::: {.callout-note icon=false collapse="true"}
+## Neural Networks / learned heuristics (MF) {#h-neural-networks}
+
+Use a trained model to guide search and propose candidates or rank moves (proof search, construction hints).
+
+_Prompts_: What features or examples could a model learn from? How do I verify its suggestions?
+:::

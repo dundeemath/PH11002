@@ -1,0 +1,24 @@
+{{< include preamble.qmd >}}
+
+# Attitudes {#sec-attitudes}
+
+Effective problem solvers masterfully balance curiosity with discipline. They begin by probing, playing, and hypothesizing, then move on to justifying, checking, and reflecting on their findings. According to Pólya, true progress originates from cycling through the four problem-solving phases, maintaining a keen awareness of one’s actions, and a readiness to adapt when new evidence arises [@Polya:1945hu]. When progress stalls, adept problem solvers pivot swiftly and consistently take time to "look back" at their process.
+
+## Selecting and pursuing an approach
+
+Begin by matching structure to strategy. Let the problem's cues choose the method: a recurrence invites induction; symmetry points toward invariants; a geometric flavour asks for a diagram and auxiliary elements; unruly numbers suggest estimation or approximation.
+
+Then commit to a strategy, but keep your course of action time-bound. Choose one plan and pursue it deliberately for a few minutes. Set a concrete checkpoint in advance so the decision to switch is not emotional or driven by frustration ("If I cannot determine the number of cases in twenty minutes, I will try another approach.").
+
+Finally, watch for traction. You are on the right track if relations clarify, expressions simplify, or the number of cases shrinks. If instead the algebra gets tedious, cases proliferate, or your reasoning seems circular: stop, reframe the problem, and select a different strategy. 
+
+## Still stuck?
+
+:::{.callout-important}
+## Try answering these questions [@Schoenfeld:1985ps]:
+
+  - What exactly are you doing? Can you describe it precisely?
+  - Why are you doing it? How does it fit into the solution?
+  - How does it help you? What will you do with the outcome when you obtain it?
+
+:::

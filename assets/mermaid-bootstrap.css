@@ -1,0 +1,15 @@
+<style>
+/* Mermaid nodes follow Bootstrap/Bootswatch colors */
+.mermaid { color: var(--bs-body-color); font-family: var(--bs-font-sans-serif); }
+/* Node shapes (rect/polygon) */
+.mermaid .node rect,
+.mermaid .node polygon {
+  fill: var(--bs-card-bg);
+  stroke: var(--bs-primary);
+  stroke-width: 2px;
+}
+/* Edges */
+.mermaid .edgePath .path { stroke: var(--bs-primary); }
+/* Labels */
+.mermaid .label { color: var(--bs-primary); } /* --bs-body-color
+</style> 

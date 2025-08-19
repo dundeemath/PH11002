@@ -1,0 +1,15 @@
+{
+  "hash": "7b3f63712ba8819256b7fb5e499c999f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "\n\n::: {.content-hidden when-format=\"pdf\"}\n\\newcommand{\\E}{\\mathbf{E}} \n\\DeclareMathOperator{\\Var}{Var}\n\\DeclareMathOperator{\\Cov}{Cov}\n\\DeclareMathOperator{\\corr}{corr}\n\\DeclareMathOperator{\\sd}{sd}\n\\newcommand{\\se}{\\mathsf{se}}\n:::\n\n\n# Attitudes to Problem Solving {#sec-attitudes}\n\nAttitudes to problem solving. \n- Selecting and pursuing the right approach and recovering from inapproriate choices\n\n:::{.callout-important}\n## Still stuck?\n\nTry answering these questions [@Schoenfeld:1985ps]:\n\n  - What exactly are you doing? Can you describe it precisely?\n  - Why are you doing it? How does it fit into the solution?\n  - How does it help you? What will you do with the outcome when you obtain it?\n\n:::\n  ",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

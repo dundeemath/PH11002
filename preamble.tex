@@ -1,0 +1,73 @@
+\usepackage{unicode-math}%
+\setmathfont{XITS Math}%
+\usepackage{fontspec}%
+\setmainfont[Ligatures ={Common, TeX}, Scale=1, RawFeature={+cpsp}]{XITS} 
+%Numbers={Lining,Proportional},Ligatures ={Common, TeX},RawFeature={+tnum,+cpsp,+frac},
+\setsansfont[RawFeature={+cpsp},Scale=MatchLowercase]{Helvetica Neue}%
+\setmonofont[Scale=0.78]{MesloLGS NF}%
+
+\usepackage[a4paper,%
+margin=2.5cm,%
+bottom=3cm,%
+top=3cm]{geometry}%
+\usepackage{afterpage}% for "\afterpage"
+\usepackage{xcolor}%
+\definecolor{dundeeblue}{HTML}{4365E2}%
+\usepackage{pagecolor}% With option pagecolor={somecolor or none}
+%% For nice tables
+\usepackage{booktabs}%
+\usepackage{longtable}%
+\usepackage{array}%
+\usepackage{multirow}%
+\usepackage{wrapfig}%
+\usepackage{float}%
+\usepackage{colortbl}%
+\usepackage{pdflscape}%
+\usepackage{tabu}%
+%\usepackage{threeparttable}%
+%\usepackage{threeparttablex}%
+%\usepackage[normalem]{ulem}%
+\usepackage{makecell}%
+%% Wrap long output lines
+\usepackage{listings}%
+\lstset{breaklines=true}%
+\usepackage{enumitem}%
+\setlist[description]{style=nextline}%
+%% For nice info boxes
+\usepackage{fontawesome5}%
+\usepackage{awesomebox}%
+\usepackage{siunitx}%
+\newcolumntype{d}{S[table-format=3.2]}%
+\renewcommand{\bibname}{References}%
+%\usepackage[colorlinks]{hyperref}%
+
+\usepackage{titling}%
+%\setlength{\droptitle}{8cm}
+\pretitle{\newpagecolor{dundeeblue}\afterpage{\restorepagecolor} \vfill \begin{flushleft}
+\fontsize{68pt}{62pt} \color{white}\sffamily\bfseries\selectfont }
+\posttitle{\end{flushleft}}
+
+\preauthor{\vspace{2.5cm} \begin{flushleft} \fontsize{18pt}{14pt} \color{white}\sffamily\selectfont}
+\postauthor{$\quad\bullet\quad$ehall001@dundee.ac.uk\end{flushleft}}
+
+\predate{\begin{flushleft} \fontsize{18pt}{14pt} \color{white}\sffamily\selectfont}
+\postdate{\\ \vspace{1cm}\includegraphics[width=10cm]{assets/images/rev_logo.pdf}\end{flushleft}}
+
+%%% BEGIN SHORTCUTS
+\DeclareMathOperator{\E}{\mathbf{E}}%
+\DeclareMathOperator{\Var}{Var}%
+\DeclareMathOperator{\Cov}{Cov}%
+\DeclareMathOperator{\corr}{corr}%
+\DeclareMathOperator{\sd}{sd}%
+\newcommand{\se}{\mathsf{se}}%
+%%% END SHORTCUTS
+
+%% Change chapter to Topic
+\makeatletter
+\renewcommand{\@chapapp}{Topic}
+\makeatother
+
+\usepackage{tocbibind}
+
+
+
