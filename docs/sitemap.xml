@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dundeemath.github.io/PH11002/03-heuristics.html</loc>
-    <lastmod>2025-08-19T17:04:51.429Z</lastmod>
-  </url>
-  <url>
     <loc>https://dundeemath.github.io/PH11002/01-purpose.html</loc>
-    <lastmod>2025-08-19T14:33:08.074Z</lastmod>
+    <lastmod>2025-08-20T11:37:05.615Z</lastmod>
   </url>
   <url>
     <loc>https://dundeemath.github.io/PH11002/02-problems.html</loc>
-    <lastmod>2025-08-19T16:00:14.944Z</lastmod>
+    <lastmod>2025-08-20T11:13:28.742Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dundeemath.github.io/PH11002/03-heuristics.html</loc>
+    <lastmod>2025-08-20T11:26:24.610Z</lastmod>
   </url>
   <url>
     <loc>https://dundeemath.github.io/PH11002/04-attitudes.html</loc>
-    <lastmod>2025-08-19T17:01:38.074Z</lastmod>
+    <lastmod>2025-08-20T11:34:49.044Z</lastmod>
   </url>
   <url>
     <loc>https://dundeemath.github.io/PH11002/09-references.html</loc>
     <lastmod>2024-09-12T14:45:53.745Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dundeemath.github.io/PH11002/index.html</loc>
-    <lastmod>2025-08-19T16:53:07.729Z</lastmod>
   </url>
 </urlset>

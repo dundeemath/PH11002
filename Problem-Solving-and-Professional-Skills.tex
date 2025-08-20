@@ -304,7 +304,7 @@ top=3cm]{geometry}%
 
 \title{Problem Solving and Professional Skills}
 \author{Dr Eric Hall}
-\date{2025-08-19}
+\date{2025-08-20}
 \begin{document}
 \maketitle
 
@@ -344,14 +344,12 @@ Attribution-NonCommercial 4.0 International License}.
 
 \chapter{Purpose}\label{sec-purpose}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{What are we here for?}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
-
+\begin{quote}
 ``{[}T{]}he mathematician's main reason for existence is to solve
 problems {[}\ldots{]} therefore, what mathematics \emph{really} consists
-of is problems and solutions'' (\citeproc{ref-Halmos:1980ps}{Halmos
+of is problems and solutions.'' (\citeproc{ref-Halmos:1980ps}{Halmos
 1980}).
-
-\end{tcolorbox}
+\end{quote}
 
 Throughout your mathematics and scientific journey, you have likely
 faced a variety of problems that provided essential context to guide you
@@ -432,7 +430,7 @@ construct, and classify. The success of these endeavors is evaluated
 based on criteria such as correctness, completeness, and in some cases,
 optimality or uniqueness.
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example of a problem to find}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example of a problem to find}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Find all integers \(n\) such that \(n(n+1)\) is a perfect square.
 
@@ -443,13 +441,13 @@ reasonable doubt. Typical prompts include: show, prove, disprove,
 establish, and deduce. To be successful, one must ensure validity,
 clarity, and appropriate use of definitions and prior results.
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example of a problem to prove}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example of a problem to prove}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Prove there are infinitely many primes congruent to \(\;3\mod 4\).
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Many problems mix both tasks!}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Many problems mix both tasks!}, coltitle=black, colback=white, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Find all objects with property \(P\) and prove your list is complete.
 
@@ -471,22 +469,23 @@ table below in Section~\ref{sec-phases}).
 
 \centering{
 
-\includegraphics[width=2.75in,height=4.87in]{02-problems_files/figure-latex/mermaid-figure-1.png}
+\includegraphics[width=4.26in,height=7.05in]{02-problems_files/figure-latex/mermaid-figure-1.png}
 
 }
 
-\caption{\label{fig-phases}Four phases of problem solving.}
+\caption{\label{fig-phases}The four phases of problem solving within a
+problem solving cycle.}
 
 \end{figure}%
 
 The phases are roughly as follows. First, \textbf{understand the
-problem}: identify givens, unknowns, and conditions; restate it in your
-own words; sketch, tabulate, or probe small cases. Next, \textbf{devise
-a plan} by choosing a route. Possible routes are to work backward, look
-for patterns, simplify or specialise, use symmetry or invariants,
-introduce an auxiliary object, estimate or bound, change representation,
-or reduce to a known problem (we will investigate these problem solving
-\emph{heuristics} later in Chapter~\ref{sec-heuristics}). Then
+problem}: identify data/givens, unknowns, and conditions/constraints;
+restate it in your own words; sketch, tabulate, or probe small cases.
+Next, \textbf{devise a plan} by choosing a route. Possible routes are to
+work backward, look for patterns, simplify or specialise, use symmetry
+or invariants, introduce an auxiliary object, estimate or bound, change
+representation, or reduce to a known problem (we will investigate these
+problem solving routes later in Chapter~\ref{sec-heuristics}). Then
 \textbf{carry out \emph{your} plan}: execute cleanly, justify each step,
 check subgoals, and pivot if a step stalls. Finally, \textbf{look back}:
 verify the result, test edge cases, assess efficiency and clarity, and
@@ -530,6 +529,12 @@ Look back & Validate the result and reflect on learning. & Can I check the resul
 
 \chapter{Heuristics}\label{sec-heuristics}
 
+\begin{quote}
+``This principle is so perfectly general that no particular application
+of it is possible.'' -- George Pólya
+(\citeproc{ref-MacTutor:Polya}{MacTutor 2025a})
+\end{quote}
+
 \section{What is a heuristic?}\label{what-is-a-heuristic}
 
 A \emph{heuristic} is a problem-solving device or strategy that provides
@@ -546,7 +551,7 @@ enhance your reasoning skills. By honing these abilities, you will be
 equipped with the tools necessary to become a proficient and literate
 problem solver.
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Heuristics will not replace shaky mastery of a subject!}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Heuristics will not replace shaky mastery of a subject!}, coltitle=black, colback=white, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 ``Despite the fact that their application cuts across various
 mathematical domains, the successful implementation of heuristic
@@ -578,7 +583,7 @@ exhaustive.
 \subsection*{Variation of the problem}\label{variation-of-the-problem}
 \addcontentsline{toc}{subsection}{Variation of the problem}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Decomposing and recombining (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Decomposing and recombining (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Break the task into subproblems (lemmas, cases), solve pieces, then
 reassemble.
@@ -588,7 +593,7 @@ that reduces the main load?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Establishing and using subgoals (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Establishing and using subgoals (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Name intermediate targets that make progress observable.
 
@@ -596,7 +601,7 @@ Name intermediate targets that make progress observable.
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Generalisation (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Generalisation (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Widen the problem to expose structure (a parameter, a family).
 
@@ -605,7 +610,7 @@ pattern emerges?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Specialisation (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Specialisation (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Test instructive instances (small, extreme, symmetric).
 
@@ -617,7 +622,7 @@ of a solution (S).
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Analogy (P, M, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Analogy (P, M, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Map the problem to a known cousin and import its method.
 
@@ -629,7 +634,7 @@ recurrence, symmetry)?
 \subsection*{Auxiliary}\label{auxiliary}
 \addcontentsline{toc}{subsection}{Auxiliary}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Auxiliary elements (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Auxiliary elements (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Introduce a helper variable/point/construction (e.g., an extra line in a
 diagram, a slack variable).
@@ -639,7 +644,7 @@ symmetric?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Auxiliary problem (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Auxiliary problem (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Solve a carefully chosen easier or nearby problem, then adapt.
 
@@ -650,7 +655,7 @@ Solve a carefully chosen easier or nearby problem, then adapt.
 \subsection*{Representation}\label{representation}
 \addcontentsline{toc}{subsection}{Representation}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Notation (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Notation (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Choose symbols that expose structure (indices, function names,
 operators). Rename until the pattern is visible.
@@ -660,7 +665,7 @@ products?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Figures (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Figures (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Draw to think: diagrams, timelines, tables, state graphs. Iterate the
 figure as the plan evolves.
@@ -670,7 +675,7 @@ bottleneck?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Setting up equations (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Setting up equations (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Translate words to algebra/constraints/recurrences. Define variables
 cleanly and encode conditions faithfully.
@@ -683,7 +688,7 @@ together?
 \subsection*{Verification}\label{verification}
 \addcontentsline{toc}{subsection}{Verification}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Examine your guess (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Examine your guess (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Conjecture, then interrogate it (``invent then verify''). Try
 counterexamples or edge cases; refine if it survives.
@@ -692,7 +697,7 @@ counterexamples or edge cases; refine if it survives.
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Check the result (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Check the result (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Verify against all conditions; try alternative derivations; sanity-check
 units and orders of magnitude.
@@ -702,7 +707,7 @@ justify uniqueness or optimality?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Type checking and dimensional analysis (P, M)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Type checking and dimensional analysis (P, M)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Ensure expressions have the right kind: units, dimensions, domains,
 monotonicity.
@@ -715,7 +720,7 @@ the answer depend on?
 \subsection*{Inference}\label{inference}
 \addcontentsline{toc}{subsection}{Inference}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Working backwards (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Working backwards (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Start from the goal and seek necessary predecessors. Useful for
 equations, constructions, and proofs by equivalence.
@@ -725,7 +730,7 @@ earlier?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Indirect proof (P, Z)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Indirect proof (P, Z)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Assume the opposite; derive a contradiction (impossible inequality,
 parity clash, minimal counterexample loop).
@@ -740,7 +745,7 @@ Note: also called \emph{reductio ad absurdum}.
 \subsection*{Modern/computational}\label{moderncomputational}
 \addcontentsline{toc}{subsection}{Modern/computational}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Approximation (M)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Approximation (M)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Replace an intractable object with a manageable surrogate
 (linearisation, asymptotics, bounding, surrogate loss).
@@ -750,7 +755,7 @@ leading behaviour?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Estimation (M)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Estimation (M)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Get ballpark numbers (orders of magnitude, back-of-envelope). Use to
 choose plans and catch nonsense early.
@@ -759,7 +764,7 @@ choose plans and catch nonsense early.
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Exhaustive search (MF)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Exhaustive search (MF)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Systematically enumerate candidates (with pruning).
 
@@ -768,7 +773,7 @@ me cut branches?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Greedy algorithms (MF)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Greedy algorithms (MF)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Make the best local choice at each step; accept that it may be
 suboptimal globally.
@@ -777,7 +782,7 @@ suboptimal globally.
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Randomisation and probabilistic methods (MF)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Randomisation and probabilistic methods (MF)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Use randomness to prove existence, estimate quantities, or guide search.
 
@@ -786,7 +791,7 @@ sampling expose the pattern?
 
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-note-color-frame, title={Neural Networks / learned heuristics (MF)}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title={Neural Networks / learned heuristics (MF)}, coltitle=black, colback=white, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 Use a trained model to guide search and propose candidates or rank moves
 (proof search, construction hints).
@@ -797,6 +802,14 @@ do I verify its suggestions?
 \end{tcolorbox}
 
 \chapter{Attitudes}\label{sec-attitudes}
+
+\begin{quote}
+``Many people who have not studied mathematics confuse it with
+arithmetic and consider it a dry and fruitless science. In reality,
+however, it is a science which requires a great amount of imagination.''
+-- Sofia Kovalevskaya (\citeproc{ref-MacTutor:Kovalevskaya}{MacTutor
+2025b})
+\end{quote}
 
 Effective problem solvers masterfully balance curiosity with discipline.
 They begin by probing, playing, and hypothesizing, then move on to
@@ -830,7 +843,7 @@ strategy.
 
 \section{Still stuck?}\label{still-stuck}
 
-\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, colframe=quarto-callout-important-color-frame, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Try answering these questions:}, opacityback=0, bottomtitle=1mm, coltitle=black, colbacktitle=quarto-callout-important-color!10!white, breakable, toprule=.15mm, rightrule=.15mm, titlerule=0mm, arc=.35mm, colback=white, toptitle=1mm, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, toprule=.15mm, leftrule=.75mm, bottomrule=.15mm, opacitybacktitle=0.6, toptitle=1mm, left=2mm, arc=.35mm, rightrule=.15mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Try answering these questions:}, coltitle=black, colback=white, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, breakable, bottomtitle=1mm, opacityback=0]
 
 \begin{itemize}
 \tightlist
@@ -861,6 +874,16 @@ strategy.
 Halmos, P. R. 1980. {``The Heart of Mathematics.''} \emph{The American
 Mathematical Monthly} 87 (7): 519--24.
 \url{https://doi.org/10.2307/2321415}.
+
+\bibitem[\citeproctext]{ref-MacTutor:Polya}
+MacTutor. 2025a. {``Quotation by George p{ó}lya.''} University of St
+Andrews. 2025.
+\url{https://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations}.
+
+\bibitem[\citeproctext]{ref-MacTutor:Kovalevskaya}
+---------. 2025b. {``Quotation by Sofia Kovalevskaya.''} University of
+St Andrews. 2025.
+\url{https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations}.
 
 \bibitem[\citeproctext]{ref-Mahajan:2010ps}
 Mahajan, Sanjoy. 2010. \emph{Street-Fighting Mathematics: The Art of

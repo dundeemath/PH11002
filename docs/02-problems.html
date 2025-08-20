@@ -549,19 +549,28 @@ flowchart TB
   P[**Devise a plan**&lt;br&gt;Heuristics]
   C[**Carry out the plan**&lt;br&gt;Justify steps, Check subgoals]
   L[**Look back**&lt;br&gt;Verify, Reflect, Generalise]
+  
+  S{Solution?}
+  
+  X([Stuck!])
 
-  U --&gt; P --&gt; C --&gt; L
+  U --&gt; P 
+  P --&gt; C 
+  C --&gt; S
+  S -- Yes --&gt; L
+  S -- No --&gt; X
+  X -. Pivot/Refine .-&gt; P
 </pre>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-phases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Four phases of problem solving.
+Figure&nbsp;2.1: The four phases of problem solving within a problem solving cycle.
 </figcaption>
 </figure>
 </div>
 </div>
 </div>
-<p>The phases are roughly as follows. First, <strong>understand the problem</strong>: identify givens, unknowns, and conditions; restate it in your own words; sketch, tabulate, or probe small cases. Next, <strong>devise a plan</strong> by choosing a route. Possible routes are to work backward, look for patterns, simplify or specialise, use symmetry or invariants, introduce an auxiliary object, estimate or bound, change representation, or reduce to a known problem (we will investigate these problem solving <em>heuristics</em> later in <a href="03-heuristics.html" class="quarto-xref"><span>Chapter 3</span></a>). Then <strong>carry out <em>your</em> plan</strong>: execute cleanly, justify each step, check subgoals, and pivot if a step stalls. Finally, <strong>look back</strong>: verify the result, test edge cases, assess efficiency and clarity, and capture the key idea. The final phase is <em>essential</em>. Use the framework to reflect on what you learned so your future problem solving gets faster and more reliable.</p>
+<p>The phases are roughly as follows. First, <strong>understand the problem</strong>: identify data/givens, unknowns, and conditions/constraints; restate it in your own words; sketch, tabulate, or probe small cases. Next, <strong>devise a plan</strong> by choosing a route. Possible routes are to work backward, look for patterns, simplify or specialise, use symmetry or invariants, introduce an auxiliary object, estimate or bound, change representation, or reduce to a known problem (we will investigate these problem solving routes later in <a href="03-heuristics.html" class="quarto-xref"><span>Chapter 3</span></a>). Then <strong>carry out <em>your</em> plan</strong>: execute cleanly, justify each step, check subgoals, and pivot if a step stalls. Finally, <strong>look back</strong>: verify the result, test edge cases, assess efficiency and clarity, and capture the key idea. The final phase is <em>essential</em>. Use the framework to reflect on what you learned so your future problem solving gets faster and more reliable.</p>
 </section>
 <section id="sec-phases" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="sec-phases"><span class="header-section-number">2.3</span> Phases of problem solving</h2>
@@ -1154,7 +1163,7 @@ Pólya, George. 1945. <em><span class="nocase">How to Solve It</span></em>. Prin
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>%%| label: fig-phases</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>%%| fig-cap: <span class="ot">"</span><span class="st">Four phases of problem solving.</span><span class="ot">"</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>%%| fig-cap: <span class="ot">"</span><span class="st">The four phases of problem solving within a problem solving cycle.</span><span class="ot">"</span></span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>%%| fig-alt: <span class="ot">"</span><span class="st">Four-step flow: Understand → Plan → Carry out → Look back.</span><span class="ot">"</span></span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>%<span class="dt">%</span>{init: { <span class="ot">"</span><span class="st">flowchart</span><span class="ot">"</span>: { <span class="ot">"</span><span class="st">htmlLabels</span><span class="ot">"</span>: false } }}%%</span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
@@ -1163,41 +1172,50 @@ Pólya, George. 1945. <em><span class="nocase">How to Solve It</span></em>. Prin
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>  P[*<span class="dt">*Devise</span> a plan*<span class="wa">*&lt;</span>br&gt;Heuristics]</span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>  C[*<span class="dt">*Carry</span> out the plan*<span class="wa">*&lt;</span>br&gt;Justify steps, Check subgoals]</span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>  L[*<span class="dt">*Look</span> back*<span class="wa">*&lt;</span>br&gt;Verify, Reflect, Generalise]</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>  U --&gt; P --&gt; C --&gt; L</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>The phases are roughly as follows. First, **understand the problem**: identify givens, unknowns, and conditions; restate it in your own words; sketch, tabulate, or probe small cases. Next, **devise a plan** by choosing a route. Possible routes are to work backward, look for patterns, simplify or specialise, use symmetry or invariants, introduce an auxiliary object, estimate or bound, change representation, or reduce to a known problem (we will investigate these problem solving _heuristics_ later in @sec-heuristics). Then **carry out _your_ plan**: execute cleanly, justify each step, check subgoals, and pivot if a step stalls. Finally, **look back**: verify the result, test edge cases, assess efficiency and clarity, and capture the key idea. The final phase is _essential_. Use the framework to reflect on what you learned so your future problem solving gets faster and more reliable.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phases of problem solving {#sec-phases}</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>Use Table @tbl-phases as a working checklist and a reflection guide, not a rigid recipe. As you tackle an open-ended problem, you might find that you are "stuck". First, don't panic! Decide which phase of the problem solving framework you are in and scan the prompts in that row. Answering the prompt may lead to a concrete next action. Reflect on this new action for a few minutes; if it stalls, return to the table, pick a different prompt, or take a break. Over time, the prompts will become more familiar and the process of solving an open-ended problme will be less daunting. </span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-phases</span></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Phases of problem solving, adapted from [@Polya:1945hu, pp. xvi-xvii]."</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/phases_table.csv"</span>)</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (knitr<span class="sc">::</span><span class="fu">is_latex_output</span>()) {</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>  <span class="co"># PDF: LaTeX table with fixed column widths and wrapping</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(df, <span class="at">format =</span> <span class="st">"latex"</span>, <span class="at">booktabs =</span> <span class="cn">TRUE</span>, <span class="at">longtable =</span> <span class="cn">TRUE</span>, <span class="at">escape =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>  <span class="at">align =</span> <span class="fu">c</span>(<span class="st">"p{0.18</span><span class="sc">\\</span><span class="st">linewidth}"</span>, <span class="st">"p{0.22</span><span class="sc">\\</span><span class="st">linewidth}"</span>, <span class="st">"p{0.30</span><span class="sc">\\</span><span class="st">linewidth}"</span>, <span class="st">"p{0.30</span><span class="sc">\\</span><span class="st">linewidth}"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>  <span class="fu">landscape</span>()</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>  <span class="co"># HTML: widths in CSS units</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(df, <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">escape =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"condensed"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">width =</span> <span class="st">"12em"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">2</span>, <span class="at">width =</span> <span class="st">"16em"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">3</span>, <span class="at">width =</span> <span class="st">"24em"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">4</span>, <span class="at">width =</span> <span class="st">"24em"</span>)</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>  S{Solution?}</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  X([Stuck!])</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>  U --&gt; P </span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>  P --&gt; C </span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  C --&gt; S</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  S -- Yes --&gt; L</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>  S -- No --&gt; X</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>  X -. Pivot/Refine .-&gt; P</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>The phases are roughly as follows. First, **understand the problem**: identify data/givens, unknowns, and conditions/constraints; restate it in your own words; sketch, tabulate, or probe small cases. Next, **devise a plan** by choosing a route. Possible routes are to work backward, look for patterns, simplify or specialise, use symmetry or invariants, introduce an auxiliary object, estimate or bound, change representation, or reduce to a known problem (we will investigate these problem solving routes later in @sec-heuristics). Then **carry out _your_ plan**: execute cleanly, justify each step, check subgoals, and pivot if a step stalls. Finally, **look back**: verify the result, test edge cases, assess efficiency and clarity, and capture the key idea. The final phase is _essential_. Use the framework to reflect on what you learned so your future problem solving gets faster and more reliable.</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phases of problem solving {#sec-phases}</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>Use Table @tbl-phases as a working checklist and a reflection guide, not a rigid recipe. As you tackle an open-ended problem, you might find that you are "stuck". First, don't panic! Decide which phase of the problem solving framework you are in and scan the prompts in that row. Answering the prompt may lead to a concrete next action. Reflect on this new action for a few minutes; if it stalls, return to the table, pick a different prompt, or take a break. Over time, the prompts will become more familiar and the process of solving an open-ended problme will be less daunting. </span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-phases</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Phases of problem solving, adapted from [@Polya:1945hu, pp. xvi-xvii]."</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="co">#| message: false</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/phases_table.csv"</span>)</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (knitr<span class="sc">::</span><span class="fu">is_latex_output</span>()) {</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>  <span class="co"># PDF: LaTeX table with fixed column widths and wrapping</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(df, <span class="at">format =</span> <span class="st">"latex"</span>, <span class="at">booktabs =</span> <span class="cn">TRUE</span>, <span class="at">longtable =</span> <span class="cn">TRUE</span>, <span class="at">escape =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>  <span class="at">align =</span> <span class="fu">c</span>(<span class="st">"p{0.18</span><span class="sc">\\</span><span class="st">linewidth}"</span>, <span class="st">"p{0.22</span><span class="sc">\\</span><span class="st">linewidth}"</span>, <span class="st">"p{0.30</span><span class="sc">\\</span><span class="st">linewidth}"</span>, <span class="st">"p{0.30</span><span class="sc">\\</span><span class="st">linewidth}"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>  <span class="fu">landscape</span>()</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>  <span class="co"># HTML: widths in CSS units</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kbl</span>(df, <span class="at">format =</span> <span class="st">"html"</span>, <span class="at">escape =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>    <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">TRUE</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"condensed"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">width =</span> <span class="st">"12em"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">2</span>, <span class="at">width =</span> <span class="st">"16em"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">3</span>, <span class="at">width =</span> <span class="st">"24em"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>    <span class="fu">column_spec</span>(<span class="dv">4</span>, <span class="at">width =</span> <span class="st">"24em"</span>)</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

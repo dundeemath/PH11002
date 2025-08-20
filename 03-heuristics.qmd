@@ -2,6 +2,9 @@
 
 # Heuristics {#sec-heuristics}
 
+> "This principle is so perfectly general that no particular application of it is possible." 
+-- George Pólya [@MacTutor:Polya]
+
 ## What is a heuristic?
 
 A *heuristic* is a problem-solving device or strategy that provides a way to seeing or approaching a problem. Choosing a suitable heuristic often leads us closer to a solution. These strategies are versatile, applying across a wide range of domains and topics. However, heuristics alone are not enough to solve a problem; they must be combined with relevant knowledge and a refined ability to select and deploy mathematical resources effectively. By explicitly discussing and reflecting on problem-solving strategies, we aim to bring the use of heuristics into your conscious awareness. This focus will help you create connections between different areas of mathematical knowledge and enhance your reasoning skills. By honing these abilities, you will be equipped with the tools necessary to become a proficient and literate problem solver.
