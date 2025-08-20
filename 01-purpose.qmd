@@ -3,7 +3,7 @@
 # Purpose {#sec-purpose}
 
 > "[T]he mathematician's main reason for existence is to solve problems [...] therefore, what mathematics _really_ consists of is problems and solutions." 
-[@Halmos:1980ps].
+[@Halmos:1980ps]
 
 Throughout your mathematics and scientific journey, you have likely faced a variety of problems that provided essential context to guide you toward the "appropriate" solution methods. Typically, you encounter a specific topic, technique, or method, followed by a series of related exercises that reinforce that concept. While this approach can be beneficial for solidifying your understanding, it can also be somewhat disconnected from real-world challenges. In reality, problems often integrate multiple concepts and span various areas of mathematics, requiring a more holistic application of your knowledge.
 
