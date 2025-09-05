@@ -1,0 +1,49 @@
+---
+title: "Peer Review Writing Rubric"
+subtitle: "PH11002 Problem Solving and Professional Skills"
+format: dundee-handout-pdf
+engine: knitr
+---
+
+Problem: \makebox[0.35\linewidth][l]{\hrulefill} \hfill
+Date: \makebox[0.35\linewidth][l]{\hrulefill}
+
+Reviewer ID: \framebox[0.33\linewidth][l]{\rule{0pt}{2.6ex}}\hfill Reviewee ID: \framebox[0.33\linewidth][l]{\rule{0pt}{2.6ex}}
+
+
+:::{.callout-note}
+## Instructions 
+
+Tick one box per row in § Rubric. Provide short and actionable feedback in § Feedback.
+:::
+
+## Rubric
+
+::: {.rubric tbl-colwidths="[20,46,10,8,16]"}
+| Criteria | Expectations | Exceeds | Meets | Developing |
+|:--|:--|:--:|:--:|:--:|
+| **Narrative** | Clearly motivates task, explains approach, and interprets results; connects each calculation and figure to what it shows and why it matters. | $\square$ | $\square$ | $\square$ |
+| **Self-consistency** | All calculations, figures, tables, and symbols agree with narrative; units and definitions are consistent. | $\square$ | $\square$ | $\square$ |
+| **Reproducibility** | Describes steps, parameters, and tools with enough detail to replicate; defines all notation on first use; includes units. | $\square$ | $\square$ | $\square$ |
+| **Logical flow / coherency** | Work is organized so each step follows from the previous; uses transitions; avoids unexplained jumps. | $\square$ | $\square$ | $\square$ |
+| **Structure** | Uses full sentences and appropriate headings; figure and table labels are informative. | $\square$ | $\square$ | $\square$ |
+| **Attribution** | Sources of ideas are cited with clear distinctions between own work and external material. | $\square$ | $\square$ | $\square$ |
+:::
+
+## Feedback
+
+Plus (strongest move): \hrulefill
+
+Delta (one change to try): \hrulefill
+
+## Self-reflection
+(for Reviewee) \hrulefill
+
+\hrulefill
+
+\hrulefill
+
+
+::: {.filehistorybottom}
+Dr Eric Hall (ehall001@dundee.ac.uk), last updated: `{r} format(Sys.time(), '%Y-%m-%d')`, commit: `{r} substr(git2r::branch_target(git2r::repository_head(getwd())), 1, 10)`. 
+:::

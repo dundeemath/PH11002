@@ -1,0 +1,22 @@
+title: dundee-handout
+author: Eric Hall (builds on PrettyPDF by Nicola Rennie)
+version: 1.0.0
+license: CC0 1.0 Universal
+
+contributes:
+  project:
+    project:
+      type: book
+  formats: 
+    pdf:
+      include-in-header: 
+       - "DundeeHandout.tex"
+      include-before-body:
+       - "pagestyle.tex"
+      toc: false
+      code-block-bg: light
+      linkcolor: highlight
+      urlcolor: highlight
+      filters:
+       - "filehistory.lua"
+    

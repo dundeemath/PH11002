@@ -1,0 +1,48 @@
+---
+title: "Peer Review Problem Solving Rubric"
+subtitle: "PH11002 Problem Solving and Professional Skills"
+format: dundee-handout-pdf
+engine: knitr
+---
+
+Problem: \makebox[0.35\linewidth][l]{\hrulefill} \hfill
+Date: \makebox[0.35\linewidth][l]{\hrulefill}
+
+Reviewer ID: \framebox[0.33\linewidth][l]{\rule{0pt}{2.6ex}}\hfill Reviewee ID: \framebox[0.33\linewidth][l]{\rule{0pt}{2.6ex}}
+
+
+:::{.callout-note}
+## Instructions 
+
+Tick one box per row in § Rubric. Provide short and actionable feedback in § Feedback.
+:::
+
+## Rubric
+
+::: {.rubric tbl-colwidths="[20,46,10,8,16]"}
+| Criteria | Expectations | Exceeds | Meets | Developing |
+|:--|:--|:--:|:--:|:--:|
+| **Problem statement** | Restates the task in own words, lists data/givens, unknowns, and conditions/constraints, and clarifies any assumptions. | $\square$ | $\square$ | $\square$ |
+| **Heuristics** | Selects at least one heuristic and explains/justifies why it is suitable. | $\square$ | $\square$ | $\square$ |
+| **Plan quality** | Contains ordered steps and clearly defines any notation needed to proceed. | $\square$ | $\square$ | $\square$ |
+| **Plan execution** | Executes steps that are technically correct and monitored (checked). | $\square$ | $\square$ | $\square$ |
+| **Representations** | Chooses helpful representations (diagrams, tables, equations) and links them to the narrative. | $\square$ | $\square$ | $\square$ |
+| **Reflection** | Verifies result (units/bounds/special cases) and notes generalizations or limitations. | $\square$ | $\square$ | $\square$ |
+:::
+
+## Feedback
+
+Plus (strongest move): \hrulefill
+
+Delta (one change to try): \hrulefill
+
+## Self-reflection
+(for Reviewee) \hrulefill
+
+\hrulefill
+
+\hrulefill
+
+::: {.filehistorybottom}
+Dr Eric Hall (ehall001@dundee.ac.uk), last updated: `{r} format(Sys.time(), '%Y-%m-%d')`, commit: `{r} substr(git2r::branch_target(git2r::repository_head(getwd())), 1, 10)`. 
+:::
