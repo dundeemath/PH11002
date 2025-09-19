@@ -8,6 +8,7 @@
 >
 > Plagiarize!"
 > 
+>
 > ::: {.content-visible unless-format="pdf"}
 <audio controls preload="metadata" src="https://en.wikipedia.org/wiki/Special:FilePath/1-06_Lobachevsky.mp3">
   Your browser does not support the audio element.
@@ -15,13 +16,14 @@
 </audio>
 :::
 >
+>
 > -- Tom Lehrer [@Lehrer:1953lobachevsky][^2] 
 
 [^1]: This song by Tom Lehrer is an attempt at humour and Lehrer is quoted as using the name Lobachevsky "solely for prosodic reasons". Nikolai Ivanovich Lobachevsky was a real mathematician [https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/](https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/); there is no evidence that he plagarised any of his work. 
 
 In his song _Lobachevsky_, first performed in Harvard's The Physical Revue (1951–52) and later recorded, Tom Lehrer lampoons plagiarism by taking it to absurd extremes. It is a joke about bad practice, not a model to follow!
 
-[^2]: In this 1950s satire, Lehrer sings in a caricatured Russian accent, typical of Cold War-era comedy, to lampoon plagiarism. This is a period comedy device that today can read as stereotyping. Our focus is the satire of academic dishonesty; we do not endorse the accent.
+[^2]: In this 1950s satire lampooning plagarism, Lehrer sings in a caricatured Russian accent, typical of Cold War-era comedy. This is a period comedy device that today can read as stereotyping. Our focus is the satire of academic dishonesty; we do not endorse the accent.
 
 Academic integrity is central to your development in this module. Please read the University's Academic Integrity Declaration: [https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration](https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration). The Code of Practice on Academic Misconduct explains procedures and penalties: [https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students](https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students). If you're unsure whether something is acceptable, ask first: cite your sources, acknowledge collaboration appropriately, and submit your own work/write-up.
 
@@ -31,11 +33,11 @@ Generative AI tools are **not permitted** for any assessment in this module, inc
 
 "Use" includes asking an AI system to plan, outline, draft, solve, code, debug, translate, paraphrase, summarise, explain steps, comment on your writing, or "improve" style. If you are unsure whether a tool counts as generative AI, ask the teaching team before using it.
 
-##  Why this policy
+### Why this policy
 
 Our aim is to help you grow core abilities that you will rely on in later study and work: framing problems, choosing methods, carrying out calculations, checking results, and communicating clearly. Outsourcing these cognitive steps to a generative system prevents you from building those skills. The policy also protects fairness for all students and reduces the risk of unreliable or untraceable outputs entering your work.
 
-## What you may use
+### What you may use
 
 You may use standard, non-generative tools that support authentic work without creating ideas or text for you. Examples include:
 
@@ -46,11 +48,17 @@ You may use standard, non-generative tools that support authentic work without c
 
 If a tool "suggests" content, sentences, code, or solution steps, treat it as generative and do not use it.
 
+
+:::{.callout-tip}
 ## Getting help the right way
 
-* Use office hours, labs, and discussion with peers at a conceptual level where collaboration is allowed. Write up your own work independently.
+The following are good habits to form that will support your development through university and beyond. 
+
+* Use office hours and discussion with peers at a conceptual level where collaboration is allowed. Write up your own work independently.
 * Cite all external sources used for ideas, data, or methods.
-* Keep notes of your thinking and intermediate steps. We may ask for these or for a short viva to confirm authorship.
+* Keep notes of your thinking and intermediate steps. We may ask for these or for a short viva to confirm authorship. 
+
+:::
 
 ## Declaration
 
