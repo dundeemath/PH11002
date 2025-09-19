@@ -26,7 +26,7 @@
     "href": "02-problems.html#two-types-of-problems",
     "title": "2  Problems",
     "section": "",
-    "text": "2.1.1 Problems to find\nThe task is to produce or create an object (often a mathematical object or an idea)2 that satisfies specified conditions, which may include a number, function, construction, example, counterexample, or algorithm. Common prompts for these tasks include terms such as determine, compute, construct, and classify. The success of these endeavors is evaluated based on criteria such as correctness, completeness, and in some cases, optimality or uniqueness.\n\n\n\n\n\n\nExample of a problem to find\n\n\n\nFind all integers n such that n(n+1) is a perfect square.\n\n\n\n\n2.1.2 Problems to prove\nThe task is to justify a claim beyond reasonable doubt. Typical prompts include: show, prove, disprove, establish, and deduce. To be successful, one must ensure validity, clarity, and appropriate use of definitions and prior results.\n\n\n\n\n\n\nExample of a problem to prove\n\n\n\nProve there are infinitely many primes congruent to \\;3\\mod 4.\n\n\n\n\n2.1.3 In this module…\nIn this module, we will focus on problems to find. We will consider traditional problems arising from mathematics and physics that have well-known solutions. We will also consider problems of a computational nature and arising from industry.\nWhen engaging in our problem solving sessions, please follow two rules: 1. If you know the solution, please do not spoil the fun. 2. If you do not know the solution, please do not be afraid to ask questions.\nThe first rule is to encourage you to engage in the problem-solving process without revealing the answer prematurely, allowing everyone to explore and learn. The second is to promote an open environment where you feel comfortable seeking help and guidance, fostering collaboration and learning.\n\n\n\n\n\n\nMany problems mix both tasks!\n\n\n\nFind all objects with property P and prove your list is complete.",
+    "text": "Problems to find\nThe task is to produce or create an object (often a mathematical object or an idea)2 that satisfies specified conditions, which may include a number, function, construction, example, counterexample, or algorithm. Common prompts for these tasks include terms such as determine, compute, construct, and classify. The success of these endeavors is evaluated based on criteria such as correctness, completeness, and in some cases, optimality or uniqueness.\n\n\n\n\n\n\nExample of a problem to find\n\n\n\nFind all integers n such that n(n+1) is a perfect square.\n\n\n\n\nProblems to prove\nThe task is to justify a claim beyond reasonable doubt. Typical prompts include: show, prove, disprove, establish, and deduce. To be successful, one must ensure validity, clarity, and appropriate use of definitions and prior results.\n\n\n\n\n\n\nExample of a problem to prove\n\n\n\nProve there are infinitely many primes congruent to \\;3\\mod 4.\n\n\n\n\nIn this module…\nIn this module, we will focus on problems to find. We will consider traditional problems arising from mathematics and physics that have well-known solutions. We will also consider problems of a computational nature and arising from industry.\nWhen engaging in our problem solving sessions, please follow two rules: 1. If you know the solution, please do not spoil the fun. 2. If you do not know the solution, please do not be afraid to ask questions.\nThe first rule is to encourage you to engage in the problem-solving process without revealing the answer prematurely, allowing everyone to explore and learn. The second is to promote an open environment where you feel comfortable seeking help and guidance, fostering collaboration and learning.\n\n\n\n\n\n\nMany problems mix both tasks!\n\n\n\nFind all objects with property P and prove your list is complete.",
     "crumbs": [
       "Problem Solving",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Problems</span>"
@@ -114,7 +114,7 @@
     "href": "09-references.html",
     "title": "References",
     "section": "",
-    "text": "Halmos, P. R. 1980. “The Heart of Mathematics.” The\nAmerican Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings\nAre False.” PLOS Medicine 2 (8): null. https://doi.org/10.1371/journal.pmed.0020124.\n\n\nMacTutor. 2025a. “Quotation by George pólya.”\nUniversity of St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations.\n\n\n———. 2025b. “Quotation by Sofia Kovalevskaya.” University\nof St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of\nEducated Guessing and Opportunistic Problem Solving. Cambridge, MA:\nThe MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed.\nBerlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford\nUniversity Press.\n\n\nPlato (transl. Benjamin Jowett). 2009. Apology. MIT. https://classics.mit.edu/Plato/apology.html.\n\n\nPólya, George. 1945. How to Solve\nIt. Princeton, NJ: Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction\nand Analogy in Mathematics. Princeton, NJ: Princeton University\nPress.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic,\nSymbolic and Mathematical. Princeton, NJ: Princeton University\nPress.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving.\nOrlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd\ned. Hoboken, NJ: Wiley.",
+    "text": "Halmos, P. R. 1980. “The Heart of Mathematics.” The\nAmerican Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings\nAre False.” PLOS Medicine 2 (8): null. https://doi.org/10.1371/journal.pmed.0020124.\n\n\nLehrer, Tom. 1953. Lobachevsky. Lehrer Records. https://en.wikipedia.org/wiki/File:1-06_Lobachevsky.mp3.\n\n\nMacTutor. 2025a. “Quotation by George pólya.”\nUniversity of St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations.\n\n\n———. 2025b. “Quotation by Sofia Kovalevskaya.” University\nof St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of\nEducated Guessing and Opportunistic Problem Solving. Cambridge, MA:\nThe MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed.\nBerlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford\nUniversity Press.\n\n\nPlato (transl. Benjamin Jowett). 2009. Apology. MIT. https://classics.mit.edu/Plato/apology.html.\n\n\nPólya, George. 1945. How to Solve\nIt. Princeton, NJ: Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction\nand Analogy in Mathematics. Princeton, NJ: Princeton University\nPress.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic,\nSymbolic and Mathematical. Princeton, NJ: Princeton University\nPress.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving.\nOrlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd\ned. Hoboken, NJ: Wiley.",
     "crumbs": [
       "Problem Solving",
       "References"
@@ -585,7 +585,7 @@
     "href": "13-technical-writing.html#sec-writing-structure",
     "title": "7  Technical Writing",
     "section": "7.5 Structure",
-    "text": "7.5 Structure\n\nGoal: headings, sentences, captions\nUse full sentences and informative headings to structure your document. Include labels for equations, figures, and tables as appropriate. Be sure that any numbered equation and figure/table is referenced in the text narrative.\n\n\nSuggested problem solution outline\nAdapt this suggested outline for short pieces of writing, such as solutions to module problems, as needed. Below we list a part or section of the report and what it should contain. Note how this structure mirrors the problem solving framework introduced in Chapter 2.\n\nProblem statement: rewrite the problem in your own words. Provide context, objective, and a brief roadmap of the solution.\nMethod: state the model/assumptions, derivations, algorithm, and parameters used. Indicate which heuristic guides the method.\nSolution: provide the result with a short interpretation.\nConclusion and Discussion: explain what the results mean, note limitations or possible generalisations, and reflect on why the heuristic worked (or why others did not).\n\n\n\nSuggested lab report outline\nAdapt this suggested outline for a lab report or longer piece of writing as needed. Below we list a part or section of the report and what it should contain. Not all parts are equal. Titles should be short and snappy; a method section should be as long as needed to ensure reproducibility.\n\nTitle: concise and informative\nAbstract (3–5 sentences): problem, method, key result, implication\nIntroduction: context, objective, roadmap of the report\nMethod: model/assumptions, derivations, algorithm, parameters\nResults: tables/figures with brief interpretation\nDiscussion: what the results mean, limitations, sensitivity\nConclusion: answer the question and outline next steps\nReferences: consistent style (for example, author–year or numbered)\nAppendix: code listings, extended derivations, raw data description",
+    "text": "7.5 Structure\n\nGoal: headings, sentences, captions\nUse full sentences and informative headings to structure your document. Include labels for equations, figures, and tables as appropriate. Be sure that any numbered equation and figure/table is referenced in the text narrative.\n\n\nSuggested problem solution outline\nAdapt this suggested outline for short pieces of writing, such as solutions to module problems, as needed. Below we list a part or section of the report and what it should contain. Note how this structure mirrors the problem solving framework introduced in Chapter 2.\n\nProblem statement: rewrite the problem in your own words. Provide context, objective, and a brief roadmap of the solution.\nMethod: state the model/assumptions, derivations, algorithm, and parameters used. Indicate which heuristic guides the method.\nSolution: provide the result with a short interpretation.\nConclusion and Discussion: explain what the results mean, note limitations or possible generalisations, and reflect on why the heuristic worked (or why others did not).\n\n\n\nSuggested lab report outline\nAdapt this suggested outline for a lab report or longer piece of writing as needed. Below we list a part or section of the report and what it should contain. Not all parts are equal. Titles should be short and snappy; a method section should be as long as needed to ensure reproducibility.\n\nTitle: concise and informative\nAbstract (3–5 sentences): problem, method, key result, implication\nIntroduction: context, objective, roadmap of the report\nMethod: model/assumptions, derivations, algorithm, parameters\nResults: tables/figures with brief interpretation\nDiscussion: what the results mean, limitations, sensitivity\nConclusion: answer the question and outline next steps\nReferences: consistent style (for example, author-year or numbered)\nAppendix: code listings, extended derivations, raw data description",
     "crumbs": [
       "Professional Skills",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
@@ -596,10 +596,141 @@
     "href": "13-technical-writing.html#sec-writing-attribution",
     "title": "7  Technical Writing",
     "section": "7.6 Attribution",
-    "text": "7.6 Attribution\n\nGoal: give credit and highlight your contributions\nCite sources of ideas, data, figures, and methods. Be sure that someone reading the document can distinguish your work from external material.\n\n\nPractical rules\n\nCite where used: immediately after the relevant sentence/equation (for example, “Using Hooke’s law [1] …”).\nQuoting vs paraphrase: prefer paraphrase with a citation. Quote sparingly with quotation marks and a page number where appropriate.\nYour contribution: signal it explicitly (for example, “We implement the method of [2] and add a sensitivity analysis.”).\nFigure reuse: if reusing or altering a figure, state the source and permission status.\nReference style: use one consistent style and include all necessary metadata so that someone reading your text can easily find the source.\n\n\n\n\n\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” PLOS Medicine 2 (8): null. https://doi.org/10.1371/journal.pmed.0020124.",
+    "text": "7.6 Attribution\n\nGoal: give credit and highlight your contributions\nCite sources of ideas, data, figures, and methods. Be sure that someone reading the document can distinguish your work from external material.\n\n\nPractical rules\n\nCite where used: immediately after the relevant sentence/equation, for example, “Using Hooke’s law [1] …”.\nQuoting vs paraphrase: prefer paraphrase with a citation. Quote sparingly with quotation marks and a page number where appropriate.\nYour contribution: signal it explicitly, for example, “We implement the method of [2] and add a sensitivity analysis”.\nFigure reuse: if reusing or altering a figure, state the source and permission status.\nReference style: use one consistent style and include all necessary metadata so that someone reading your text can easily find the source.\n\n\n\n\n\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” PLOS Medicine 2 (8): null. https://doi.org/10.1371/journal.pmed.0020124.",
     "crumbs": [
       "Professional Skills",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html",
+    "href": "11-academic-integrity.html",
+    "title": "5  Academic integrity",
+    "section": "",
+    "text": "5.1 Our AI policy for this module\nAcademic integrity is central to your development in this module. Please read the University’s Academic Integrity Declaration: https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration. The Code of Practice on Academic Misconduct explains procedures and penalties: https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students.\nGenerative AI tools are not permitted for any assessment in this module, including formative and summative work. This includes tools that generate or transform content such as ChatGPT, Copilot, Gemini, and similar services.\n“Use” includes asking an AI system to plan, outline, draft, solve, code, debug, translate, paraphrase, summarise, explain steps, comment on your writing, or “improve” style. If you are unsure whether a tool counts as generative AI, ask the teaching team before using it.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#why-this-policy",
+    "href": "11-academic-integrity.html#why-this-policy",
+    "title": "5  Academic integrity",
+    "section": "5.2 Why this policy",
+    "text": "5.2 Why this policy\nOur aim is to help you grow core abilities that you will rely on in later study and work: framing problems, choosing methods, carrying out calculations, checking results, and communicating clearly. Outsourcing these cognitive steps to a generative system prevents you from building those skills. The policy also protects fairness for all students and reduces the risk of unreliable or untraceable outputs entering your work.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#what-you-may-use",
+    "href": "11-academic-integrity.html#what-you-may-use",
+    "title": "5  Academic integrity",
+    "section": "5.3 What you may use",
+    "text": "5.3 What you may use\nYou may use standard, non-generative tools that support authentic work without creating ideas or text for you. Examples include:\n\ncalculators, spreadsheets, plotting libraries, LaTeX compilers\nreference managers for storing and formatting citations\nbasic proofreading tools that check spelling or punctuation without suggesting new sentences\nIDEs or editors with non-AI features only\n\nIf a tool “suggests” content, sentences, code, or solution steps, treat it as generative and do not use it.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#getting-help-the-right-way",
+    "href": "11-academic-integrity.html#getting-help-the-right-way",
+    "title": "5  Academic integrity",
+    "section": "5.4 Getting help the right way",
+    "text": "5.4 Getting help the right way\n\nUse office hours, labs, and discussion with peers at a conceptual level where collaboration is allowed. Write up your own work independently.\nCite all external sources used for ideas, data, or methods.\nKeep notes of your thinking and intermediate steps. We may ask for these or for a short viva to confirm authorship.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#declaration",
+    "href": "11-academic-integrity.html#declaration",
+    "title": "5  Academic integrity",
+    "section": "5.5 Declaration",
+    "text": "5.5 Declaration\nBy submitting work for this module you confirm that it is your own, that you have not used generative AI to produce or edit the content, and that you understand the University’s policies linked above. Suspected breaches will be handled under the Code of Practice on Academic Misconduct. If in doubt, ask first.\n\n\n\n\n\n\nLehrer, Tom. 1953. Lobachevsky. Lehrer Records. https://en.wikipedia.org/wiki/File:1-06_Lobachevsky.mp3.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#footnotes",
+    "href": "11-academic-integrity.html#footnotes",
+    "title": "5  Academic integrity",
+    "section": "",
+    "text": "This song by Tom Lehrer is an attempt at humour and Lehrer is quoted as using the name Lobachevsky “solely for prosodic reasons”. Nikolai Ivanovich Lobachevsky was a real mathematician https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/; there is no evidence that he plagarised any of his work.↩︎",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "99-references.html",
+    "href": "99-references.html",
+    "title": "References",
+    "section": "",
+    "text": "Halmos, P. R. 1980. “The Heart of Mathematics.” The\nAmerican Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings\nAre False.” PLOS Medicine 2 (8): null. https://doi.org/10.1371/journal.pmed.0020124.\n\n\nLehrer, Tom. 1953. Lobachevsky. Lehrer Records. https://en.wikipedia.org/wiki/File:1-06_Lobachevsky.mp3.\n\n\nMacTutor. 2025a. “Quotation by George pólya.”\nUniversity of St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations.\n\n\n———. 2025b. “Quotation by Sofia Kovalevskaya.” University\nof St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of\nEducated Guessing and Opportunistic Problem Solving. Cambridge, MA:\nThe MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed.\nBerlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford\nUniversity Press.\n\n\nPlato (transl. Benjamin Jowett). 2009. Apology. MIT. https://classics.mit.edu/Plato/apology.html.\n\n\nPólya, George. 1945. How to Solve\nIt. Princeton, NJ: Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction\nand Analogy in Mathematics. Princeton, NJ: Princeton University\nPress.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic,\nSymbolic and Mathematical. Princeton, NJ: Princeton University\nPress.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving.\nOrlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd\ned. Hoboken, NJ: Wiley.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html",
+    "href": "12-teamwork.html",
+    "title": "6  Teamwork",
+    "section": "",
+    "text": "6.1 Code of conduct for group work\nWorking well in a team is a core professional skill in mathematics and physics. It allows you to tackle more interesting problems by combining different strengths and viewpoints, sharpen your explanations for both specialists and non-specialists, plan and share tasks so work is delivered to agreed deadlines with accountability, and build the habit of giving and receiving constructive feedback. You also learn professional behaviours, such as, listening carefully, asking clear questions, and making decisions that the whole group understands.\nIn this module you will work with different groups of peers on different tasks. Start by agreeing a clear goal and a short plan for how you will reach it. Share tasks fairly (especially mathematical tasks) and rotate roles where helpful (chair, scribe, checker, presenter). Communicate openly and early with the teaching team if you are stuck or need help. After each activity, take a minute to reflect on group dynamics including what worked and what you would consider changing next time. The aim is not only a good solution, but a good way of working that you can carry into future study and employment.\nWe are building an environment where everyone can contribute and learn. The following expectations apply in fact-to-face meetings, online spaces, and written communication.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html#code-of-conduct-for-group-work",
+    "href": "12-teamwork.html#code-of-conduct-for-group-work",
+    "title": "6  Teamwork",
+    "section": "",
+    "text": "Expectations\n\nTreat everyone with respect by listen actively and being punctual and prepared.\nStrive to collaborate effetively by sharing mathematical tasks fairly and rotating group roles.\nCommunicate openly: ask questions, summarise decisions, and record actions.\nRaise issues early with your group and, if needed, speak to the teaching team.\nValue diversity and create a welcoming environment for all.\n\n\n\nUnacceptable behaviours\n\nDiscriminatory or belittling comments; inappropriate or hostile language.\nIntimidation, bullying, or repeated dismissive interruptions.\nUnwanted physical contact or attention.\nRecording or sharing images/audio of others without consent.\nPlagiarism or misrepresenting someone else’s work as your own.\n\nIf problems arise, use the active bystander toolkit below and, when appropriate, inform the teaching team.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html#active-bystander-toolkit-the-4ds",
+    "href": "12-teamwork.html#active-bystander-toolkit-the-4ds",
+    "title": "6  Teamwork",
+    "section": "6.2 Active bystander toolkit (the 4Ds)",
+    "text": "6.2 Active bystander toolkit (the 4Ds)\nThese options help you act in ways that are safe and proportionate. Choose what fits the situation.\n### Direct action\naddress the behaviour.\n\n\n\n\n\n\nExample\n\n\n\n\n\n“Please let them finish. Everyone gets a turn to speak because we need all ideas.”\n\n\n\n### Distraction change the focus to defuse tension.\n\n\n\n\n\n\nExample\n\n\n\n\n\n“Let’s pause and check the task list,” or “Can we look at the data for a minute?”\n\n\n\n\nDelay\ncheck in afterwards, then follow up.\nExample: after the session, “Are you OK with what happened? Would you like me to raise it with the tutor?”\n\n\nDelegation\nDelegation involves someone with responsibility or authority.\nExample: quietly inform a GTA or lecturer about a pattern of interruptions or exclusion.\nSafety comes first. If a situation feels unsafe or escalates, prioritise Delegation and Delay. After any incident, note what happened, support those affected, and, if appropriate, follow up with the teaching team.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html#active-bystander",
+    "href": "12-teamwork.html#active-bystander",
+    "title": "6  Teamwork",
+    "section": "6.2 Active bystander",
+    "text": "6.2 Active bystander\nWe do not anticipate problems in this module, but learning how to respond to poor behaviour is a professional skill you can carry into labs, workplaces, and public life. Figure 6.1 presents four actions (the 4Ds) that you can take to call out innapropriate behviour. The aim of these actions is to reduce harm, support those affected, and uphold a respectful learning environment.\n\n\n\n\n\n\nmindmap\n  root((Active&lt;/br&gt;Bystander&lt;/br&gt;Toolkit))\n    Direct action\n    Distraction\n    Delay\n    Delegation\n\n\n\n\nFigure 6.1: The 4Ds of the active bystander toolkit: four strategies for supporting active bystander interventions.\n\n\n\n\n\nThe 4Ds are options to help you act in ways that are safe and proportionate. Choose what D fits the situation. If a situation feels unsafe or escalates, prioritise Delegation and Delay. After any incident, note what happened, support those affected, and, if appropriate, follow up with someone with responsibility or authority.\n\nDirect action\n\nAddress the behaviour immediately.\n\nThis strategy is useful when you feel safe, the issue is clear, and a simple prompt can reset the tone. It is important to name the behaviour, set a boundary, and say why it matters for the group. Avoid sarcasm, public shaming, or debating motives. Focus on impact and the group norm.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\n“Please let them finish. Everyone gets a turn to speak because we need all ideas.”\n\n\n\n\n\nDistraction\n\nChange the focus to defuse tension.\n\nThis strategy is useful when direct confrontation may escalate things or could embarrass someone. To use this strategy, interrupt the pattern with a task, a process check, or a role switch.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\n“Let’s pause and check the task list” or “Can we look at the data for a minute?” or “Could you summarise the next step?”\n\n\n\n\n\nDelay\n\nCheck in afterwards, then follow up.\n\nThis strategy is useful when the moment has passed, you are unsure what happened, or it felt unsafe to intervene live. Speak privately to the person affected, describe what you noticed, ask what support they want, and agree a next step. Avoid promising actions you cannot take or sharing details widely.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\nAfter the session: “Are you OK with what happened?” or “I noticed …; how would you like me to help?” or “Would you like me to raise it with the lecturer?”\n\n\n\n\n\nDelegation\n\nInvolve someone with responsibility or authority.\n\nUse this strategy when safety is a concern, behaviour persists, or power dynamics make self-intervention hard. Do this by giving a concise, factual account to a tutor or lecturer, including what happened, when, and who was present. Avoid diagnosing motives or assigning labels; report behaviours and impact.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\nQuietly inform a tutor or lecturer about a pattern of interruptions or exclusion: “I’m concerned about repeated interruptions in our group. Here is what I observed and when.””",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html#be-an-active-bystander",
+    "href": "12-teamwork.html#be-an-active-bystander",
+    "title": "6  Teamwork",
+    "section": "6.2 Be an active bystander",
+    "text": "6.2 Be an active bystander\nWe do not anticipate problems in this module, but learning how to respond to poor behaviour is a professional skill you can carry into labs, workplaces, and public life. Figure 6.1 presents four actions (the 4Ds) that you can take to call out innapropriate behviour. The aim of these actions is to reduce harm, support those affected, and uphold a respectful learning environment.\n\n\n\n\n\n\nmindmap\n  root((Active&lt;/br&gt;Bystander&lt;/br&gt;Toolkit))\n    Direct action\n    Distraction\n    Delay\n    Delegation\n\n\n\n\nFigure 6.1: The 4Ds of the active bystander toolkit: four strategies for supporting active bystander interventions.\n\n\n\n\n\nThe 4Ds are options to help you act in ways that are safe and proportionate. Choose what D fits the situation. If a situation feels unsafe or escalates, prioritise Delegation and Delay. After any incident, note what happened, support those affected, and, if appropriate, follow up with someone with responsibility or authority.\n\n\n\n\n\n\nSupport\n\n\n\nWe want you to know that the teaching team for this module will support you in being an active bystander.\n\n\n\nDirect action\n\nAddress the behaviour immediately.\n\nThis strategy is useful when you feel safe, the issue is clear, and a simple prompt can reset the tone. It is important to name the behaviour, set a boundary, and say why it matters for the group. Avoid sarcasm, public shaming, or debating motives. Focus on impact and the group norm.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\n“Please let them finish. Everyone gets a turn to speak because we need all ideas.”\n\n\n\n\n\nDistraction\n\nChange the focus to defuse tension.\n\nThis strategy is useful when direct confrontation may escalate things or could embarrass someone. To use this strategy, interrupt the pattern with a task, a process check, or a role switch.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\n“Let’s pause and check the task list” or “Can we look at the data for a minute?” or “Could you summarise the next step?”\n\n\n\n\n\nDelay\n\nCheck in afterwards, then follow up.\n\nThis strategy is useful when the moment has passed, you are unsure what happened, or it felt unsafe to intervene live. Speak privately to the person affected, describe what you noticed, ask what support they want, and agree a next step. Avoid promising actions you cannot take or sharing details widely.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\nAfter the session: “Are you OK with what happened?” or “I noticed …; how would you like me to help?” or “Would you like me to raise it with the lecturer?”\n\n\n\n\n\nDelegation\n\nInvolve someone with responsibility or authority.\n\nUse this strategy when safety is a concern, behaviour persists, or power dynamics make self-intervention hard. Do this by giving a concise, factual account to a tutor or lecturer, including what happened, when, and who was present. Avoid diagnosing motives or assigning labels; report behaviours and impact.\n\n\n\n\n\n\nExample phrases\n\n\n\n\n\nQuietly inform a tutor or lecturer about a pattern of interruptions or exclusion: “I’m concerned about repeated interruptions in our group. Here is what I observed and when.””\n\n\n\n\n\n\n\n\n\nNewton, Isaac. 1676. “Letter to Robert Hooke.” In The Correspondence of Isaac Newton, edited by H. W. Turnbull, 1:416. Cambridge: Cambridge University Press.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
     ]
   }
 ]

@@ -10,7 +10,7 @@ The following short, practical guide will help you meet the expectations set out
 
 ## Narrative {#sec-writing-narrative}
 
-### Goal: tell a clear story {.unnumbered}
+### Goal: tell a clear story
 
 Motivate the task, explain the approach, interpret the results, and connect every calculation, figure, or table to what it shows and why it matters.
 
@@ -20,9 +20,9 @@ Motivate the task, explain the approach, interpret the results, and connect ever
 Note that narrative involves putting *words* on paper  (not just equations) to explain, e.g., quantities and figures are connected to ideas.
 :::
 
-### How to do it {.unnumbered}
+### How to do it
 
-#### Build using focused and readable parts {.unnumbered}
+#### Build using focused and readable parts
 
 You should aim to keep your overall narrative focused and readable. One way to achieve this is to build your text from focused and readable parts. For each subsection, try considering the cycle: _Question → Method → Result → Meaning_. The reader needs to learn: what you are trying to find (Question), how you tried to find it (Method), what you obtained (Result), and why it matters (Meaning). Using the same pattern will makes your writing predictable, easier to assess, and simpler to debug when numbers or logic do not line up. For longer pieces of writing, this cycle will influence the overall _structure_ of your document (see @sec-writing-structure).
 
@@ -61,7 +61,7 @@ Importantly, these are not hard-and-fast rules; they are suggestions to help you
 For a proof-style task, "Result" may be a statement proved and "Meaning" explains how the lemma/theorem advances the overall goal. For a coding task, "Method" should include algorithm steps and parameters; "Result" should include the output and a brief performance or accuracy note; "Meaning" comments on whether the output is reasonable and how it supports the objective.
 :::
 
-#### Captions {.unnumbered}
+#### Captions
 
 Every figure or table answers a question you pose in the text. Include the answer in the caption (not just a label). 
 
@@ -120,7 +120,7 @@ ggplot(df, aes(x = t, y = h)) +
 The caption above in @fig-falling-ball provides context (describes what the figure is showing) and emphasises the importance of the figure (the mismatch between the experimental observations and expectations). 
 :::
 
-#### Interpret {.unnumbered} 
+#### Interpret 
 
 After equations or code outputs, explain *what the numbers mean* relative to the question. 
 
@@ -142,11 +142,11 @@ Avoid the urge to provide superfluous information and make sure that equations, 
 
 ## Self-consistency {#sec-writing-self-consistency}
 
-### Goal: make everything agree {.unnumbered}
+### Goal: make everything agree
 
 Calculations, figures, tables, and symbols should all match with the textual narrative, and any units and definitions should be used consistently throughout the text. Ensure that equations and figures _support_ your narrative. 
 
-### A small checklist {.unnumbered}
+### A small checklist
 
 Consider the following points when reviewing a text for self-consistency.
 
@@ -157,7 +157,7 @@ Consider the following points when reviewing a text for self-consistency.
 * Tables: Include units in headers, not in every cell.
 * Numerical agreement: Values quoted in text equal those shown in figures/tables (including the same rounding).
 
-### Style conventions {.unnumbered}
+### Style conventions
 
 Style conventions are very important when *typesetting* technical documents using LaTeX. Pick a style and use it throughout your piece of text. For example, common style conventions are:
 
@@ -167,7 +167,7 @@ Style conventions are very important when *typesetting* technical documents usin
 
 ## Reproducibility {#sec-writing-reproducibility}
 
-### Goal: ensure *someone else* can verify your findings {.unnumbered}
+### Goal: ensure *someone else* can verify your findings
 
 Provide enough detail (steps, parameters, tools) so that someone else can replicate your results and findings. This includes defining notation when first used in a text and including units as appropriate.
 
@@ -178,7 +178,7 @@ Provide enough detail (steps, parameters, tools) so that someone else can replic
 As a future mathematician or physicist, please promote positive behaviours and avoid contributing to the reproducibility crisis in science \[@Ioannidis:2005rc].
 :::
 
-### Minimum to include {.unnumbered}
+### Minimum to include
 
 * Method steps: Numbered steps for key procedures or algorithms.
 * Parameters and inputs: List parameter values, initial conditions, and data sources. State any random seeds.[^1]
@@ -188,7 +188,7 @@ As a future mathematician or physicist, please promote positive behaviours and a
 
 [^1]: We will use simulation in later modules, such as MA22004; stating the seed lets others reproduce your numbers exactly when including (pseudo)random draws.
 
-### Notation discipline {.unnumbered}
+### Notation discipline
 
 Define all symbols when first introduced.
 
@@ -215,11 +215,11 @@ Notice how all notation is defined and units are provided.
 
 ## Logical flow/coherency {#sec-writing-coherency}
 
-### Goal: guide the reader {.unnumbered}
+### Goal: guide the reader
 
 Organise work so each step follows from the previous. Use transitions between equations to avoid logical jumps.
 
-### Structure each section with transitions {.unnumbered}
+### Structure each section with transitions
 
 * From background to method: "Given these constraints, we model the motion with constant acceleration."
 * From method to results: "Applying the method to our parameters gives $t=0.52~\mathrm{s}$."
@@ -240,11 +240,11 @@ It is easy to break the logical flow of a piece of technical writing. Some commo
 
 ## Structure {#sec-writing-structure}
 
-### Goal: headings, sentences, captions {.unnumbered}
+### Goal: headings, sentences, captions
 
 Use full sentences and informative headings to structure your document. Include labels for equations, figures, and tables as appropriate. Be sure that any numbered equation and figure/table is referenced in the text narrative.
 
-### Suggested problem solution outline {.unnumbered}
+### Suggested problem solution outline
 
 Adapt this suggested outline for short pieces of writing, such as solutions to module problems, as needed. Below we list a part or section of the report and what it should contain. Note how this structure mirrors the problem solving framework introduced in @sec-problems.
 
@@ -253,7 +253,7 @@ Adapt this suggested outline for short pieces of writing, such as solutions to m
 * **Solution**: provide the result with a short interpretation.
 * **Conclusion and Discussion**: explain what the results mean, note limitations or possible generalisations, and reflect on why the heuristic worked (or why others did not).
 
-### Suggested lab report outline {.unnumbered}
+### Suggested lab report outline
 
 Adapt this suggested outline for a lab report or longer piece of writing as needed. Below we list a part or section of the report and what it should contain. Not all parts are equal. Titles should be short and snappy; a method section should be as long as needed to ensure reproducibility.
 
@@ -264,20 +264,20 @@ Adapt this suggested outline for a lab report or longer piece of writing as need
 * **Results**: tables/figures with brief interpretation
 * **Discussion**: what the results mean, limitations, sensitivity
 * **Conclusion**: answer the question and outline next steps
-* **References**: consistent style (for example, author–year or numbered)
+* **References**: consistent style (for example, author-year or numbered)
 * **Appendix**: code listings, extended derivations, raw data description
 
 ## Attribution {#sec-writing-attribution}
 
-### Goal: give credit and highlight your contributions {.unnumbered}
+### Goal: give credit and highlight your contributions
 
 Cite sources of ideas, data, figures, and methods. Be sure that someone reading the document can distinguish your work from external material.
 
-### Practical rules {.unnumbered}
+### Practical rules
 
-* Cite where used: immediately after the relevant sentence/equation (for example, "Using Hooke’s law \[1] ...").
+* Cite where used: immediately after the relevant sentence/equation, for example, "Using Hooke’s law \[1] ...".
 * Quoting vs paraphrase: prefer paraphrase with a citation. Quote sparingly with quotation marks and a page number where appropriate.
-* Your contribution: signal it explicitly (for example, "We implement the method of \[2] and add a sensitivity analysis.").
+* Your contribution: signal it explicitly, for example, "We implement the method of \[2] and add a sensitivity analysis".
 * Figure reuse: if reusing or altering a figure, state the source and permission status.
 * Reference style: use one consistent style and include all necessary metadata so that someone reading your text can easily find the source.
 

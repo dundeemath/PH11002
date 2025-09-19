@@ -1,3 +1,53 @@
 {{< include preamble.qmd >}}
 
-# Purpose {#sec-purpose}
+# Academic integrity {#sec-academic-integrity}
+
+> "I am never forget the day I first meet the great Lobachevsky[^1]
+>
+> In one word he told me secret of success in mathematics:
+>
+> Plagiarize!"
+> 
+> ::: {.content-visible unless-format="pdf"}
+<audio controls preload="metadata" src="https://en.wikipedia.org/wiki/Special:FilePath/1-06_Lobachevsky.mp3">
+  Your browser does not support the audio element.
+  <a href="https://en.wikipedia.org/wiki/Special:FilePath/1-06_Lobachevsky.mp3">Download the MP3</a>.
+</audio>
+:::
+>
+> -- Tom Lehrer [@Lehrer:1953lobachevsky] 
+
+[^1]: This song by Tom Lehrer is an attempt at humour and Lehrer is quoted as using the name Lobachevsky "solely for prosodic reasons". Nikolai Ivanovich Lobachevsky was a real mathematician [https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/](https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/); there is no evidence that he plagarised any of his work. 
+
+Academic integrity is central to your development in this module. Please read the University’s Academic Integrity Declaration: [https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration](https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration). The Code of Practice on Academic Misconduct explains procedures and penalties: [https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students](https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students).
+
+## Our AI policy for this module
+
+Generative AI tools are **not permitted** for any assessment in this module, including formative and summative work. This includes tools that generate or transform content such as ChatGPT, Copilot, Gemini, and similar services.
+
+"Use" includes asking an AI system to plan, outline, draft, solve, code, debug, translate, paraphrase, summarise, explain steps, comment on your writing, or "improve" style. If you are unsure whether a tool counts as generative AI, ask the teaching team before using it.
+
+##  Why this policy
+
+Our aim is to help you grow core abilities that you will rely on in later study and work: framing problems, choosing methods, carrying out calculations, checking results, and communicating clearly. Outsourcing these cognitive steps to a generative system prevents you from building those skills. The policy also protects fairness for all students and reduces the risk of unreliable or untraceable outputs entering your work.
+
+## What you may use
+
+You may use standard, non-generative tools that support authentic work without creating ideas or text for you. Examples include:
+
+* calculators, spreadsheets, plotting libraries, LaTeX compilers
+* reference managers for storing and formatting citations
+* basic proofreading tools that check spelling or punctuation without suggesting new sentences
+* IDEs or editors with non-AI features only
+
+If a tool "suggests" content, sentences, code, or solution steps, treat it as generative and do not use it.
+
+## Getting help the right way
+
+* Use office hours, labs, and discussion with peers at a conceptual level where collaboration is allowed. Write up your own work independently.
+* Cite all external sources used for ideas, data, or methods.
+* Keep notes of your thinking and intermediate steps. We may ask for these or for a short viva to confirm authorship.
+
+## Declaration
+
+By submitting work for this module you confirm that it is your own, that you have not used generative AI to produce or edit the content, and that you understand the University’s policies linked above. Suspected breaches will be handled under the Code of Practice on Academic Misconduct. If in doubt, ask first.

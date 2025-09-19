@@ -4,7 +4,9 @@ project:
  
 book: 
   title: "Problem Solving and Professional Skills"
-  author: "Dr Eric Hall"
+  author: 
+    - "Dr Eric Hall"
+    - "Dr Paula Stella De Viveiros Teixeira"
   # css: "assets/style.css"
   description: |
      Notes for PH11002 - Problem Solving and Professional Skills, 
@@ -32,7 +34,6 @@ book:
         - "02-problems.qmd"
         - "03-heuristics.qmd"
         - "04-attitudes.qmd"
-        - "09-references.qmd"
     - part: "Professional Skills"
       chapters:
         - "11-academic-integrity.qmd"
@@ -40,6 +41,7 @@ book:
         - "13-technical-writing.qmd"
         - "14-presentations.qmd"
         - "15-ethics.qmd"
+    - "99-references.qmd"
   # appendices: 
   # margin-header: "Header Text"
   sidebar:
@@ -69,6 +71,8 @@ format:
     toc: true
     html-math-method: katex
     include-in-header: header.qmd
+    number-sections: true
+    number-depth: 2
   pdf: 
     code-overflow: wrap
     documentclass: scrreprt
@@ -81,6 +85,8 @@ format:
     link-citations: true
     link-bibliography: true
     cover-image: assets/images/cover_small.jpg
+    number-sections: true
+    number-depth: 2
     mermaid:
       mermaid-format: svg
       theme: neutral
