@@ -2,9 +2,12 @@
 
 # Attitudes {#sec-attitudes}
 
-> "Many people who have not studied mathematics confuse it with arithmetic and consider it a dry and fruitless science. In reality, however, it is a science which requires a great amount of imagination." -- Sofia Kovalevskaya [@MacTutor:Kovalevskaya]
+> "Many people who have not studied mathematics confuse it with arithmetic and consider it a dry and fruitless science. In reality, however, it is a science which requires a great amount of imagination." 
+>
+> -- Sofia Kovalevskaya [@MacTutor:Kovalevskaya]
 
-Effective problem solvers masterfully balance curiosity with discipline. They begin by probing, playing, and hypothesizing, then move on to justifying, checking, and reflecting on their findings. According to Pólya, true progress originates from cycling through the four problem-solving phases, maintaining a keen awareness of one’s actions, and a readiness to adapt when new evidence arises [@Polya:1945hu]. When progress stalls, adept problem solvers pivot swiftly and consistently take time to "look back" at their process.
+Effective problem solvers masterfully balance curiosity with discipline. They begin by probing, playing, and hypothesizing, then move on to justifying, checking, and reflecting on their findings. True progress originates from cycling through the four problem-solving phases, maintaining a keen awareness of one's actions, and a readiness to adapt when new evidence arises [@Polya:1945hu]. When progress stalls, adept problem solvers pivot swiftly and consistently take time to "look back" at their process.
+
 
 ## Selecting and pursuing an approach
 
@@ -19,9 +22,11 @@ Finally, watch for traction. You are on the right track if relations clarify, ex
 :::{.callout-important}
 ## Try answering these questions:
 
-  - What exactly are you doing? Can you describe it precisely?
+  - What exactly are you doing? 
+  - Can you describe what you are aiming to do precisely?
   - Why are you doing it? How does it fit into the solution?
-  - How does it help you? What will you do with the outcome when you obtain it?
+  - How does what your are doing help you solve the problem at hand? 
+  - What will you do with the outcome when you obtain it?
 
 [see @Schoenfeld:1985ps].
 

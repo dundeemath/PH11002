@@ -34,6 +34,12 @@ book:
         - "04-attitudes.qmd"
         - "09-references.qmd"
     - part: "Professional Skills"
+      chapters:
+        - "11-academic-integrity.qmd"
+        - "12-teamwork.qmd"
+        - "13-technical-writing.qmd"
+        - "14-presentations.qmd"
+        - "15-ethics.qmd"
   # appendices: 
   # margin-header: "Header Text"
   sidebar:

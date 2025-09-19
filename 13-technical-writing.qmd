@@ -1,0 +1,283 @@
+{{< include preamble.qmd >}}
+
+# Technical Writing
+
+> "Verbosity to hide ignorance will not be rewarded."
+>
+> -- Max Mintz (personal communication)
+
+The following short, practical guide will help you meet the expectations set out in the technical writing rubric used in this module. The rubric focuses on six criteria: narrative, self-consistency, reproducibility, logical flow/coherency, structure, and attribution.
+
+## Narrative {#sec-writing-narrative}
+
+### Goal: tell a clear story {.unnumbered}
+
+Motivate the task, explain the approach, interpret the results, and connect every calculation, figure, or table to what it shows and why it matters.
+
+:::{.callout-important}
+## Narrative implies writing
+
+Note that narrative involves putting *words* on paper  (not just equations) to explain, e.g., quantities and figures are connected to ideas.
+:::
+
+### How to do it {.unnumbered}
+
+#### Build using focused and readable parts {.unnumbered}
+
+You should aim to keep your overall narrative focused and readable. One way to achieve this is to build your text from focused and readable parts. For each subsection, try considering the cycle: _Question → Method → Result → Meaning_. The reader needs to learn: what you are trying to find (Question), how you tried to find it (Method), what you obtained (Result), and why it matters (Meaning). Using the same pattern will makes your writing predictable, easier to assess, and simpler to debug when numbers or logic do not line up. For longer pieces of writing, this cycle will influence the overall _structure_ of your document (see @sec-writing-structure).
+
+For each subsection, let your writing be guided by this mini-cycle: 
+
+* **Question:** what you aim to find or show, with context.
+
+  * State the quantity or claim and why it is useful.
+  * Name the conditions of interest (for example, "neglect air resistance," "short time interval," "constant acceleration").
+  * Example: "We aim to estimate the average speed of the journey so we can plan arrival time."
+
+* **Method:** the plan to answer the question.
+
+  * Name the model or relationship you will use, the assumptions that make it reasonable, and the inputs.
+  * Show the key equation or algorithm once; define symbols and units.
+  * Tools belong here if relevant (for example, "linear fit in R," "stopwatch measurements").
+  * Example: "To calculate velocity $v$, we assume approximately constant speed and use $v=d/t$ with distance $d$ from the map and time $t$ from our calibrated stopwatch."
+
+* **Result:** the outcome of applying the method.
+
+  * Present the numerical or symbolic answer with correct units and sensible significant figures.
+  * If relevant, include uncertainty or a brief pointer to where it came from.
+  * Keep intermediate algebra brief; include only what is needed to verify the calculation.
+  * Example: "The calculation gives $v=4.2~\mathrm{m\,s^{-1}}$."
+
+* **Meaning:** interpretation of the result relative to the question.
+
+  * Say what the number tells you, compare it with an expectation or limit, and note any limitations.
+  * If a figure/table supports the claim, mention it directly.
+  * Example: "This is below the speed limit; the straight-line trend in Fig. 1 is consistent with constant speed."
+
+Importantly, these are not hard-and-fast rules; they are suggestions to help you meet module expectations for forming a narrative. 
+
+:::{.callout-tip}
+## Variants
+For a proof-style task, "Result" may be a statement proved and "Meaning" explains how the lemma/theorem advances the overall goal. For a coding task, "Method" should include algorithm steps and parameters; "Result" should include the output and a brief performance or accuracy note; "Meaning" comments on whether the output is reasonable and how it supports the objective.
+:::
+
+#### Captions {.unnumbered}
+
+Every figure or table answers a question you pose in the text. Include the answer in the caption (not just a label). 
+
+:::{.callout-note collapse="true"}
+## Example
+
+Consider the following plot of a the height of a falling ball, subject to gravity, over time together with a fit to a quadratic curve. 
+
+```{r}
+#| label: fig-falling-ball
+#| fig-cap: "Height vs time for a falling ball; fitting $h(t) = h_0 + v_0 t - \\frac{1}{2} gt^2$ to the data  yields $g \\approx 9.7~\\mathrm{m\\,s^{-2}}$, about $1\\%$ below the standard $9.81~\\mathrm{m\\,s^{-2}}$."
+#| echo: false
+#| warning: false
+#| message: false
+set.seed(42)
+
+# --- Synthetic data (replace with measured t, h if available) ---
+g_true <- 9.7        # m/s^2 - misspecified on purpose
+h0 <- 1.20           # initial height (m)
+v0 <- 0.00           # initial velocity (m/s)
+t <- seq(0, 0.44, length.out = 10)
+h_clean <- h0 + v0*t - 0.5*g_true*t^2
+h <- h_clean + rnorm(length(t), mean = 0, sd = 0.005)
+
+df <- data.frame(t = t, h = h)
+
+# --- Quadratic fit: h(t) ≈ c2*t^2 + c1*t + c0; then g_hat = -2*c2 ---
+fit <- lm(h ~ t + I(t^2), data = df)
+c2 <- coef(fit)[["I(t^2)"]]
+g_hat <- -2 * c2
+
+# Predictions for a smooth curve
+t_fit <- seq(min(t), max(t), length.out = 200)
+df_fit <- data.frame(t = t_fit)
+df_fit$h <- predict(fit, newdata = df_fit)
+
+# --- Plot ---
+ggplot(df, aes(x = t, y = h)) +
+  geom_point() +
+  geom_line(data = df_fit, aes(x = t, y = h)) +
+  labs(
+    x = expression(Time * "," ~ italic(t) ~ "(s)"),
+    y = expression(Height * "," ~ italic(h) ~ "(m)"), 
+    title = "Height of a falling ball over time"
+  ) +
+  annotate(
+    "text",
+    x = min(t) + 0.02 * diff(range(t)),
+    y = 0.95*max(h),
+    hjust = 0, vjust = 1,
+    label = paste0("g%~%", format(round(g_hat, 2), nsmall = 2), "~ m %.% s^{-2}"),
+    parse = TRUE
+  )
+```
+
+The caption above in @fig-falling-ball provides context (describes what the figure is showing) and emphasises the importance of the figure (the mismatch between the experimental observations and expectations). 
+:::
+
+#### Interpret {.unnumbered} 
+
+After equations or code outputs, explain *what the numbers mean* relative to the question. 
+
+:::{.callout-note collapse="true"}
+## Example
+
+"Using $F=kx$ with $k=200~\mathrm{N\,m^{-1}}$ and $x=0.03~\mathrm{m}$, the force is $6~\mathrm{N}$, _which is enough to hold the mass in place._"
+
+The emphasized text above helps to explain the practical significance of the calculation. 
+:::
+
+:::{.callout-warning}
+
+## Don't dump!
+
+Avoid the urge to provide superfluous information and make sure that equations, figures, and tables are necessary to support the narrative.
+:::
+
+
+## Self-consistency {#sec-writing-self-consistency}
+
+### Goal: make everything agree {.unnumbered}
+
+Calculations, figures, tables, and symbols should all match with the textual narrative, and any units and definitions should be used consistently throughout the text. Ensure that equations and figures _support_ your narrative. 
+
+### A small checklist {.unnumbered}
+
+Consider the following points when reviewing a text for self-consistency.
+
+* Symbols: Define once, and use consistently (for example, $v$ is always speed; do not switch to $u$ later).
+* Units: Use SI units, unless there is a compelling reason not to. When typesetting, use a non-breaking space between number and unit (for example, `3.2\,\mathrm{m}\,\mathrm{s}^{-1}` in LaTeX). Avoid writing "3.2m/s" in a formal piece of writing (it is fine for scratchwork).
+* Significant figures: Reflect measurement precision and propagate appropriately. Do not over-round at intermediate steps.
+* Figure axes: Units and symbols on every axis (for example, *Time, $t$ (s)*). Match variable names to the text.
+* Tables: Include units in headers, not in every cell.
+* Numerical agreement: Values quoted in text equal those shown in figures/tables (including the same rounding).
+
+### Style conventions {.unnumbered}
+
+Style conventions are very important when *typesetting* technical documents using LaTeX. Pick a style and use it throughout your piece of text. For example, common style conventions are:
+
+* Scalars/variables: italic ($x, t, E$); vectors: bold ($\mathbf{v}$); matrices: bold caps ($\mathbf{A}$).
+* Functions/operators ($\sin, \cos, \exp$) upright; units upright ($\mathrm{m},\,\mathrm{s}$).
+* Population vs estimates (statistics): many styles are possible, such as using Greek letters for population parameters ($\mu, \sigma, \rho$) and Roman letters for corresponding estimates ($m, s, r$), or decorating corresponding estimates with hats ($\hat{\mu}, \hat{\sigma}, \hat{\rho}$).
+
+## Reproducibility {#sec-writing-reproducibility}
+
+### Goal: ensure *someone else* can verify your findings {.unnumbered}
+
+Provide enough detail (steps, parameters, tools) so that someone else can replicate your results and findings. This includes defining notation when first used in a text and including units as appropriate.
+
+:::{.callout-important}
+
+## Reproducibility crisis
+
+As a future mathematician or physicist, please promote positive behaviours and avoid contributing to the reproducibility crisis in science \[@Ioannidis:2005rc].
+:::
+
+### Minimum to include {.unnumbered}
+
+* Method steps: Numbered steps for key procedures or algorithms.
+* Parameters and inputs: List parameter values, initial conditions, and data sources. State any random seeds.[^1]
+* Tools: Name software and versions, for example, "Python 3.11, NumPy 1.26; plots made in Jupyter".
+* Data and code access: If provided, give file names or appendix listings; if not, describe how data were generated, for example, "Measured height with a meter rule" or "three repeated measurements per subject".
+* Assumptions and approximations: State and justify, for example, "Neglect air resistance" or "small-angle approximation valid for $\theta<10^\circ$".
+
+[^1]: We will use simulation in later modules, such as MA22004; stating the seed lets others reproduce your numbers exactly when including (pseudo)random draws.
+
+### Notation discipline {.unnumbered}
+
+Define all symbols when first introduced.
+
+:::{.callout-note collapse="true"}
+## Bad Example
+
+This is an example of what *not* to do. 
+
+> From $kx = F$ we found 6, so $k = 200$ and then we used $u=kx$.
+
+Problems: symbols are introduced without definitions, units are missing or informal, and the symbol switches from $k$ to $u$ mid-calculation.
+:::
+
+:::{.callout-note collapse="true"}
+## Good Example
+
+This is an exmaple of good practice. 
+
+> Let $k$ denote the spring constant ($\mathrm{N\,m^{-1}}$). By Hooke’s law, $$F = k x \,,$$ where $F$ is the force ($\mathrm{N}$) and $x$ is the extension from equilibrium ($\mathrm{m}$).
+
+Notice how all notation is defined and units are provided.
+:::
+
+
+## Logical flow/coherency {#sec-writing-coherency}
+
+### Goal: guide the reader {.unnumbered}
+
+Organise work so each step follows from the previous. Use transitions between equations to avoid logical jumps.
+
+### Structure each section with transitions {.unnumbered}
+
+* From background to method: "Given these constraints, we model the motion with constant acceleration."
+* From method to results: "Applying the method to our parameters gives $t=0.52~\mathrm{s}$."
+* From results to meaning: "Therefore, the height is about $1.3~\mathrm{m}$, which is consistent with the tape-measure reading (Fig. 1)."
+* From one figure to the next: "Having established a linear $V$–$I$ relation (Fig. 1), we now examine residuals (Fig. 2)."
+
+:::{.callout-warning}
+## Avoid common flow breakers
+
+It is easy to break the logical flow of a piece of technical writing. Some common pitfalls to avoid are:
+
+* Introducing symbols in a figure without defining them in text.
+* Presenting equations with no statement of purpose.
+* Jumping from raw data to conclusions without intermediate reasoning.
+* Switching units or symbols mid-way (for example, metres to centimetres without saying so).
+:::
+
+
+## Structure {#sec-writing-structure}
+
+### Goal: headings, sentences, captions {.unnumbered}
+
+Use full sentences and informative headings to structure your document. Include labels for equations, figures, and tables as appropriate. Be sure that any numbered equation and figure/table is referenced in the text narrative.
+
+### Suggested problem solution outline {.unnumbered}
+
+Adapt this suggested outline for short pieces of writing, such as solutions to module problems, as needed. Below we list a part or section of the report and what it should contain. Note how this structure mirrors the problem solving framework introduced in @sec-problems.
+
+* **Problem statement**: rewrite the problem in your own words. Provide context, objective, and a brief roadmap of the solution.
+* **Method**: state the model/assumptions, derivations, algorithm, and parameters used. Indicate which *heuristic* guides the method.
+* **Solution**: provide the result with a short interpretation.
+* **Conclusion and Discussion**: explain what the results mean, note limitations or possible generalisations, and reflect on why the heuristic worked (or why others did not).
+
+### Suggested lab report outline {.unnumbered}
+
+Adapt this suggested outline for a lab report or longer piece of writing as needed. Below we list a part or section of the report and what it should contain. Not all parts are equal. Titles should be short and snappy; a method section should be as long as needed to ensure reproducibility.
+
+* **Title**: concise and informative
+* **Abstract (3–5 sentences)**: problem, method, key result, implication
+* **Introduction**: context, objective, roadmap of the report
+* **Method**: model/assumptions, derivations, algorithm, parameters
+* **Results**: tables/figures with brief interpretation
+* **Discussion**: what the results mean, limitations, sensitivity
+* **Conclusion**: answer the question and outline next steps
+* **References**: consistent style (for example, author–year or numbered)
+* **Appendix**: code listings, extended derivations, raw data description
+
+## Attribution {#sec-writing-attribution}
+
+### Goal: give credit and highlight your contributions {.unnumbered}
+
+Cite sources of ideas, data, figures, and methods. Be sure that someone reading the document can distinguish your work from external material.
+
+### Practical rules {.unnumbered}
+
+* Cite where used: immediately after the relevant sentence/equation (for example, "Using Hooke’s law \[1] ...").
+* Quoting vs paraphrase: prefer paraphrase with a citation. Quote sparingly with quotation marks and a page number where appropriate.
+* Your contribution: signal it explicitly (for example, "We implement the method of \[2] and add a sensitivity analysis.").
+* Figure reuse: if reusing or altering a figure, state the source and permission status.
+* Reference style: use one consistent style and include all necessary metadata so that someone reading your text can easily find the source.
+
