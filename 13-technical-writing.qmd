@@ -1,6 +1,6 @@
 {{< include preamble.qmd >}}
 
-# Technical Writing
+# Technical Writing {#sec-technical-writing}
 
 > "Verbosity to hide ignorance will not be rewarded."
 >
