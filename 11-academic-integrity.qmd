@@ -15,11 +15,15 @@
 </audio>
 :::
 >
-> -- Tom Lehrer [@Lehrer:1953lobachevsky] 
+> -- Tom Lehrer [@Lehrer:1953lobachevsky][^2] 
 
 [^1]: This song by Tom Lehrer is an attempt at humour and Lehrer is quoted as using the name Lobachevsky "solely for prosodic reasons". Nikolai Ivanovich Lobachevsky was a real mathematician [https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/](https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/); there is no evidence that he plagarised any of his work. 
 
-Academic integrity is central to your development in this module. Please read the University’s Academic Integrity Declaration: [https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration](https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration). The Code of Practice on Academic Misconduct explains procedures and penalties: [https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students](https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students).
+Although we quote the satirist Tom Lehrer above, we expect you to uphold the highest standards of academic integrity in this module. His song _Lobachevsky_, first performed in Harvard's The Physical Revue (1951–52) and later recorded, lampoons plagiarism by taking it to absurd extremes. It is a joke about bad practice, not a model to follow!
+
+[^2]: In this 1950s satire, Lehrer sings in a caricatured Russian accent, typical of Cold War-era comedy, to lampoon plagiarism. This is a period comedy device that today can read as stereotyping. Our focus is the satire of academic dishonesty; we do not endorse the accent.
+
+Academic integrity is central to your development in this module. Please read the University's Academic Integrity Declaration: [https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration](https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration). The Code of Practice on Academic Misconduct explains procedures and penalties: [https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students](https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students). If you're unsure whether something is acceptable, ask first: cite your sources, acknowledge collaboration appropriately, and submit your own work/write-up.
 
 ## Our AI policy for this module
 
@@ -50,4 +54,4 @@ If a tool "suggests" content, sentences, code, or solution steps, treat it as ge
 
 ## Declaration
 
-By submitting work for this module you confirm that it is your own, that you have not used generative AI to produce or edit the content, and that you understand the University’s policies linked above. Suspected breaches will be handled under the Code of Practice on Academic Misconduct. If in doubt, ask first.
+By submitting work for this module you confirm that it is your own, that you have not used generative AI to produce or edit the content, and that you understand the University's policies linked above. Suspected breaches will be handled under the Code of Practice on Academic Misconduct. If in doubt, ask first.

@@ -1,6 +1,9 @@
 project:
   type: "book"
   output-dir: docs
+  resources:
+    - rubric-problem-solving.pdf
+    - rubric-writing.pdf
  
 book: 
   title: "Problem Solving and Professional Skills"
@@ -42,7 +45,8 @@ book:
         - "14-presentations.qmd"
         - "15-ethics.qmd"
     - "99-references.qmd"
-  # appendices: 
+  appendices: 
+    - appendix-rubrics.qmd
   # margin-header: "Header Text"
   sidebar:
     alignment: left

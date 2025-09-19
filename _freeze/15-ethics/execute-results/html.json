@@ -1,9 +1,11 @@
 {
-  "hash": "cf12e1fb20d24cde1c26f2cd098b9e18",
+  "hash": "4ee4f394b03b14621d759676e656ca05",
   "result": {
     "engine": "knitr",
     "markdown": "\n\n::: {.content-hidden when-format=\"pdf\"}\n\\newcommand{\\E}{\\mathbf{E}} \n\\DeclareMathOperator{\\Var}{Var}\n\\DeclareMathOperator{\\Cov}{Cov}\n\\DeclareMathOperator{\\corr}{corr}\n\\DeclareMathOperator{\\sd}{sd}\n\\newcommand{\\se}{\\mathsf{se}}\n:::\n\n\n# Purpose {#sec-purpose}\n",
-    "supporting": [],
+    "supporting": [
+      "15-ethics_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

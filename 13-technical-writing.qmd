@@ -207,7 +207,7 @@ Problems: symbols are introduced without definitions, units are missing or infor
 
 This is an exmaple of good practice. 
 
-> Let $k$ denote the spring constant ($\mathrm{N\,m^{-1}}$). By Hooke’s law, $$F = k x \,,$$ where $F$ is the force ($\mathrm{N}$) and $x$ is the extension from equilibrium ($\mathrm{m}$).
+> Let $k$ denote the spring constant ($\mathrm{N\,m^{-1}}$). By Hooke's law, $$F = k x \,,$$ where $F$ is the force ($\mathrm{N}$) and $x$ is the extension from equilibrium ($\mathrm{m}$).
 
 Notice how all notation is defined and units are provided.
 :::
@@ -275,7 +275,7 @@ Cite sources of ideas, data, figures, and methods. Be sure that someone reading 
 
 ### Practical rules
 
-* Cite where used: immediately after the relevant sentence/equation, for example, "Using Hooke’s law \[1] ...".
+* Cite where used: immediately after the relevant sentence/equation, for example, "Using Hooke's law \[1] ...".
 * Quoting vs paraphrase: prefer paraphrase with a citation. Quote sparingly with quotation marks and a page number where appropriate.
 * Your contribution: signal it explicitly, for example, "We implement the method of \[2] and add a sensitivity analysis".
 * Figure reuse: if reusing or altering a figure, state the source and permission status.

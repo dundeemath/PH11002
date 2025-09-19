@@ -4,7 +4,7 @@
 
 > "If I have seen further, it is by standing on the shoulders of giants."
 > 
-> -- Isaac Newton, in a letter to Robert Hooke, [@Newton:1676sg]
+> -- Isaac Newton, in a letter to Robert Hooke [@Newton:1676sg]
 
 Working well in a team is a core professional skill in mathematics and physics. It allows you to tackle more interesting problems by combining different strengths and viewpoints, sharpen your explanations for both specialists and non-specialists, plan and share tasks so work is delivered to agreed deadlines with accountability, and build the habit of giving and receiving constructive feedback. You also learn professional behaviours, such as, listening carefully, asking clear questions, and making decisions that the whole group understands.
 
@@ -104,5 +104,5 @@ Use this strategy when safety is a concern, behaviour persists, or power dynamic
 ## Example phrases
 
 Quietly inform a tutor or lecturer about a pattern of interruptions or exclusion:
-"I’m concerned about repeated interruptions in our group. Here is what I observed and when.""
+"I'm concerned about repeated interruptions in our group. Here is what I observed and when.""
 :::
