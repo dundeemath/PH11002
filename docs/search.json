@@ -1,0 +1,395 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Problem Solving and Professional Skills",
+    "section": "",
+    "text": "Introduction\nWelcome to PH11002 Problem Solving and Professional Skills at the University of Dundee.\nThese notes are available at dundeemath.github.io/PH11002/ as HTML and also as a PDF.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#licence",
+    "href": "index.html#licence",
+    "title": "Problem Solving and Professional Skills",
+    "section": "Licence",
+    "text": "Licence\n\nThis work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "01-purpose.html",
+    "href": "01-purpose.html",
+    "title": "1  Purpose",
+    "section": "",
+    "text": "“[T]he mathematician’s main reason for existence is to solve problems […] therefore, what mathematics really consists of is problems and solutions.”\n(Halmos 1980)\n\nThroughout your mathematics and scientific journey, you have likely encountered a variety of quantiative problems. Usually, these problems folllow a specific topic, technique, or method introduced in class that are followed by a series of related exercises to reinforce a particular concept or approach. In these instances, you may have been provided essential context to guide you toward the “appropriate” solution method. While this structued learning can solidify your understanding of a particular concept or approach, it can also be somewhat disconnected from reality. In real-world challenges, problems frequently integrate multiple concepts that span various areas of mathematics and quantitative reasoning, requiring a more holistic application of your knowledge.\nIn this module, our goal is to cultivate skills that enable you to tackle problems in a broader context. This goal will be achieved through action: we will develop problem solving skills and learn how to solve problems more generally by … solving problems! We will engage with tasks for which the solution methods are not predetermined. To succeed with these open-ended challenges, you will reflect on your experiences and the frameworks and processes you utilize in problem-solving. This reflection is crucial because effective problem-solving involves not just your mathematical resources (i.e., what you know), but also your perception of that knowledge shaped by your experiences (Schoenfeld 1985).\nUltimately, this problem solving module aims to:\n\nBuild your confidence in solving unseen problems,\nOffers prompts to support reflection and deepen your perception of mathematical concepts and their interconnections,\nProvide generic support for scaffolding problem solving (vs scaffolding the problem) to enhance your problem-solving skills.\n\nTogether, these aims will lay a foundation for your development as a mathematician and physicist.\n\n\n\n\n\n\nNoteTL;DR\n\n\n\n\n\nA key aspect of this module will involve engaging in problem-solving tasks, both individually and collaboratively, and reflecting on these experiences to enhance your learning.\n\n\n\n\n\n\n\n\n\nHalmos, P. R. 1980. “The Heart of Mathematics.” The American Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Orlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Purpose</span>"
+    ]
+  },
+  {
+    "objectID": "02-problems.html",
+    "href": "02-problems.html",
+    "title": "2  Problems",
+    "section": "",
+    "text": "2.1 Two Types of Problems\nProblems often involve more complexity than straightforward exercises in that the method of solution is not proscribed. We will differentiate between two types of problems and present a general framework, introduced by Pólya in a series of monographs (Pólya 1945, 1954a, 1954b), for understanding problem solving.1 This framework is intended to serve as a foundation for analysing your approach to problem solving.\nWe distinguish between different types of problems based on the desired goal. These are problems to find and problems to prove.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Problems</span>"
+    ]
+  },
+  {
+    "objectID": "02-problems.html#two-types-of-problems",
+    "href": "02-problems.html#two-types-of-problems",
+    "title": "2  Problems",
+    "section": "",
+    "text": "Problems to find\nThe task is to produce or create an object (often a mathematical object or an idea)2 that satisfies specified conditions, which may include a number, function, construction, example, counterexample, or algorithm. Common prompts for these tasks include terms such as determine, compute, construct, and classify. The success of these endeavors is evaluated based on criteria such as correctness, completeness, and in some cases, optimality or uniqueness.\n\n\n\n\n\n\nNoteExample of a problem to find\n\n\n\nFind all integers n such that n(n+1) is a perfect square.\n\n\n\n\nProblems to prove\nThe task is to justify a claim beyond reasonable doubt. Typical prompts include: show, prove, disprove, establish, and deduce. To be successful, one must ensure validity, clarity, and appropriate use of definitions and prior results.\n\n\n\n\n\n\nNoteExample of a problem to prove\n\n\n\nProve there are infinitely many primes congruent to \\;3\\mod 4.\n\n\n\n\nIn this module…\nIn this module, we will focus on problems to find. We will consider traditional problems arising from mathematics and physics that have well-known solutions. We will also consider problems of a computational nature and arising from industry.\nWhen engaging in our problem solving sessions, please follow two rules: 1. If you know the solution, please do not spoil the fun. 2. If you do not know the solution, please do not be afraid to ask questions.\nThe first rule is to encourage you to engage in the problem-solving process without revealing the answer prematurely, allowing everyone to explore and learn. The second is to promote an open environment where you feel comfortable seeking help and guidance, fostering collaboration and learning.\n\n\n\n\n\n\nWarningMany problems mix both tasks!\n\n\n\nFind all objects with property P and prove your list is complete.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Problems</span>"
+    ]
+  },
+  {
+    "objectID": "02-problems.html#problem-solving-framework",
+    "href": "02-problems.html#problem-solving-framework",
+    "title": "2  Problems",
+    "section": "2.2 Problem solving framework",
+    "text": "2.2 Problem solving framework\nIn this module, we will make use of a particular problem solving framework for reflection and organising our thoughts. This problem solving framework (see Pólya 1945) is a four-phase cycle for tackling open-ended problems. The phases of the problem solving framework are depicted in Figure 2.1; the name of each phase is listed in bold text, with key terms in normal text. Knowing which phase of the framework you are in may help you choose the best prompt to move forward (see further the table below in Section 2.3).\n\n\n\n\n\n\n%%{init: { \"flowchart\": { \"htmlLabels\": false } }}%%\n\nflowchart TB\n  U[**Understand the problem**&lt;br&gt;Unknowns, Data, Constraints]\n  P[**Devise a plan**&lt;br&gt;Heuristics]\n  C[**Carry out the plan**&lt;br&gt;Justify steps, Check subgoals]\n  L[**Look back**&lt;br&gt;Verify, Reflect, Generalise]\n  \n  S{Solution?}\n  \n  X([Stuck!])\n\n  U --&gt; P \n  P --&gt; C \n  C --&gt; S\n  S -- Yes --&gt; L\n  S -- No --&gt; X\n  X -. Pivot/Refine .-&gt; P\n\n\n\n\nFigure 2.1: The four phases of problem solving within a problem solving cycle.\n\n\n\n\n\nThe phases are roughly as follows. First, understand the problem: identify data/givens, unknowns, and conditions/constraints; restate the problem in your own words; sketch, tabulate, or probe small cases. This phase involves translating abstract ideas into mathematical ones so that quantitative reasoning can be applied. Understandiing the problem is sometimes the hardest phase, particularly when considering problems arising from real-world challenges! Next, devise a plan by choosing a route. Possible routes are to work backward, look for patterns, simplify or specialise, use symmetry or invariants, introduce an auxiliary object, estimate or bound, change representation, or reduce to a known problem (we will investigate these problem solving routes later in Chapter 3). Then carry out your plan: execute cleanly, justify each step, check subgoals, and pivot if a step stalls. Remember that getting stuck is part of learning. Finally, look back: verify the result, test edge cases, assess efficiency and clarity, and capture the key idea you have uncovered. The final phase is essential; to quote Socrates, “the life which is unexamined is not worth living”.3 Use the framework to reflect on what you learned so your future problem solving gets faster and more reliable.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Problems</span>"
+    ]
+  },
+  {
+    "objectID": "02-problems.html#sec-phases",
+    "href": "02-problems.html#sec-phases",
+    "title": "2  Problems",
+    "section": "2.3 Phases of problem solving",
+    "text": "2.3 Phases of problem solving\nUse Table Table 2.1 as a working checklist and a reflection guide, not a rigid recipe. As you tackle an open-ended problem, you might find that you are “stuck”. First, don’t panic! Decide which phase of the problem solving framework you are in and scan the prompts in that row. Answering the prompt may lead to a concrete next action. Reflect on this new action for a few minutes; if it stalls, return to the table, pick a different prompt, or take a break. Over time, the prompts will become more familiar and the process of solving an open-ended problme will be less daunting.\n\n\n\n\nTable 2.1: Phases of problem solving, adapted from (Pólya 1945, xvi–xvii).\n\n\n\n\n\n\nPhase\nPurpose\nPrompts to ask yourself\nUseful tactics\n\n\n\n\nUnderstanding the problem\nFor a problem to find, understand the problem by making the unknown, data, and conditions precise.\nWhat is unknown? What is given or what are the data? What conditions/constraints apply? Can I restate the task in my own words? What do small or extreme cases look like? What diagram/notation will help?\nDefine symbols. Draw a figure. List constraints. Test tiny cases. Identify edge cases. Rephrase the question. Separate various parts of the condition.\n\n\nDevising a plan\nFind the connection between the data and the unknown that provides a path towards a solution.\nHave I seen the problem before? Have I seen the same problem in a slightly different form? Do I know a related problem? Do I know a theorem that might be useful? Can I work backward from the goal? Can I simplify/specialise first? What pattern, invariant, or symmetry might apply? Can I introduce an auxiliary element or change representation? Did I use all the data in devising my plan? Did I account for all the conditions?\nHeuristics such as analogy; special/edge cases; generalisation; using invariants and symmetry; bounding/estimating; pigeonhole; substitution; set up equations or a new diagram.\n\n\nCarry out your plan\nCarry out plan, checking each step!\nWould I be able to clearly explain that the step is correct? Can I prove that it is correct? Does each step follow from assumptions or known results? What subgoal can I verify now? If a step fails, which alternative route will I try next?\nJustify steps. Prove lemmas. Compute carefully. Frequently take stock (checkpoint). Pivot quickly if a line of attack stalls. Don't panic.\n\n\nLook back\nValidate the result and reflect on learning.\nCan I check the result? Can you explain your arguments? Does the result meet all conditions? Any counterexamples? Is it complete/optimal? Can I shorten or generalise the solution? Can I derive the result differently? What key idea made it work, and where else could it apply?\nRecord the central insight. Phases of the framework. Prompts answered. Heuristics used and how.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford University Press.\n\n\nPlato (transl. Benjamin Jowett). 2009. Apology. MIT. https://classics.mit.edu/Plato/apology.html.\n\n\nPólya, George. 1945. How to Solve It. Princeton, NJ: Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction and Analogy in Mathematics. Princeton, NJ: Princeton University Press.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic, Symbolic and Mathematical. Princeton, NJ: Princeton University Press.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Problems</span>"
+    ]
+  },
+  {
+    "objectID": "02-problems.html#footnotes",
+    "href": "02-problems.html#footnotes",
+    "title": "2  Problems",
+    "section": "",
+    "text": "George Pólya is a Hungarian-American mathematician who made contributions to probability theory, combinatorics, number theory, and numerical analysis. More information about his life and work can be found at the MacTutor Archive: https://mathshistory.st-andrews.ac.uk/Biographies/Polya/.↩︎\nWe are not engineers 😉.↩︎\nThis famous remark was supposedly uttered by Socrates at his trial (for impiety and corrupting youth) and is recorded in Apology (Plato (transl. Benjamin Jowett) 2009).↩︎",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Problems</span>"
+    ]
+  },
+  {
+    "objectID": "03-heuristics.html",
+    "href": "03-heuristics.html",
+    "title": "3  Heuristics",
+    "section": "",
+    "text": "3.1 What is a heuristic?\nA heuristic is a problem-solving device or strategy that provides a way to approaching a problem. Choosing a suitable heuristic often leads us closer to a solution. These strategies are versatile, applying across a wide range of domains and topics. However, heuristics alone are not enough to solve a problem; they must be combined with relevant knowledge and a refined ability to select and deploy mathematical resources effectively. By explicitly discussing and reflecting on problem-solving strategies, we aim to bring the use of heuristics into your conscious awareness. This focus will help you create connections between different areas of mathematical knowledge and enhance your reasoning skills. By honing these abilities, you will be equipped with the tools necessary to become a proficient and literate problem solver.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
+    ]
+  },
+  {
+    "objectID": "03-heuristics.html#what-is-a-heuristic",
+    "href": "03-heuristics.html#what-is-a-heuristic",
+    "title": "3  Heuristics",
+    "section": "",
+    "text": "WarningHeuristics will not replace shaky mastery of a subject!\n\n\n\n“Despite the fact that their application cuts across various mathematical domains, the successful implementation of heuristic strategies in any particular domain often depends heavily on the possession of specific subject matter knowledge.” (Schoenfeld 1985)",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
+    ]
+  },
+  {
+    "objectID": "03-heuristics.html#compendium-of-heuristics",
+    "href": "03-heuristics.html#compendium-of-heuristics",
+    "title": "3  Heuristics",
+    "section": "3.2 Compendium of heuristics",
+    "text": "3.2 Compendium of heuristics\nBelow we include a collection of common heuristics, grouped by theme. Each of these heuristics should be viewed as a label for a closely related family of devices. That is, each heuristic in the compendium is not precise enough to allow for unambiguous interpretation or application to a particular problem! Key challenges that arise when trying to apply any of these heuristics is firstly to select appropriately and second to decompose the heuristic into a targeted strategy that you can actually execute. Use the prompts to trigger action.\nFor each heuristic we have indicated a source: (P) = after Pólya (Pólya 1945); (M) = after Mahajan (Mahajan 2010); (MF) = after (Michalewicz and Fogel 2004); (Z) = after (Zeitz 2016). The list is not exhaustive.\n\nVariation of the problem\n\n\n\n\n\n\nNoteDecomposing and recombining (P, Z)\n\n\n\n\n\nBreak the task into subproblems (lemmas, cases), solve pieces, then reassemble.\nPrompts: What minimal subgoal would help? Can I prove a lemma that reduces the main load?\n\n\n\n\n\n\n\n\n\nNoteEstablishing and using subgoals (P, Z)\n\n\n\n\n\nName intermediate targets that make progress observable.\nPrompts: What would I need to show to make the last step trivial?\n\n\n\n\n\n\n\n\n\nNoteGeneralisation (P, Z)\n\n\n\n\n\nWiden the problem to expose structure (a parameter, a family).\nPrompts: If n were real/complex/d-dimensional, what pattern emerges?\n\n\n\n\n\n\n\n\n\nNoteSpecialisation (P, Z)\n\n\n\n\n\nTest instructive instances (small, extreme, symmetric).\nPrompts: What happens for n = 1, 2, 3? For an extreme or degenerate case?\nNote: Trying special cases can suggest both direction and plausibility of a solution (S).\n\n\n\n\n\n\n\n\n\nNoteAnalogy (P, M, Z)\n\n\n\n\n\nMap the problem to a known cousin and import its method.\nPrompts: What solved problem has the same backbone (invariant, recurrence, symmetry)?\n\n\n\n\n\nAuxiliary\n\n\n\n\n\n\nNoteAuxiliary elements (P, Z)\n\n\n\n\n\nIntroduce a helper variable/point/construction (e.g., an extra line in a diagram, a slack variable).\nPrompts: What new object would make the relation linear or symmetric?\n\n\n\n\n\n\n\n\n\nNoteAuxiliary problem (P, Z)\n\n\n\n\n\nSolve a carefully chosen easier or nearby problem, then adapt.\nPrompts: What relaxation or stronger statement is tractable?\n\n\n\n\n\nRepresentation\n\n\n\n\n\n\nNoteNotation (P, Z)\n\n\n\n\n\nChoose symbols that expose structure (indices, function names, operators). Rename until the pattern is visible.\nPrompts: Can I re-index or re-parameterise to simplify sums or products?\n\n\n\n\n\n\n\n\n\nNoteFigures (P, Z)\n\n\n\n\n\nDraw to think: diagrams, timelines, tables, state graphs. Iterate the figure as the plan evolves.\nPrompts: What picture would let me see the invariant or the bottleneck?\n\n\n\n\n\n\n\n\n\nNoteSetting up equations (P, Z)\n\n\n\n\n\nTranslate words to algebra/constraints/recurrences. Define variables cleanly and encode conditions faithfully.\nPrompts: What are the unknowns, and what relations tie them together?\n\n\n\n\n\nVerification\n\n\n\n\n\n\nNoteExamine your guess (P, Z)\n\n\n\n\n\nConjecture, then interrogate it (“invent then verify”). Try counterexamples or edge cases; refine if it survives.\nPrompts: What would falsify my guess quickest?\n\n\n\n\n\n\n\n\n\nNoteCheck the result (P, Z)\n\n\n\n\n\nVerify against all conditions; try alternative derivations; sanity-check units and orders of magnitude.\nPrompts: Does this fail for any small or extreme case? Can I justify uniqueness or optimality?\n\n\n\n\n\n\n\n\n\nNoteType checking and dimensional analysis (P, M)\n\n\n\n\n\nEnsure expressions have the right kind: units, dimensions, domains, monotonicity.\nPrompts: Do both sides have the same units/type? What scales does the answer depend on?\n\n\n\n\n\nInference\n\n\n\n\n\n\nNoteWorking backwards (P, Z)\n\n\n\n\n\nStart from the goal and seek necessary predecessors. Useful for equations, constructions, and proofs by equivalence.\nPrompts: If the claim were true, what must also be true one step earlier?\n\n\n\n\n\n\n\n\n\nNoteIndirect proof (P, Z)\n\n\n\n\n\nAssume the opposite; derive a contradiction (impossible inequality, parity clash, minimal counterexample loop).\nPrompts: What invariant would be violated if the claim were false?\nNote: also called reductio ad absurdum.\n\n\n\n\n\nModern/computational\n\n\n\n\n\n\nNoteApproximation (M)\n\n\n\n\n\nReplace an intractable object with a manageable surrogate (linearisation, asymptotics, bounding, surrogate loss).\nPrompts: What can I ignore or approximate without changing the leading behaviour?\n\n\n\n\n\n\n\n\n\nNoteEstimation (M)\n\n\n\n\n\nGet ballpark numbers (orders of magnitude, back-of-envelope). Use to choose plans and catch nonsense early.\nPrompts: What’s a plausible scale? Is my result within it?\n\n\n\n\n\n\n\n\n\nNoteExhaustive search (MF)\n\n\n\n\n\nSystematically enumerate candidates (with pruning).\nPrompts: How can I bound the search space? What constraints let me cut branches?\n\n\n\n\n\n\n\n\n\nNoteGreedy algorithms (MF)\n\n\n\n\n\nMake the best local choice at each step; accept that it may be suboptimal globally.\nPrompts: What local score aligns with the global objective?\n\n\n\n\n\n\n\n\n\nNoteRandomisation and probabilistic methods (MF)\n\n\n\n\n\nUse randomness to prove existence, estimate quantities, or guide search.\nPrompts: What random construction has the right expectation? Can sampling expose the pattern?\n\n\n\n\n\n\n\n\n\nNoteNeural Networks / learned heuristics (MF)\n\n\n\n\n\nUse a trained model to guide search and propose candidates or rank moves (proof search, construction hints).\nPrompts: What features or examples could a model learn from? How do I verify its suggestions?\n\n\n\n\n\n\n\n\n\nMacTutor. 2025. “Quotation by George Pólya.” University of St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of Educated Guessing and Opportunistic Problem Solving. Cambridge, MA: The MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed. Berlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nPólya, George. 1945. How to Solve It. Princeton, NJ: Princeton University Press.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Orlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd ed. Hoboken, NJ: Wiley.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Heuristics</span>"
+    ]
+  },
+  {
+    "objectID": "04-attitudes.html",
+    "href": "04-attitudes.html",
+    "title": "4  Attitudes",
+    "section": "",
+    "text": "4.1 Selecting and pursuing an approach\nEffective problem solvers masterfully balance curiosity with discipline. They begin by probing, playing, and hypothesizing, then move on to justifying, checking, and reflecting on their findings. True progress originates from cycling through the four problem-solving phases, maintaining a keen awareness of one’s actions, and a readiness to adapt when new evidence arises (Pólya 1945). When progress stalls, adept problem solvers pivot swiftly and consistently take time to “look back” at their process.\nBegin by matching structure to strategy. Let the problem’s cues choose the method: a recurrence invites induction; symmetry points toward invariants; a geometric flavour asks for a diagram and auxiliary elements; unruly numbers suggest estimation or approximation.\nThen commit to a strategy, but keep your course of action time-bound. Choose one plan and pursue it deliberately for a few minutes. Set a concrete checkpoint in advance so the decision to switch is not emotional or driven by frustration (“If I cannot determine the number of cases in twenty minutes, I will try another approach.”).\nFinally, watch for traction. You are on the right track if relations clarify, expressions simplify, or the number of cases shrinks. If instead the algebra gets tedious, cases proliferate, or your reasoning seems circular: stop, reframe the problem, and select a different strategy.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Attitudes</span>"
+    ]
+  },
+  {
+    "objectID": "04-attitudes.html#still-stuck",
+    "href": "04-attitudes.html#still-stuck",
+    "title": "4  Attitudes",
+    "section": "4.2 Still stuck?",
+    "text": "4.2 Still stuck?\n\n\n\n\n\n\nImportantTry answering these questions:\n\n\n\n\nWhat exactly are you doing?\nCan you describe what you are aiming to do precisely?\nWhy are you doing it? How does it fit into the solution?\nHow does what your are doing help you solve the problem at hand?\nWhat will you do with the outcome when you obtain it?\n\n(see Schoenfeld 1985).\n\n\n\n\n\n\n\n\nMacTutor. 2025. “Quotation by Sofia Kovalevskaya.” University of St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations.\n\n\nPólya, George. 1945. How to Solve It. Princeton, NJ: Princeton University Press.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving. Orlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.",
+    "crumbs": [
+      "Problem Solving",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Attitudes</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html",
+    "href": "11-academic-integrity.html",
+    "title": "5  Academic integrity",
+    "section": "",
+    "text": "5.1 Our AI policy for this module\nIn his song Lobachevsky, first performed in Harvard’s The Physical Revue (1951–52) and later recorded, Tom Lehrer lampoons plagiarism by taking it to absurd extremes. It is a joke about bad practice, not a model to follow!\nAcademic integrity is central to your development in this module. Please read the University’s Academic Integrity Declaration: https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration. The Code of Practice on Academic Misconduct explains procedures and penalties: https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students. If you’re unsure whether something is acceptable, ask first: cite your sources, acknowledge collaboration appropriately, and submit your own work/write-up.\nGenerative AI tools are not permitted for any assessment in this module, including formative and summative work. This includes tools that generate or transform content such as ChatGPT, Copilot, Gemini, and similar services.\n“Use” includes asking an AI system to plan, outline, draft, solve, code, debug, translate, paraphrase, summarise, explain steps, comment on your writing, or “improve” style. If you are unsure whether a tool counts as generative AI, ask the teaching team before using it.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#our-ai-policy-for-this-module",
+    "href": "11-academic-integrity.html#our-ai-policy-for-this-module",
+    "title": "5  Academic integrity",
+    "section": "",
+    "text": "Why this policy\nOur aim is to help you grow core abilities that you will rely on in later study and work: framing problems, choosing methods, carrying out calculations, checking results, and communicating clearly. Outsourcing these cognitive steps to a generative system prevents you from building those skills. The policy also protects fairness for all students and reduces the risk of unreliable or untraceable outputs entering your work.\n\n\nWhat you may use\nYou may use standard, non-generative tools that support authentic work without creating ideas or text for you. Examples include:\n\ncalculators, spreadsheets, plotting libraries, LaTeX compilers\nreference managers for storing and formatting citations\nbasic proofreading tools that check spelling or punctuation without suggesting new sentences\nIDEs or editors with non-AI features only\n\nIf a tool “suggests” content, sentences, code, or solution steps, treat it as generative and do not use it.\n\n\n\n\n\n\nTipGetting help the right way\n\n\n\nThe following are good habits to form that will support your development through university and beyond.\n\nUse office hours and discussion with peers at a conceptual level where collaboration is allowed. Write up your own work independently.\nCite all external sources used for ideas, data, or methods.\nKeep notes of your thinking and intermediate steps. We may ask for these or for a short viva to confirm authorship.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#declaration",
+    "href": "11-academic-integrity.html#declaration",
+    "title": "5  Academic integrity",
+    "section": "5.2 Declaration",
+    "text": "5.2 Declaration\nBy submitting work for this module you confirm that it is your own, that you have not used generative AI to produce or edit the content, and that you understand the University’s policies linked above. Suspected breaches will be handled under the Code of Practice on Academic Misconduct. If in doubt, ask first.\n\n\n\n\n\n\nLehrer, Tom. 1953. Lobachevsky. Lehrer Records. https://en.wikipedia.org/wiki/File:1-06_Lobachevsky.mp3.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "11-academic-integrity.html#footnotes",
+    "href": "11-academic-integrity.html#footnotes",
+    "title": "5  Academic integrity",
+    "section": "",
+    "text": "This song by Tom Lehrer is an attempt at humour and Lehrer is quoted as using the name Lobachevsky “solely for prosodic reasons”. Nikolai Ivanovich Lobachevsky was a real mathematician https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/; there is no evidence that he plagarised any of his work.↩︎\nIn this 1950s satire lampooning plagarism, Lehrer sings in a caricatured Russian accent, typical of Cold War-era comedy. This is a period comedy device that today can read as stereotyping. Our focus is the satire of academic dishonesty; we do not endorse the accent.↩︎",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Academic integrity</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html",
+    "href": "12-teamwork.html",
+    "title": "6  Teamwork",
+    "section": "",
+    "text": "6.1 Code of conduct for group work\nWorking well in a team is a core professional skill in mathematics and physics. It allows you to tackle more interesting problems by combining different strengths and viewpoints, sharpen your explanations for both specialists and non-specialists, plan and share tasks so work is delivered to agreed deadlines with accountability, and build the habit of giving and receiving constructive feedback. You also learn professional behaviours, such as, listening carefully, asking clear questions, and making decisions that the whole group understands.\nIn this module you will work with different groups of peers on different tasks. Start by agreeing a clear goal and a short plan for how you will reach it. Share tasks fairly (especially mathematical tasks) and rotate roles where helpful (chair, scribe, checker, presenter). Communicate openly and early with the teaching team if you are stuck or need help. After each activity, take a minute to reflect on group dynamics including what worked and what you would consider changing next time. The aim is not only a good solution, but a good way of working that you can carry into future study and employment.\nWe are building an environment where everyone can contribute and learn. The following expectations apply in fact-to-face meetings, online spaces, and written communication.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html#code-of-conduct-for-group-work",
+    "href": "12-teamwork.html#code-of-conduct-for-group-work",
+    "title": "6  Teamwork",
+    "section": "",
+    "text": "Expectations\n\nTreat everyone with respect by listen actively and being punctual and prepared.\nStrive to collaborate effetively by sharing mathematical tasks fairly and rotating group roles.\nCommunicate openly: ask questions, summarise decisions, and record actions.\nRaise issues early with your group and, if needed, speak to the teaching team.\nValue diversity and create a welcoming environment for all.\n\n\n\nUnacceptable behaviours\n\nDiscriminatory or belittling comments; inappropriate or hostile language.\nIntimidation, bullying, or repeated dismissive interruptions.\nUnwanted physical contact or attention.\nRecording or sharing images/audio of others without consent.\nPlagiarism or misrepresenting someone else’s work as your own.\n\nIf problems arise, use the active bystander toolkit below and, when appropriate, inform the teaching team.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "12-teamwork.html#be-an-active-bystander",
+    "href": "12-teamwork.html#be-an-active-bystander",
+    "title": "6  Teamwork",
+    "section": "6.2 Be an active bystander",
+    "text": "6.2 Be an active bystander\nWe do not anticipate problems in this module, but learning how to respond to poor behaviour is a professional skill you can carry into labs, workplaces, and public life. Figure 6.1 presents four actions (the 4Ds) that you can take to call out innapropriate behviour. The aim of these actions is to reduce harm, support those affected, and uphold a respectful learning environment.\n\n\n\n\n\n\nmindmap\n  root((Active&lt;/br&gt;Bystander&lt;/br&gt;Toolkit))\n    Direct action\n    Distraction\n    Delay\n    Delegation\n\n\n\n\nFigure 6.1: The 4Ds of the active bystander toolkit: four strategies for supporting active bystander interventions.\n\n\n\n\n\nThe 4Ds are options to help you act in ways that are safe and proportionate. Choose what D fits the situation. If a situation feels unsafe or escalates, prioritise Delegation and Delay. After any incident, note what happened, support those affected, and, if appropriate, follow up with someone with responsibility or authority.\n\n\n\n\n\n\nNoteSupport\n\n\n\nWe want you to know that the teaching team for this module will support you in being an active bystander.\n\n\n\nDirect action\n\nAddress the behaviour immediately.\n\nThis strategy is useful when you feel safe, the issue is clear, and a simple prompt can reset the tone. It is important to name the behaviour, set a boundary, and say why it matters for the group. Avoid sarcasm, public shaming, or debating motives. Focus on impact and the group norm.\n\n\n\n\n\n\nNoteExample phrases\n\n\n\n\n\n“Please let them finish. Everyone gets a turn to speak because we need all ideas.”\n\n\n\n\n\nDistraction\n\nChange the focus to defuse tension.\n\nThis strategy is useful when direct confrontation may escalate things or could embarrass someone. To use this strategy, interrupt the pattern with a task, a process check, or a role switch.\n\n\n\n\n\n\nNoteExample phrases\n\n\n\n\n\n“Let’s pause and check the task list” or “Can we look at the data for a minute?” or “Could you summarise the next step?”\n\n\n\n\n\nDelay\n\nCheck in afterwards, then follow up.\n\nThis strategy is useful when the moment has passed, you are unsure what happened, or it felt unsafe to intervene live. Speak privately to the person affected, describe what you noticed, ask what support they want, and agree a next step. Avoid promising actions you cannot take or sharing details widely.\n\n\n\n\n\n\nNoteExample phrases\n\n\n\n\n\nAfter the session: “Are you OK with what happened?” or “I noticed …; how would you like me to help?” or “Would you like me to raise it with the lecturer?”\n\n\n\n\n\nDelegation\n\nInvolve someone with responsibility or authority.\n\nUse this strategy when safety is a concern, behaviour persists, or power dynamics make self-intervention hard. Do this by giving a concise, factual account to a tutor or lecturer, including what happened, when, and who was present. Avoid diagnosing motives or assigning labels; report behaviours and impact.\n\n\n\n\n\n\nNoteExample phrases\n\n\n\n\n\nQuietly inform a tutor or lecturer about a pattern of interruptions or exclusion: “I’m concerned about repeated interruptions in our group. Here is what I observed and when.”\n\n\n\n\n\n\n\n\n\nNewton, Isaac. 1676. “Letter to Robert Hooke.” In The Correspondence of Isaac Newton, edited by H. W. Turnbull, 1:416. Cambridge: Cambridge University Press.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Teamwork</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html",
+    "href": "13-technical-writing.html",
+    "title": "7  Technical Writing",
+    "section": "",
+    "text": "7.1 Narrative\nThe following short, practical guide will help you meet the expectations set out in the technical writing rubric used in this module. The rubric focuses on six criteria: narrative, self-consistency, reproducibility, logical flow/coherency, structure, and attribution.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#sec-writing-narrative",
+    "href": "13-technical-writing.html#sec-writing-narrative",
+    "title": "7  Technical Writing",
+    "section": "",
+    "text": "Goal: tell a clear story\nMotivate the task, explain the approach, interpret the results, and connect every calculation, figure, or table to what it shows and why it matters.\n\n\n\n\n\n\nImportantNarrative implies writing\n\n\n\nNote that narrative involves putting words on paper (not just equations) to explain, e.g., quantities and figures are connected to ideas.\n\n\n\n\nHow to do it\n\nBuild using focused and readable parts\n\n\nBuild using focused and readable parts\nKeep your overall narrative tight by building it from focused, readable parts. For each subsection, follow the simple progression in Figure 7.1. The reader first needs to know what you are trying to find (the Question), then how you set about finding it (the Method), what you obtained (the Result), and finally why it matters (the Meaning). Repeating this pattern makes your writing predictable, easier to assess, and simpler to debug when numbers or logic do not line up. In longer pieces, this mini-cycle scales up to shape the overall structure of your document (see Section 7.5).\n\n\n\n\n\n\n%%{init: { \"flowchart\": { \"htmlLabels\": false } }}%%\n\nflowchart LR\n  Q[Question]\n  M[Method]\n  R[Results]\n  Y[Meaning]\n  Q --&gt; M --&gt; R --&gt; Y\n\n\n\n\nFigure 7.1: To build focused and readable narratives progress from question to method to result to meaning.\n\n\n\n\n\n\n\n\n\n\n\nNoteA problem: Delivery van ETA\n\n\n\nEstimate a delivery van’s arrival time from app data that includes previous deliveries and a map. The van is roughly 4.5\\,\\mathrm{km} away.\n\n\nBegin each subsection by stating the Question plainly, with enough context to be meaningful. Consider what quantity or claim are you after, under which conditions, and why is it useful. For example: “We aim to calculate the average velocity of the van so we can estimate the arrival time.” Next, move to the Method, naming the model or relationship you will use, the assumptions that make it reasonable, and the inputs. Show the key equation or algorithm and define symbols and units; mention tools if relevant. For instance: “From the app we see the van covered d=3.0~\\mathrm{km} in t=12~\\mathrm{min}; assuming roughly constant speed we use v=d/t.” Then present the Result succinctly. This will typically be a numerical or symbolic outcome, with correct units and sensible significant figures, and a brief note on uncertainty if appropriate. For example, “The calculation gives v=\\frac{3.0~\\mathrm{km}}{12~\\mathrm{min}}=0.25~\\mathrm{km\\,min}^{-1}\\approx 15~\\mathrm{km\\,h}^{-1} (about 4.2~\\mathrm{m\\,s}^{-1}).” Close with the Meaning. This involves interpreting the result relative to the question, compare it with an expectation or limit, note any limitations, and point to supporting figures or tables: “At this pace the remaining 4.5~\\mathrm{km} will take \\frac{4.5}{15}\\,\\text{h}=0.3\\,\\mathrm{h}\\approx 18~\\mathrm{min}\\,, which is reasonable and below local speed limits.”\n\n\n\n\n\n\nTipVariants\n\n\n\nFor a proof-style task, “Result” may be a statement proved and “Meaning” explains how the lemma/theorem advances the overall goal. For a coding task, “Method” should include algorithm steps and parameters; “Result” should include the output and a brief performance or accuracy note; “Meaning” comments on whether the output is reasonable and how it supports the objective.\n\n\n\n\nCaptions\nEvery figure or table answers a question you pose in the text. Include the answer in the caption (not just a label).\n\n\n\n\n\n\nNoteExample\n\n\n\n\n\nConsider the following plot of a the height of a falling ball, subject to gravity, over time together with a fit to a quadratic curve.\n\n\n\n\n\n\n\n\nFigure 7.2: Height vs time for a falling ball; fitting h(t) = h_0 + v_0 t - \\frac{1}{2} gt^2 to the data yields g \\approx 9.7~\\mathrm{m\\,s^{-2}}, about 1\\% below the standard 9.81~\\mathrm{m\\,s^{-2}}.\n\n\n\n\n\nThe caption above in Figure 7.2 provides context (describes what the figure is showing) and emphasises the importance of the figure (the mismatch between the experimental observations and expectations).\n\n\n\n\n\nInterpret\nAfter equations or code outputs, explain what the numbers mean relative to the question.\n\n\n\n\n\n\nNoteExample\n\n\n\n\n\n“Using F=kx with k=200~\\mathrm{N\\,m^{-1}} and x=0.03~\\mathrm{m}, the force is 6~\\mathrm{N}, which is enough to hold the mass in place.”\nThe emphasized text above helps to explain the practical significance of the calculation.\n\n\n\n\n\n\n\n\n\nWarningDon’t dump!\n\n\n\nAvoid the urge to provide superfluous information and make sure that equations, figures, and tables are necessary to support the narrative.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#sec-writing-self-consistency",
+    "href": "13-technical-writing.html#sec-writing-self-consistency",
+    "title": "7  Technical Writing",
+    "section": "7.2 Self-consistency",
+    "text": "7.2 Self-consistency\n\nGoal: make everything agree\nCalculations, figures, tables, and symbols should all match with the textual narrative, and any units and definitions should be used consistently throughout the text. Ensure that equations and figures support your narrative.\n\n\nA small checklist\nConsider the following points when reviewing a text for self-consistency.\n\nSymbols: Define once, and use consistently (for example, v is always speed; do not switch to u later).\nUnits: Use SI units, unless there is a compelling reason not to. When typesetting, use a non-breaking space between number and unit (for example, 3.2\\,\\mathrm{m}\\,\\mathrm{s}^{-1} in LaTeX). Avoid writing “3.2m/s” in a formal piece of writing (it is fine for scratchwork).\nSignificant figures: Reflect measurement precision and propagate appropriately. Do not over-round at intermediate steps.\nFigure axes: Units and symbols on every axis (for example, Time, t (s)). Match variable names to the text.\nTables: Include units in headers, not in every cell.\nNumerical agreement: Values quoted in text equal those shown in figures/tables (including the same rounding).\n\n\n\nStyle conventions\nStyle conventions are very important when typesetting technical documents using LaTeX. Pick a style and use it throughout your piece of text. For example, common style conventions are:\n\nScalars/variables: italic (x, t, E); vectors: bold (\\mathbf{v}); matrices: bold caps (\\mathbf{A}).\nFunctions/operators (\\sin, \\cos, \\exp) upright; units upright (\\mathrm{m},\\,\\mathrm{s}).\nPopulation vs estimates (statistics): many styles are possible, such as using Greek letters for population parameters (\\mu, \\sigma, \\rho) and Roman letters for corresponding estimates (m, s, r), or decorating corresponding estimates with hats (\\hat{\\mu}, \\hat{\\sigma}, \\hat{\\rho}).",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#sec-writing-reproducibility",
+    "href": "13-technical-writing.html#sec-writing-reproducibility",
+    "title": "7  Technical Writing",
+    "section": "7.3 Reproducibility",
+    "text": "7.3 Reproducibility\n\nGoal: ensure someone else can verify your findings\nProvide enough detail (steps, parameters, tools) so that someone else can replicate your results and findings. This includes defining notation when first used in a text and including units as appropriate.\n\n\n\n\n\n\nImportantReproducibility crisis\n\n\n\nAs a future mathematician or physicist, please promote positive behaviours and avoid contributing to the reproducibility crisis in science [Ioannidis (2005)].\n\n\n\n\nMinimum to include\n\nMethod steps: Numbered steps for key procedures or algorithms.\nParameters and inputs: List parameter values, initial conditions, and data sources. State any random seeds.1\nTools: Name software and versions, for example, “Python 3.11, NumPy 1.26; plots made in Jupyter”.\nData and code access: If provided, give file names or appendix listings; if not, describe how data were generated, for example, “Measured height with a meter rule” or “three repeated measurements per subject”.\nAssumptions and approximations: State and justify, for example, “Neglect air resistance” or “small-angle approximation valid for \\theta&lt;10^\\circ”.\n\n\n\nNotation discipline\nDefine all symbols when first introduced.\n\n\n\n\n\n\nNoteBad Example\n\n\n\n\n\nThis is an example of what not to do.\n\nFrom kx = F we found 6, so k = 200 and then we used u=kx.\n\nProblems: symbols are introduced without definitions, units are missing or informal, and the symbol switches from k to u mid-calculation.\n\n\n\n\n\n\n\n\n\nNoteGood Example\n\n\n\n\n\nThis is an exmaple of good practice.\n\nLet k denote the spring constant (\\mathrm{N\\,m^{-1}}). By Hooke’s law, F = k x \\,, where F is the force (\\mathrm{N}) and x is the extension from equilibrium (\\mathrm{m}).\n\nNotice how all notation is defined and units are provided.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#sec-writing-coherency",
+    "href": "13-technical-writing.html#sec-writing-coherency",
+    "title": "7  Technical Writing",
+    "section": "7.4 Logical flow/coherency",
+    "text": "7.4 Logical flow/coherency\n\nGoal: guide the reader\nOrganise your work so each step follows naturally from the last, and use brief transitions to steer the reader between equations and ideas rather than leaving logical jumps.\n\n\nStructure each section with transitions\nTo demonstrate that you meet expectations against this goal, use words or phrases to guide transitions between steps in your calculations. This includes explaining how each result shapes the argument and, for example, why one line follows from the next. When you present calculations, explain how the method yields numbers. Be sure to follow results with interpretation so the reader understands what the results mean.\n\n\n\n\n\n\nWarningAvoid common flow breakers\n\n\n\nIt is easy to break the logical flow of a piece of technical writing. Some common pitfalls to avoid are:\n\nIntroducing symbols in a figure without defining them in text.\nPresenting equations with no statement of purpose.\nJumping from raw data to conclusions without intermediate reasoning.\nSwitching units or symbols mid-way (for example, metres to centimetres without saying so).",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#sec-writing-structure",
+    "href": "13-technical-writing.html#sec-writing-structure",
+    "title": "7  Technical Writing",
+    "section": "7.5 Structure",
+    "text": "7.5 Structure\n\nGoal: headings, sentences, captions\nUse full sentences and informative headings to structure your document. Include labels for equations, figures, and tables as appropriate. Be sure that any numbered equation and figure/table is referenced in the text narrative.\n\n\nSuggested problem solution outline\nAdapt this suggested outline for short pieces of writing, such as solutions to module problems, as needed. Below we list a part or section of the report and what it should contain. Note how this structure mirrors the problem solving framework introduced in Chapter 2.\n\nProblem statement: rewrite the problem in your own words. Provide context, objective, and a brief roadmap of the solution.\nMethod: state the model/assumptions, derivations, algorithm, and parameters used. Indicate which heuristic guides the method.\nSolution: provide the result with a short interpretation.\nConclusion and Discussion: explain what the results mean, note limitations or possible generalisations, and reflect on why the heuristic worked (or why others did not).\n\n\n\nSuggested lab report outline\nAdapt this suggested outline for a lab report or longer piece of writing as needed. Below we list a part or section of the report and what it should contain. Not all parts are equal. Titles should be short and snappy; a method section should be as long as needed to ensure reproducibility.\n\nTitle: concise and informative\nAbstract (3–5 sentences): problem, method, key result, implication\nIntroduction: context, objective, roadmap of the report\nMethod: model/assumptions, derivations, algorithm, parameters\nResults: tables/figures with brief interpretation\nDiscussion: what the results mean, limitations, sensitivity\nConclusion: answer the question and outline next steps\nReferences: consistent style (for example, author-year or numbered)\nAppendix: code listings, extended derivations, raw data description",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#sec-writing-attribution",
+    "href": "13-technical-writing.html#sec-writing-attribution",
+    "title": "7  Technical Writing",
+    "section": "7.6 Attribution",
+    "text": "7.6 Attribution\n\nGoal: give credit and highlight your contributions\nCite sources of ideas, data, figures, and methods. Be sure that someone reading the document can distinguish your work from external material.\n\n\nPractical rules\n\nCite where used: immediately after the relevant sentence/equation, for example, “Using Hooke’s law [1] …”.\nQuoting vs paraphrase: prefer paraphrase with a citation. Quote sparingly with quotation marks and a page number where appropriate.\nYour contribution: signal it explicitly, for example, “We implement the method of [2] and add a sensitivity analysis”.\nFigure reuse: if reusing or altering a figure, state the source and permission status.\nReference style: use one consistent style and include all necessary metadata so that someone reading your text can easily find the source.\n\n\n\n\n\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” PLOS Medicine 2 (8): e124. https://doi.org/10.1371/journal.pmed.0020124.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "13-technical-writing.html#footnotes",
+    "href": "13-technical-writing.html#footnotes",
+    "title": "7  Technical Writing",
+    "section": "",
+    "text": "We will use simulation in later modules, such as MA22004; stating the seed lets others reproduce your numbers exactly when including (pseudo)random draws.↩︎",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Technical Writing</span>"
+    ]
+  },
+  {
+    "objectID": "15-ethics.html",
+    "href": "15-ethics.html",
+    "title": "9  Ethics",
+    "section": "",
+    "text": "9.1 Two guiding questions\nEthical issues in scientific work tend to cluster around two questions:\nThe first question asks about purpose and proportionality. We weigh the value of the knowledge against the costs and risks, including the possibility of misuse. In mathematics and physics this often means checking whether a model, algorithm, or optimisation method could be applied in ways we did not intend, thereby steering policy, finance, surveillance, or defence. If unintended consequences are identified, then one must decide what safeguards or limits on release are appropriate. It also asks who benefits, who bears burdens, and whether scarce time and resources are being directed fairly.\nThe second question focuses on conduct: about integrity and care in everyday practice. As professional mathematicians and physicists, we commit to honesty in analysis and reporting; clear attribution of ideas, data, and tools; and enough transparency that a peer can retrace our steps. In quantitative work, this includes stating assumptions, limits of validity, and uncertainty; keeping a reproducible trail for computations; and avoiding exaggerated claims. Good conduct extends to collaboration, such as fair authorship, respectful review, prompt correction of errors, and to communication, where we present results responsibly without hype.\nThese two questions, what and how, form a habit: pause before starting, and reflect before sharing. They help keep powerful methods pointed toward good ends, and they keep trust in our work intact.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Ethics</span>"
+    ]
+  },
+  {
+    "objectID": "15-ethics.html#two-guiding-questions",
+    "href": "15-ethics.html#two-guiding-questions",
+    "title": "9  Ethics",
+    "section": "",
+    "text": "what science should be conducted and\nhow science should be conducted.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Ethics</span>"
+    ]
+  },
+  {
+    "objectID": "15-ethics.html#what-work-should-be-done",
+    "href": "15-ethics.html#what-work-should-be-done",
+    "title": "9  Ethics",
+    "section": "9.2 What work should be done",
+    "text": "9.2 What work should be done\nBig scientific programmes raise questions of priority and fairness. Big Science projects (costly, long-horizon efforts run by large teams) promise major advances, but they also centralise decisions about which fields get funded and who gets to participate, including whether researchers in the developing world can share equitably in the work and its benefits.\nBy contrast, Blue-Sky research pursues ideas with no immediate payoff. Such research can look speculative in the moment yet prove foundational later. For example, the early laser was famously dismissed as “a solution looking for a problem,” before becoming ubiquitous in science, medicine, and communications. The ethical question is whether we sustain such inquiry despite uncertain returns, and how we justify that choice to the public.\nTo weigh these options, one should use ethical lenses: a virtue perspective asks what kind of scientific character we cultivate; a Kantian view tests duties we owe regardless of outcomes; a utilitarian calculus weighs overall consequences. Importantly, for any ethical decision, one must guard against hindsight bias: as Herodotus reminds us, a decision should be judged by the evidence available when it was made, not by how it turned out.2 This keeps the evaluation of risks anchored in reasoned judgment rather than outcome luck.\n\n\n\n\n\n\nTipA quick ethics checklist\n\n\n\nThe following ethical considerations might be taken into account for most research projects.\n\nPurpose & stakes: Who benefits? Who could be harmed?\n\nScope & assumptions: Where does your result not apply?\n\nUncertainty: What’s the error budget/sensitivity?\n\nTransparency: Can a peer reproduce your work?\n\nAttribution: Have you credited data/code/ideas?\n\nDual-use: Could this be misapplied, and how will you mitigate?",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Ethics</span>"
+    ]
+  },
+  {
+    "objectID": "15-ethics.html#how-we-conduct-ourselves",
+    "href": "15-ethics.html#how-we-conduct-ourselves",
+    "title": "9  Ethics",
+    "section": "9.3 How we conduct ourselves",
+    "text": "9.3 How we conduct ourselves\nNot all errors are equal (Hamner 1992). Some errors are reputable errors; these are mistakes, made in good-faith, that are documented, reproducible, and fixable. These represent a deviation from methodological norms and include negligence, such as sloppy methods or record-keeping that breach methodological standards even without intent. On the other hand, some errors are disreputable, such as fabrication, falsification, and plagiarism. These represent a deviation from moral norms. The practical ethic is to design your workflow so that reputable error is possible and correctable (clear notes, version control, open materials) and disreputable error is impossible (independent checks, audit trails, explicit authorship and citation norms).\n\nMoral norms\nRobert K. Merton’s classic account of the scientific ethos names four ideals: universalism, communality, disinterestedness, and organized skepticism. His essay on these moral norms first appeared in 1942 and has been reprinted with revised titles reflect changing values in the scientific community (Merton 1973). The current resource frames openness and research transparency today. Think of these norms as routine habits that counter the very pressures that produce negligence and fraud.\n\nUniversalism: judge claims by impersonal criteria, not by who makes them.\nCommunality: treat knowledge as a shared good, circulated with credit.\nDisinterestedness: organize work so private interests and biases do not distort it.\nOrganized skepticism: subject claims to systematic, critical scrutiny before acceptance.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Ethics</span>"
+    ]
+  },
+  {
+    "objectID": "15-ethics.html#for-discussion",
+    "href": "15-ethics.html#for-discussion",
+    "title": "9  Ethics",
+    "section": "9.4 For discussion",
+    "text": "9.4 For discussion\n\n\n\n\n\n\nImportantDraw a line\n\n\n\n\n\nWhere’s the line between negligence and misconduct in simulation-heavy mathematics/physics?\n\n\n\n\n\n\n\n\n\nImportantTogether or alone?\n\n\n\n\n\nHow do Merton’s norms play out in a large collaboration vs a solo proof?\n\n\n\n\n\n\n\n\n\nImportantPrioritising resrouces\n\n\n\n\n\nShould limited resources prioritise Big Science or Blue-Sky Research, and who decides?\n\n\n\n\n\n\n\n\n\nClark, Carol A. 2017. “Manhattan Project Unsung Hero: Mathematician Ulam.” December 16, 2017. https://ladailypost.com/manhattan-project-unsung-hero-mathematician-ulam/.\n\n\nHamner, Vincent N. 1992. “Misconduct in Science: Do Scientists Need a Professional Code of Ethics?” Virginia Polytechnic Institute; State University. 1992. https://web.archive.org/web/20090605080153/http://www.files.chem.vt.edu/chem-ed/ethics/vinny/www_ethx.html.\n\n\nHerodotus (transl. George Rawlinson). 2009. The History of Herodotus. MIT. https://classics.mit.edu/Herodotus/history.1.i.html.\n\n\nMerton, Robert K. 1973. “The Normative Structure of Science.” In The Sociology of Science: Theoretical and Empirical Investigations, edited by Norman W. Storer, 267–78. Chicago: University of Chicago Press.\n\n\nOxford Dictionary of English. 2010. Oxford: Oxford University Press.",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Ethics</span>"
+    ]
+  },
+  {
+    "objectID": "15-ethics.html#footnotes",
+    "href": "15-ethics.html#footnotes",
+    "title": "9  Ethics",
+    "section": "",
+    "text": "See Clark (2017).↩︎\nCf. Solon’s advice to Croesus: “[c]all him, however, until he die, not happy but fortunate” (Herodotus (transl. George Rawlinson) 2009, bk. 1);↩︎",
+    "crumbs": [
+      "Professional Skills",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Ethics</span>"
+    ]
+  },
+  {
+    "objectID": "99-references.html",
+    "href": "99-references.html",
+    "title": "References",
+    "section": "",
+    "text": "Clark, Carol A. 2017. “Manhattan Project Unsung Hero:\nMathematician Ulam.” December 16, 2017. https://ladailypost.com/manhattan-project-unsung-hero-mathematician-ulam/.\n\n\nHalmos, P. R. 1980. “The Heart of Mathematics.” The\nAmerican Mathematical Monthly 87 (7): 519–24. https://doi.org/10.2307/2321415.\n\n\nHamner, Vincent N. 1992. “Misconduct in Science: Do Scientists\nNeed a Professional Code of Ethics?” Virginia Polytechnic\nInstitute; State University. 1992. https://web.archive.org/web/20090605080153/http://www.files.chem.vt.edu/chem-ed/ethics/vinny/www_ethx.html.\n\n\nHerodotus (transl. George Rawlinson). 2009. The History of\nHerodotus. MIT. https://classics.mit.edu/Herodotus/history.1.i.html.\n\n\nIoannidis, John P. A. 2005. “Why Most Published Research Findings\nAre False.” PLOS Medicine 2 (8): e124. https://doi.org/10.1371/journal.pmed.0020124.\n\n\nLehrer, Tom. 1953. Lobachevsky. Lehrer Records. https://en.wikipedia.org/wiki/File:1-06_Lobachevsky.mp3.\n\n\nMacTutor. 2025a. “Quotation by George\nPólya.” University of St Andrews. 2025.\nhttps://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations.\n\n\n———. 2025b. “Quotation by Sofia Kovalevskaya.” University\nof St Andrews. 2025. https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations.\n\n\nMahajan, Sanjoy. 2010. Street-Fighting Mathematics: The Art of\nEducated Guessing and Opportunistic Problem Solving. Cambridge, MA:\nThe MIT Press. https://doi.org/10.7551/mitpress/7728.001.0001.\n\n\nMerton, Robert K. 1973. “The Normative Structure of\nScience.” In The Sociology of Science: Theoretical and\nEmpirical Investigations, edited by Norman W. Storer, 267–78.\nChicago: University of Chicago Press.\n\n\nMichalewicz, Zbigniew, and David B. Fogel. 2004. How to Solve It: Modern Heuristics. 2nd ed.\nBerlin, Heidelberg: Springer. https://doi.org/10.1007/978-3-662-07807-5.\n\n\nNewton, Isaac. 1676. “Letter to Robert Hooke.” In The\nCorrespondence of Isaac Newton, edited by H. W. Turnbull, 1:416.\nCambridge: Cambridge University Press.\n\n\nOxford Dictionary of English. 2010. Oxford: Oxford University\nPress.\n\n\nOxford English Dictionary. 1989. 2nd ed. Oxford: Oxford\nUniversity Press.\n\n\nPlato (transl. Benjamin Jowett). 2009. Apology. MIT. https://classics.mit.edu/Plato/apology.html.\n\n\nPólya, George. 1945. How to Solve\nIt. Princeton, NJ: Princeton University Press.\n\n\n———. 1954a. Mathematics and Plausible Reasoning, Volume 1: Induction\nand Analogy in Mathematics. Princeton, NJ: Princeton University\nPress.\n\n\n———. 1954b. Mathematics and Plausible Reasoning, Volume 2: Logic,\nSymbolic and Mathematical. Princeton, NJ: Princeton University\nPress.\n\n\nSchoenfeld, Alan H. 1985. Mathematical Problem Solving.\nOrlando, FL: Academic Press. https://doi.org/10.1016/C2013-0-05012-8.\n\n\nZeitz, Paul. 2016. The Art and Craft of Problem Solving. 3rd\ned. Hoboken, NJ: Wiley.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "appendix-rubrics.html",
+    "href": "appendix-rubrics.html",
+    "title": "Appendix A — Rubrics",
+    "section": "",
+    "text": "Problem solving rubric\nTechnical writing rubric",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Rubrics</span>"
+    ]
+  }
+]

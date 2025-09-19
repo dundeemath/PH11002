@@ -6,3 +6,5 @@ ma22004.tex
 
 /.quarto/
 /.luarc.json
+
+**/*.quarto_ipynb

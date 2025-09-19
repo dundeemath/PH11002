@@ -176,12 +176,12 @@ As a future mathematician or physicist, please promote positive behaviours and a
 ### Minimum to include
 
 * Method steps: Numbered steps for key procedures or algorithms.
-* Parameters and inputs: List parameter values, initial conditions, and data sources. State any random seeds.[^1]
+* Parameters and inputs: List parameter values, initial conditions, and data sources. State any random seeds.[^seed]
 * Tools: Name software and versions, for example, "Python 3.11, NumPy 1.26; plots made in Jupyter".
 * Data and code access: If provided, give file names or appendix listings; if not, describe how data were generated, for example, "Measured height with a meter rule" or "three repeated measurements per subject".
 * Assumptions and approximations: State and justify, for example, "Neglect air resistance" or "small-angle approximation valid for $\theta<10^\circ$".
 
-[^1]: We will use simulation in later modules, such as MA22004; stating the seed lets others reproduce your numbers exactly when including (pseudo)random draws.
+[^seed]: We will use simulation in later modules, such as MA22004; stating the seed lets others reproduce your numbers exactly when including (pseudo)random draws.
 
 ### Notation discipline
 

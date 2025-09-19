@@ -2,6 +2,6 @@
 
 \begingroup
 \raggedright
-::: {#refs}
+:::{#refs}
 :::
 \endgroup

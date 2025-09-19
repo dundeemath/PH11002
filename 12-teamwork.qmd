@@ -104,5 +104,5 @@ Use this strategy when safety is a concern, behaviour persists, or power dynamic
 ## Example phrases
 
 Quietly inform a tutor or lecturer about a pattern of interruptions or exclusion:
-"I'm concerned about repeated interruptions in our group. Here is what I observed and when.""
+"I'm concerned about repeated interruptions in our group. Here is what I observed and when."
 :::
