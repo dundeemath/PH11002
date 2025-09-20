@@ -1,11 +1,13 @@
 # Rubrics
 
-:::{.content-visible only-format="html"}
+:::{.content-visible when-format="html"}
 - [Problem solving rubric](rubric-problem-solving.pdf)
 - [Technical writing rubric](rubric-writing.pdf)
 :::
 
-:::{.content-visible only-format="pdf"}
+:::{.content-visible when-format="pdf"}
+- Problem solving rubric
+- Technical writing rubric
 ```{=latex}
 \includepdf[pages=-]{rubric-problem-solving.pdf}
 \includepdf[pages=-]{rubric-writing.pdf}

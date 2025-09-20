@@ -17,8 +17,8 @@ book:
   site-url: https://dundeemath.github.io/PH11002
   repo-url: https://github.com/dundeemath/PH11002/
   repo-branch: master
-  cover-image: cover.png
-  cover-image-alt: "Cover for lecture note packet."
+  cover-image: assets/images/cover_small.jpg
+  cover-image-alt: "Wanderer above the Sea of Fog (Caspar David Friedrich, c. 1818)."
   downloads: pdf
   repo-actions: [issue]
   date: last-modified
@@ -47,8 +47,10 @@ book:
   # margin-header: "Header Text"
   sidebar:
     alignment: left
-    logo: 'assets/images/uod_shield_rgb.png'
-    logo-alt: 'University of Dundee shield'
+    footer: |
+      <div style="padding-top: 0.3rem; padding-left: 0;">
+        <img src="assets/images/uod_shield_rgb.png" alt="University of Dundee shield" style="width: 150px; display: block; margin: 0.0rem 0;"/>
+      </div>
     # footer: |
     #   Last modified: {{< meta date >}}
 
