@@ -50,7 +50,7 @@ mindmap
 
 The 4Ds are options to help you act in ways that are safe and proportionate. Choose what D fits the situation. If a situation feels unsafe or escalates, prioritise _Delegation_ and _Delay_. After any incident, note what happened, support those affected, and, if appropriate, follow up with someone with responsibility or authority.
 
-:::{.callout-note}
+:::{.callout-tip}
 ## Support
 
 We want you to know that the teaching team for this module will support you in being an active bystander. 

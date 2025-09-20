@@ -4,13 +4,12 @@ project:
   resources:
     - rubric-problem-solving.pdf
     - rubric-writing.pdf
- 
+
 book: 
   title: "Problem Solving and Professional Skills"
   author: 
     - "Dr Eric Hall"
-    - "Dr Paula Stella De Viveiros Teixeira"
-  # css: "assets/style.css"
+    - "Dr Paula Stella Teixeira"
   description: |
      Notes for PH11002 - Problem Solving and Professional Skills, 
      a first year module about problem solving at 
@@ -22,13 +21,11 @@ book:
   cover-image-alt: "Cover for lecture note packet."
   downloads: pdf
   repo-actions: [issue]
-  # sharing: [twitter]
   date: last-modified
   date-format: iso
   page-footer: "Copyright 2025, Eric Hall (University of Dundee)" 
   page-navigation: true
   search: true
-  # collapse-level: 1
   chapters: 
     - "index.qmd"
     - part: "Problem Solving"
@@ -65,8 +62,6 @@ format:
     theme: 
       light: flatly
       dark: darkly
-      # - assets/style.css
-    # css: assets/mermaid-bootstrap.css
     code-tools: true
     code-background: true
     code-fold: show
@@ -85,6 +80,7 @@ format:
     classoption: oneside
     keep-tex: true
     pdf-engine: xelatex
+    latex-auto-install: false
     citation_method: natbib
     link-citations: true
     link-bibliography: true

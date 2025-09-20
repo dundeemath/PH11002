@@ -6,49 +6,63 @@
 \setsansfont[RawFeature={+cpsp},Scale=MatchLowercase]{Helvetica Neue}%
 \setmonofont[Scale=0.78]{MesloLGS NF}%
 
-\usepackage[a4paper,%
-margin=2.5cm,%
-bottom=3cm,%
-top=3cm]{geometry}%
+% \usepackage[a4paper,%
+% left=2.5cm,%
+% right=4cm,
+% bottom=3cm,%
+% top=3cm]{geometry}%
+\usepackage[
+  a4paper,
+  inner = 25mm, 
+  outer = 65mm,
+  marginparwidth = 38mm, 
+  marginparsep=8mm,
+  top = 25mm, 
+  bottom = 30mm
+]{geometry}
+\usepackage[side,ragged]{footmisc}
 \usepackage{afterpage}% for "\afterpage"
 \usepackage{xcolor}%
 \definecolor{dundeeblue}{HTML}{4365E2}%
 \usepackage{pagecolor}% With option pagecolor={somecolor or none}
 %% For nice tables
-\usepackage{booktabs}%
-\usepackage{longtable}%
-\usepackage{array}%
-\usepackage{multirow}%
-\usepackage{wrapfig}%
-\usepackage{float}%
-\usepackage{colortbl}%
-\usepackage{pdflscape}%
-\usepackage{makecell}%
+\usepackage{booktabs,longtable,array,makecell,colortbl,pdflscape}
+% \usepackage{multirow}%
+% \usepackage{wrapfig}%
+% \usepackage{float}%
 %% Wrap long output lines
 \usepackage{listings}%
 \lstset{breaklines=true}%
 \usepackage{enumitem}%
 \setlist[description]{style=nextline}%
-%% For nice info boxes
-\usepackage{fontawesome5}%
-\usepackage{awesomebox}%
 \usepackage{pdfpages}%
-\usepackage{siunitx}%
-\newcolumntype{d}{S[table-format=3.2]}%
+% \usepackage{siunitx}%
+% \newcolumntype{d}{S[table-format=3.2]}%
 \renewcommand{\bibname}{References}%
 %\usepackage[colorlinks]{hyperref}%
 
 \usepackage{titling}%
 %\setlength{\droptitle}{8cm}
 \pretitle{\newpagecolor{dundeeblue}\afterpage{\restorepagecolor} \vfill \begin{flushleft}
-\fontsize{68pt}{62pt} \color{white}\sffamily\bfseries\selectfont }
-\posttitle{\end{flushleft}}
+\fontsize{64pt}{60pt} \color{white}\sffamily\bfseries\selectfont }
+\posttitle{\par\end{flushleft}\vspace{0pt}}
 
-\preauthor{\vspace{2.5cm} \begin{flushleft} \fontsize{18pt}{14pt} \color{white}\sffamily\selectfont}
-\postauthor{$\quad\bullet\quad$ehall001@dundee.ac.uk\end{flushleft}}
+\preauthor{\vspace{2.5cm}\begin{flushleft}\fontsize{18pt}{14pt} \color{white}\sffamily\selectfont}
+\postauthor{\par\end{flushleft}}
 
-\predate{\begin{flushleft} \fontsize{18pt}{14pt} \color{white}\sffamily\selectfont}
-\postdate{\\ \vspace{1cm}\includegraphics[width=10cm]{assets/images/rev_logo.pdf}\end{flushleft}}
+\predate{\begin{flushleft}\fontsize{18pt}{14pt}\color{white}\sffamily\selectfont}
+\postdate{\par\vspace{1cm}\includegraphics[width=10cm]{assets/images/rev_logo.pdf}\par\end{flushleft}}
+
+% Ensure makecell/array changes to \\ don't break \maketitle
+\usepackage{etoolbox}
+\makeatletter
+% Locally restore the normal \\ inside \maketitle to avoid “Misplaced \crcr.”
+\pretocmd{\maketitle}{\begingroup\let\\\@normalcr}{}{}
+\apptocmd{\maketitle}{\endgroup}{}{}
+% Also avoid KOMA’s author alignment: make \and a simple separator
+\renewcommand{\and}{\unskip\quad\textbullet\quad}
+\makeatother
+
 
 %%% BEGIN SHORTCUTS
 %%% END SHORTCUTS
@@ -59,6 +73,4 @@ top=3cm]{geometry}%
 \makeatother
 
 \usepackage{tocbibind}
-
-
 

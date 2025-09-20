@@ -1,0 +1,9 @@
+RColorBrewer
+scales
+readr
+dplyr
+ggplot2
+latex2exp
+svglite
+knitr
+kableExtra

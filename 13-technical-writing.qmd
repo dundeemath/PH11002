@@ -24,8 +24,6 @@ Note that narrative involves putting *words* on paper  (not just equations) to e
 
 #### Build using focused and readable parts
 
-#### Build using focused and readable parts
-
 Keep your overall narrative tight by building it from focused, readable parts. For each subsection, follow the simple progression in @fig-focused-readable. The reader first needs to know what you are trying to find (the Question), then how you set about finding it (the Method), what you obtained (the Result), and finally why it matters (the Meaning). Repeating this pattern makes your writing predictable, easier to assess, and simpler to debug when numbers or logic do not line up. In longer pieces, this mini-cycle scales up to shape the overall structure of your document (see @sec-writing-structure).
 
 ```{mermaid}

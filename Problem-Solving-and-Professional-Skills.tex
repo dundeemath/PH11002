@@ -1,0 +1,1996 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  a4paper,
+  DIV=11,
+  numbers=noendperiod,
+  oneside]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{2}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{unicode-math}%
+\setmathfont{XITS Math}%
+\usepackage{fontspec}%
+\setmainfont[Ligatures ={Common, TeX}, Scale=1, RawFeature={+cpsp}]{XITS} 
+%Numbers={Lining,Proportional},Ligatures ={Common, TeX},RawFeature={+tnum,+cpsp,+frac},
+\setsansfont[RawFeature={+cpsp},Scale=MatchLowercase]{Helvetica Neue}%
+\setmonofont[Scale=0.78]{MesloLGS NF}%
+
+% \usepackage[a4paper,%
+% left=2.5cm,%
+% right=4cm,
+% bottom=3cm,%
+% top=3cm]{geometry}%
+\usepackage[
+  a4paper,
+  inner = 25mm, 
+  outer = 65mm,
+  marginparwidth = 38mm, 
+  marginparsep=8mm,
+  top = 25mm, 
+  bottom = 30mm
+]{geometry}
+\usepackage[side,ragged]{footmisc}
+\usepackage{afterpage}% for "\afterpage"
+\usepackage{xcolor}%
+\definecolor{dundeeblue}{HTML}{4365E2}%
+\usepackage{pagecolor}% With option pagecolor={somecolor or none}
+%% For nice tables
+\usepackage{booktabs,longtable,array,makecell,colortbl,pdflscape}
+% \usepackage{multirow}%
+% \usepackage{wrapfig}%
+% \usepackage{float}%
+%% Wrap long output lines
+\usepackage{listings}%
+\lstset{breaklines=true}%
+\usepackage{enumitem}%
+\setlist[description]{style=nextline}%
+\usepackage{pdfpages}%
+% \usepackage{siunitx}%
+% \newcolumntype{d}{S[table-format=3.2]}%
+\renewcommand{\bibname}{References}%
+%\usepackage[colorlinks]{hyperref}%
+
+\usepackage{titling}%
+%\setlength{\droptitle}{8cm}
+\pretitle{\newpagecolor{dundeeblue}\afterpage{\restorepagecolor} \vfill \begin{flushleft}
+\fontsize{64pt}{60pt} \color{white}\sffamily\bfseries\selectfont }
+\posttitle{\par\end{flushleft}\vspace{0pt}}
+
+\preauthor{\vspace{2.5cm}\begin{flushleft}\fontsize{18pt}{14pt} \color{white}\sffamily\selectfont}
+\postauthor{\par\end{flushleft}}
+
+\predate{\begin{flushleft}\fontsize{18pt}{14pt}\color{white}\sffamily\selectfont}
+\postdate{\par\vspace{1cm}\includegraphics[width=10cm]{assets/images/rev_logo.pdf}\par\end{flushleft}}
+
+% Ensure makecell/array changes to \\ don't break \maketitle
+\usepackage{etoolbox}
+\makeatletter
+% Locally restore the normal \\ inside \maketitle to avoid “Misplaced \crcr.”
+\pretocmd{\maketitle}{\begingroup\let\\\@normalcr}{}{}
+\apptocmd{\maketitle}{\endgroup}{}{}
+% Also avoid KOMA’s author alignment: make \and a simple separator
+\renewcommand{\and}{\unskip\quad\textbullet\quad}
+\makeatother
+
+
+%%% BEGIN SHORTCUTS
+%%% END SHORTCUTS
+
+%% Change chapter to Topic
+\makeatletter
+\renewcommand{\@chapapp}{Topic}
+\makeatother
+
+\usepackage{tocbibind}
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Problem Solving and Professional Skills},
+  pdfauthor={Dr Eric Hall; Dr Paula Stella Teixeira},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Problem Solving and Professional Skills}
+\author{Dr Eric Hall \and Dr Paula Stella Teixeira}
+\date{2025-09-20}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Introduction}\label{introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+\markboth{Introduction}{Introduction}
+
+This manuscript contains notes for PH11002 - Problem Solving and
+Professional Skills, a first year module about problem solving at the
+University of Dundee.
+
+An up-to-date version of these notes are available at
+\href{https://dundeemath.github.io/PH11002/}{dundeemath.github.io/PH11002/}
+as HTML and also as a PDF.
+
+\section*{Publication data}
+
+First published 2025-09-20
+
+\bigskip
+
+Authors:
+
+\bigskip
+
+Dr Eric Hall, University of Dundee
+
+Dr Paula Stella Teixeira, University of Dundee
+
+\bigskip 
+\bigskip
+
+Any questions or comments about these notes can be directed to Dr Eric
+Hall
+(\href{mailto:ehall001@dundee.ac.uk}{\nolinkurl{ehall001@dundee.ac.uk}}).
+
+\vfill
+
+\section*{Licence}\label{licence}
+\addcontentsline{toc}{section}{Licence}
+
+\markright{Licence}
+
+\pandocbounded{\includegraphics[keepaspectratio]{index_files/mediabag/88x31.png}}
+
+This work is licensed under a
+\href{http://creativecommons.org/licenses/by-nc/4.0/}{Creative Commons
+Attribution-NonCommercial 4.0 International License}.
+
+Copyright 2025, Eric Hall (University of Dundee).
+
+\part{Problem Solving}
+
+\chapter{Purpose}\label{sec-purpose}
+
+\begin{quote}
+``{[}T{]}he mathematician's main reason for existence is to solve
+problems {[}\ldots{]} therefore, what mathematics \emph{really} consists
+of is problems and solutions.''
+
+(\citeproc{ref-Halmos:1980ps}{Halmos 1980})
+\end{quote}
+
+Throughout your mathematics and scientific journey, you have likely
+encountered a variety of quantiative problems. Usually, these problems
+folllow a specific topic, technique, or method introduced in class that
+are followed by a series of related exercises to reinforce a particular
+concept or approach. In these instances, you may have been provided
+essential context to guide you toward the ``appropriate'' solution
+method. While this structued learning can solidify your understanding of
+a particular concept or approach, it can also be somewhat disconnected
+from reality. In real-world challenges, problems frequently integrate
+multiple concepts that span various areas of mathematics and
+quantitative reasoning, requiring a more holistic application of your
+knowledge.
+
+In this module, our goal is to cultivate skills that enable you to
+tackle problems in a broader context. This goal will be achieved through
+action: we will develop problem solving skills and learn how to
+\emph{solve problems more generally} by \ldots{} solving problems! We
+will engage with tasks for which the solution methods are not
+predetermined. To succeed with these open-ended challenges, you will
+reflect on your experiences and the frameworks and processes you utilize
+in problem-solving. This reflection is crucial because effective
+problem-solving involves not just your mathematical resources (i.e.,
+\emph{what you know}), but also your perception of that knowledge shaped
+by your \emph{experiences} (\citeproc{ref-Schoenfeld:1985ps}{Schoenfeld
+1985}).
+
+Ultimately, this problem solving module aims to:
+
+\begin{itemize}
+\tightlist
+\item
+  Build your confidence in solving unseen problems,
+\item
+  Offers prompts to support reflection and deepen your perception of
+  mathematical concepts and their interconnections,
+\item
+  Provide generic support for scaffolding problem solving (vs
+  scaffolding the problem) to enhance your problem-solving skills.
+\end{itemize}
+
+Together, these aims will lay a foundation for your development as a
+mathematician and physicist.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{TL;DR}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+A key aspect of this module will involve engaging in problem-solving
+tasks, both individually and collaboratively, and reflecting on these
+experiences to enhance your learning.
+
+\end{tcolorbox}
+
+\chapter{Problems}\label{sec-problems}
+
+\begin{quote}
+``Problem. A doubtful or difficult question; a matter of inquiry,
+discussion, or thought; a question that exercises the mind.''
+
+(\citeproc{ref-OED:1989ps}{\emph{Oxford English Dictionary} 1989})
+\end{quote}
+
+Problems often involve more complexity than straightforward
+\emph{exercises} in that the method of solution is not proscribed. We
+will differentiate between two types of problems and present a general
+framework, introduced by Pólya in a series of monographs
+(\citeproc{ref-Polya:1945hu}{Pólya 1945},
+\citeproc{ref-Polya:1954oi}{1954a}, \citeproc{ref-Polya:1954ii}{1954b}),
+for understanding problem solving.\footnote{George Pólya was a
+  Hungarian-American mathematician who made contributions to probability
+  theory, combinatorics, number theory, and numerical analysis. More
+  information about his life and work can be found at the MacTutor
+  Archive:
+  \url{https://mathshistory.st-andrews.ac.uk/Biographies/Polya/}.} This
+framework is intended to serve as a foundation for analysing your
+approach to problem solving.
+
+\section{Two Types of Problems}\label{two-types-of-problems}
+
+We distinguish between different types of problems based on the desired
+goal. These are \emph{problems to find} and \emph{problems to prove}.
+
+\subsection{Problems to find}\label{problems-to-find}
+
+The task is to produce or create an object (often a mathematical object
+or an idea)\footnote{We are not engineers ;).} that satisfies specified
+conditions, which may include a number, function, construction, example,
+counterexample, or algorithm. Common prompts for these tasks include
+terms such as determine, compute, construct, and classify. The success
+of these endeavors is evaluated based on criteria such as correctness,
+completeness, and in some cases, optimality or uniqueness.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example of a problem to find}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Find all integers \(n\) such that \(n(n+1)\) is a perfect square.
+
+\end{tcolorbox}
+
+\subsection{Problems to prove}\label{problems-to-prove}
+
+The task is to justify a claim beyond reasonable doubt. Typical prompts
+include: show, prove, disprove, establish, and deduce. To be successful,
+one must ensure validity, clarity, and appropriate use of definitions
+and prior results.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example of a problem to prove}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Prove there are infinitely many primes congruent to \(\;3\mod 4\).
+
+\end{tcolorbox}
+
+\subsection{In this module\ldots{}}\label{in-this-module}
+
+In this module, we will focus on \emph{problems to find}. We will
+consider traditional problems arising from mathematics and physics that
+have well-known solutions. We will also consider problems of a
+computational nature and arising from industry.
+
+When engaging in our problem solving sessions, please follow two rules:
+1. If you know the solution, please do not spoil the fun. 2. If you do
+not know the solution, please do not be afraid to ask questions.
+
+The first rule is to encourage you to engage in the problem-solving
+process without revealing the answer prematurely, allowing everyone to
+explore and learn. The second is to promote an open environment where
+you feel comfortable seeking help and guidance, fostering collaboration
+and learning.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Many problems mix both tasks!}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Find all objects with property \(P\) and prove your list is complete.
+
+\end{tcolorbox}
+
+\section{Problem solving framework}\label{problem-solving-framework}
+
+In this module, we will make use of a particular problem solving
+framework for reflection and organising our thoughts. This problem
+solving framework (see \citeproc{ref-Polya:1945hu}{Pólya 1945}) is a
+four-phase cycle for tackling open-ended problems. The phases of the
+problem solving framework are depicted in Figure~\ref{fig-phases}; the
+name of each phase is listed in bold text, with key terms in normal
+text. Knowing which phase of the framework you are in may help you
+choose the best prompt to move forward (see further the table below in
+Section~\ref{sec-phases}).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=4.27in,height=7.71in]{02-problems_files/figure-latex/mermaid-figure-1.png}
+
+}
+
+\caption{\label{fig-phases}The four phases of problem solving within a
+problem solving cycle.}
+
+\end{figure}%
+
+The phases are roughly as follows. First, \textbf{understand the
+problem}: identify data/givens, unknowns, and conditions/constraints;
+restate the problem in your own words; sketch, tabulate, or probe small
+cases. This phase involves translating abstract ideas into mathematical
+ones so that quantitative reasoning can be applied. Understandiing the
+problem is sometimes the hardest phase, particularly when considering
+problems arising from real-world challenges! Next, \textbf{devise a
+plan} by choosing a route. Possible routes are to work backward, look
+for patterns, simplify or specialise, use symmetry or invariants,
+introduce an auxiliary object, estimate or bound, change representation,
+or reduce to a known problem (we will investigate these problem solving
+routes later in Chapter~\ref{sec-heuristics}). Then \textbf{carry out
+\emph{your} plan}: execute cleanly, justify each step, check subgoals,
+and pivot if a step stalls. Remember that getting stuck is part of
+learning. Finally, \textbf{look back}: verify the result, test edge
+cases, assess efficiency and clarity, and capture the key idea you have
+uncovered. The final phase is \emph{essential}; to quote Socrates, ``the
+life which is unexamined is not worth living''.\footnote{This famous
+  remark was supposedly uttered by Socrates at his trial (for impiety
+  and corrupting youth) and is recorded in Apology
+  (\citeproc{ref-Plato:347BCE}{Plato (transl. Benjamin Jowett) 2009}).}
+Use the framework to reflect on what you learned so your future problem
+solving gets faster and more reliable.
+
+\section{Phases of problem solving}\label{sec-phases}
+
+Use Table~\ref{tbl-phases} as a working checklist and a reflection
+guide, not a rigid recipe. As you tackle an open-ended problem, you
+might find that you are ``stuck''. First, don't panic! Decide which
+phase of the problem solving framework you are in and scan the prompts
+in that row. Answering the prompt may lead to a concrete next action.
+Reflect on this new action for a few minutes; if it stalls, return to
+the table, pick a different prompt, or take a break. Over time, the
+prompts will become more familiar and the process of solving an
+open-ended problme will be less daunting.
+
+\clearpage
+\newgeometry{margin=25mm} 
+\thispagestyle{empty}
+
+\begin{landscape}
+
+\begin{longtable}[t]{p{0.1\linewidth}p{0.2\linewidth}p{0.28\linewidth}p{0.28\linewidth}}
+
+\caption{\label{tbl-phases}Phases of problem solving, adapted from
+(\citeproc{ref-Polya:1945hu}{Pólya 1945, xvi--xvii}).}
+
+\tabularnewline
+
+\toprule
+Phase & Purpose & Prompts to ask yourself & Useful tactics\\
+\midrule
+Understanding the problem & For a problem to find, understand the problem by making the unknown, data, and conditions precise. & What is unknown? What is given or what are the data? What conditions/constraints apply? Can I restate the task in my own words? What do small or extreme cases look like? What diagram/notation will help? & Define symbols. Draw a figure. List constraints. Test tiny cases. Identify edge cases. Rephrase the question. Separate various parts of the condition.\\
+Devising a plan & Find the connection between the data and the unknown that provides a path towards a solution. & Have I seen the problem before? Have I seen the same problem in a slightly different form? Do I know a related problem? Do I know a theorem that might be useful? Can I work backward from the goal? Can I simplify/specialise first? What pattern, invariant, or symmetry might apply? Can I introduce an auxiliary element or change representation? Did I use all the data in devising my plan? Did I account for all the conditions? & Heuristics such as analogy; special/edge cases; generalisation; using invariants and symmetry; bounding/estimating; pigeonhole; substitution; set up equations or a new diagram.\\
+Carry out your plan & Carry out plan, checking each step! & Would I be able to clearly explain that the step is correct? Can I prove that it is correct? Does each step follow from assumptions or known results? What subgoal can I verify now? If a step fails, which alternative route will I try next? & Justify steps. Prove lemmas. Compute carefully. Frequently take stock (checkpoint). Pivot quickly if a line of attack stalls. Don't panic.\\
+Look back & Validate the result and reflect on learning. & Can I check the result? Can you explain your arguments? Does the result meet all conditions? Any counterexamples? Is it complete/optimal? Can I shorten or generalise the solution? Can I derive the result differently? What key idea made it work, and where else could it apply? & Record the central insight. Phases of the framework. Prompts answered. Heuristics used and how.\\
+\bottomrule
+
+\end{longtable}
+
+\end{landscape}
+
+\restoregeometry
+
+\chapter{Heuristics}\label{sec-heuristics}
+
+\begin{quote}
+``This principle is so perfectly general that no particular application
+of it is possible.''
+
+-- George Pólya (\citeproc{ref-MacTutor:Polya}{MacTutor 2025a})
+\end{quote}
+
+\section{What is a heuristic?}\label{what-is-a-heuristic}
+
+A \emph{heuristic} is a problem-solving device or strategy that provides
+a way to approaching a problem. Choosing a suitable heuristic often
+leads us closer to a solution. These strategies are versatile, applying
+across a wide range of domains and topics. However, heuristics alone are
+not enough to solve a problem; they must be combined with relevant
+knowledge and a refined ability to select and deploy mathematical
+resources effectively. By explicitly discussing and reflecting on
+problem-solving strategies, we aim to bring the use of heuristics into
+your conscious awareness. This focus will help you create connections
+between different areas of mathematical knowledge and enhance your
+reasoning skills. By honing these abilities, you will be equipped with
+the tools necessary to become a proficient and literate problem solver.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Heuristics will not replace shaky mastery of a subject!}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+``Despite the fact that their application cuts across various
+mathematical domains, the successful implementation of heuristic
+strategies in any particular domain often depends heavily on the
+possession of specific subject matter knowledge.''
+(\citeproc{ref-Schoenfeld:1985ps}{Schoenfeld 1985})
+
+\end{tcolorbox}
+
+\section{Compendium of heuristics}\label{compendium-of-heuristics}
+
+Below we include a collection of common heuristics, grouped by theme.
+Each of these heuristics should be viewed as a label for a closely
+related family of devices. That is, each heuristic in the compendium is
+not precise enough to allow for unambiguous interpretation or
+application to a particular problem! Key challenges that arise when
+trying to apply any of these heuristics is firstly to select
+appropriately and second to decompose the heuristic into a targeted
+strategy that you can actually execute. Use the prompts to trigger
+action.
+
+For each heuristic we have indicated a source: (P) = after Pólya
+(\citeproc{ref-Polya:1945hu}{Pólya 1945}); (M) = after Mahajan
+(\citeproc{ref-Mahajan:2010ps}{Mahajan 2010}); (MF) = after
+(\citeproc{ref-MichalewiczFogel:2004hu}{Michalewicz and Fogel 2004});
+(Z) = after (\citeproc{ref-Zeitz:2016ps}{Zeitz 2016}). The list is not
+exhaustive.
+
+\subsection*{Variation of the problem}\label{variation-of-the-problem}
+\addcontentsline{toc}{subsection}{Variation of the problem}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Decomposing and recombining (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Break the task into subproblems (lemmas, cases), solve pieces, then
+reassemble.
+
+\emph{Prompts}: What minimal subgoal would help? Can I prove a lemma
+that reduces the main load?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Establishing and using subgoals (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Name intermediate targets that make progress observable.
+
+\emph{Prompts}: What would I need to show to make the last step trivial?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Generalisation (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Widen the problem to expose structure (a parameter, a family).
+
+\emph{Prompts}: If \(n\) were real/complex/\(d\)-dimensional, what
+pattern emerges?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Specialisation (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Test instructive instances (small, extreme, symmetric).
+
+\emph{Prompts}: What happens for \(n = 1, 2, 3\)? For an extreme or
+degenerate case?
+
+Note: Trying special cases can suggest both direction and plausibility
+of a solution (S).
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Analogy (P, M, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Map the problem to a known cousin and import its method.
+
+\emph{Prompts}: What solved problem has the same backbone (invariant,
+recurrence, symmetry)?
+
+\end{tcolorbox}
+
+\subsection*{Auxiliary}\label{auxiliary}
+\addcontentsline{toc}{subsection}{Auxiliary}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Auxiliary elements (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Introduce a helper variable/point/construction (e.g., an extra line in a
+diagram, a slack variable).
+
+\emph{Prompts}: What new object would make the relation linear or
+symmetric?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Auxiliary problem (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Solve a carefully chosen easier or nearby problem, then adapt.
+
+\emph{Prompts}: What relaxation or stronger statement is tractable?
+
+\end{tcolorbox}
+
+\subsection*{Representation}\label{representation}
+\addcontentsline{toc}{subsection}{Representation}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Notation (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Choose symbols that expose structure (indices, function names,
+operators). Rename until the pattern is visible.
+
+\emph{Prompts}: Can I re-index or re-parameterise to simplify sums or
+products?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Figures (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Draw to think: diagrams, timelines, tables, state graphs. Iterate the
+figure as the plan evolves.
+
+\emph{Prompts}: What picture would let me see the invariant or the
+bottleneck?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Setting up equations (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Translate words to algebra/constraints/recurrences. Define variables
+cleanly and encode conditions faithfully.
+
+\emph{Prompts}: What are the unknowns, and what relations tie them
+together?
+
+\end{tcolorbox}
+
+\subsection*{Verification}\label{verification}
+\addcontentsline{toc}{subsection}{Verification}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Examine your guess (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Conjecture, then interrogate it (``invent then verify''). Try
+counterexamples or edge cases; refine if it survives.
+
+\emph{Prompts}: What would falsify my guess quickest?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Check the result (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Verify against all conditions; try alternative derivations; sanity-check
+units and orders of magnitude.
+
+\emph{Prompts}: Does this fail for any small or extreme case? Can I
+justify uniqueness or optimality?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Type checking and dimensional analysis (P, M)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Ensure expressions have the right kind: units, dimensions, domains,
+monotonicity.
+
+\emph{Prompts}: Do both sides have the same units/type? What scales does
+the answer depend on?
+
+\end{tcolorbox}
+
+\subsection*{Inference}\label{inference}
+\addcontentsline{toc}{subsection}{Inference}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Working backwards (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Start from the goal and seek necessary predecessors. Useful for
+equations, constructions, and proofs by equivalence.
+
+\emph{Prompts}: If the claim were true, what must also be true one step
+earlier?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Indirect proof (P, Z)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Assume the opposite; derive a contradiction (impossible inequality,
+parity clash, minimal counterexample loop).
+
+\emph{Prompts}: What invariant would be violated if the claim were
+false?
+
+Note: also called \emph{reductio ad absurdum}.
+
+\end{tcolorbox}
+
+\subsection*{Modern/computational}\label{moderncomputational}
+\addcontentsline{toc}{subsection}{Modern/computational}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Approximation (M)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Replace an intractable object with a manageable surrogate
+(linearisation, asymptotics, bounding, surrogate loss).
+
+\emph{Prompts}: What can I ignore or approximate without changing the
+leading behaviour?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Estimation (M)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Get ballpark numbers (orders of magnitude, back-of-envelope). Use to
+choose plans and catch nonsense early.
+
+\emph{Prompts}: What's a plausible scale? Is my result within it?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Exhaustive search (MF)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Systematically enumerate candidates (with pruning).
+
+\emph{Prompts}: How can I bound the search space? What constraints let
+me cut branches?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Greedy algorithms (MF)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Make the best local choice at each step; accept that it may be
+suboptimal globally.
+
+\emph{Prompts}: What local score aligns with the global objective?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Randomisation and probabilistic methods (MF)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Use randomness to prove existence, estimate quantities, or guide search.
+
+\emph{Prompts}: What random construction has the right expectation? Can
+sampling expose the pattern?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Neural Networks / learned heuristics (MF)}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Use a trained model to guide search and propose candidates or rank moves
+(proof search, construction hints).
+
+\emph{Prompts}: What features or examples could a model learn from? How
+do I verify its suggestions?
+
+\end{tcolorbox}
+
+\chapter{Attitudes}\label{sec-attitudes}
+
+\begin{quote}
+``Many people who have not studied mathematics confuse it with
+arithmetic and consider it a dry and fruitless science. In reality,
+however, it is a science which requires a great amount of imagination.''
+
+-- Sofia Kovalevskaya (\citeproc{ref-MacTutor:Kovalevskaya}{MacTutor
+2025b})
+\end{quote}
+
+Effective problem solvers masterfully balance curiosity with discipline.
+They begin by probing, playing, and hypothesizing, then move on to
+justifying, checking, and reflecting on their findings. True progress
+originates from cycling through the four problem-solving phases,
+maintaining a keen awareness of one's actions, and a readiness to adapt
+when new evidence arises (\citeproc{ref-Polya:1945hu}{Pólya 1945}). When
+progress stalls, adept problem solvers pivot swiftly and consistently
+take time to ``look back'' at their process.
+
+\section{Selecting and pursuing an
+approach}\label{selecting-and-pursuing-an-approach}
+
+Begin by matching structure to strategy. Let the problem's cues choose
+the method: a recurrence invites induction; symmetry points toward
+invariants; a geometric flavour asks for a diagram and auxiliary
+elements; unruly numbers suggest estimation or approximation.
+
+Then commit to a strategy, but keep your course of action time-bound.
+Choose one plan and pursue it deliberately for a few minutes. Set a
+concrete checkpoint in advance so the decision to switch is not
+emotional or driven by frustration (``If I cannot determine the number
+of cases in twenty minutes, I will try another approach.'').
+
+Finally, you are on the right track if relations clarify, expressions
+simplify, or the number of cases shrinks. If instead the algebra gets
+tedious, cases proliferate, or your reasoning seems circular: stop,
+reframe the problem, and select a different strategy.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Still stuck?}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Try answering these questions (see
+\citeproc{ref-Schoenfeld:1985ps}{Schoenfeld 1985}):
+
+\begin{itemize}
+\tightlist
+\item
+  What exactly are you doing?
+\item
+  Can you describe what you are aiming to do precisely?
+\item
+  Why are you doing it? How does it fit into the solution?
+\item
+  How does what your are doing help you solve the problem at hand?
+\item
+  What will you do with the outcome when you obtain it?
+\end{itemize}
+
+\end{tcolorbox}
+
+\part{Professional Skills}
+
+\chapter{Academic integrity}\label{sec-academic-integrity}
+
+\begin{quote}
+``I am never forget the day I first meet the great
+Lobachevsky\footnote{These song lyrics, by Tom Lehrer, are an attempt at
+  absurdist humour. Lehrer is quoted as using the name Lobachevsky
+  ``solely for prosodic reasons.'' Nikolai Ivanovich Lobachevsky was a
+  real mathematician (for a short biography, see the MacTutor archive:
+  \url{https://mathshistory.st-andrews.ac.uk/Biographies/Lobachevsky/});
+  there is no evidence that Lobachevsky plagarised any of his work.}
+
+In one word he told me secret of success in mathematics:
+
+Plagiarize!''
+
+-- Tom Lehrer (\citeproc{ref-Lehrer:1953lobachevsky}{Lehrer
+1953})\footnote{In this 1950s satire lampooning plagarism, Lehrer sings
+  in a caricatured Russian accent, typical of Cold War-era comedy. This
+  is a period comedy device that today can read as stereotyping. Our
+  focus is the satire of academic dishonesty; we do not endorse the
+  accent.}
+\end{quote}
+
+In his song \emph{Lobachevsky}, first performed in Harvard's The
+Physical Revue (1951--52) and later recorded, Tom Lehrer lampoons
+plagiarism by taking it to absurd extremes. It is a joke about bad
+practice, not a model to follow!
+
+Academic integrity is central to your development in this module. Please
+read the University's Academic Integrity Declaration:
+\url{https://www.dundee.ac.uk/corporate-information/academic-integrity-declaration}.
+The Code of Practice on Academic Misconduct explains procedures and
+penalties:
+\url{https://www.dundee.ac.uk/corporate-information/code-practice-academic-misconduct-students}.
+If you're unsure whether something is acceptable, ask first: cite your
+sources, acknowledge collaboration appropriately, and submit your own
+work/write-up.
+
+\section{Our AI policy for this
+module}\label{our-ai-policy-for-this-module}
+
+Generative AI tools are \textbf{not permitted} for any assessment in
+this module, including formative and summative work. This includes tools
+that generate or transform content such as ChatGPT, Copilot, Gemini, and
+similar services.
+
+``Use'' includes asking an AI system to plan, outline, draft, solve,
+code, debug, translate, paraphrase, summarise, explain steps, comment on
+your writing, or ``improve'' style. If you are unsure whether a tool
+counts as generative AI, ask the teaching team before using it.
+
+\subsection{Why this policy}\label{why-this-policy}
+
+Our aim is to help you grow core abilities that you will rely on in
+later study and work: framing problems, choosing methods, carrying out
+calculations, checking results, and communicating clearly. Outsourcing
+these cognitive steps to a generative system prevents you from building
+those skills. The policy also protects fairness for all students and
+reduces the risk of unreliable or untraceable outputs entering your
+work.
+
+\subsection{What you may use}\label{what-you-may-use}
+
+You may use standard, non-generative tools that support authentic work
+without creating ideas or text for you. Examples include:
+
+\begin{itemize}
+\tightlist
+\item
+  calculators, spreadsheets, plotting libraries, LaTeX compilers
+\item
+  reference managers for storing and formatting citations
+\item
+  basic proofreading tools that check spelling or punctuation without
+  suggesting new sentences
+\item
+  IDEs or editors with non-AI features only
+\end{itemize}
+
+If a tool ``suggests'' content, sentences, code, or solution steps,
+treat it as generative and do not use it.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Getting help the right way}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+The following are good habits to form that will support your development
+through university and beyond.
+
+\begin{itemize}
+\tightlist
+\item
+  Use office hours and discussion with peers at a conceptual level where
+  collaboration is allowed. Write up your own work independently.
+\item
+  Cite all external sources used for ideas, data, or methods.
+\item
+  Keep notes of your thinking and intermediate steps. We may ask for
+  these or for a short viva to confirm authorship.
+\end{itemize}
+
+\end{tcolorbox}
+
+\section{Declaration}\label{declaration}
+
+By submitting work for this module you confirm that it is your own, that
+you have not used generative AI to produce or edit the content, and that
+you understand the University's policies linked above. Suspected
+breaches will be handled under the Code of Practice on Academic
+Misconduct. If in doubt, ask first.
+
+\chapter{Teamwork}\label{sec-teamwork}
+
+\begin{quote}
+``If I have seen further, it is by standing on the shoulders of
+giants.''
+
+-- Isaac Newton, in a letter to Robert Hooke
+(\citeproc{ref-Newton:1676sg}{Newton 1676})
+\end{quote}
+
+Working well in a team is a core professional skill in mathematics and
+physics. It allows you to tackle more interesting problems by combining
+different strengths and viewpoints, sharpen your explanations for both
+specialists and non-specialists, plan and share tasks so work is
+delivered to agreed deadlines with accountability, and build the habit
+of giving and receiving constructive feedback. You also learn
+professional behaviours, such as, listening carefully, asking clear
+questions, and making decisions that the whole group understands.
+
+In this module you will work with different groups of peers on different
+tasks. Start by agreeing a clear goal and a short plan for how you will
+reach it. Share tasks fairly (especially mathematical tasks) and rotate
+roles where helpful (chair, scribe, checker, presenter). Communicate
+openly and early with the teaching team if you are stuck or need help.
+After each activity, take a minute to reflect on group dynamics
+including what worked and what you would consider changing next time.
+The aim is not only a good solution, but a good way of working that you
+can carry into future study and employment.
+
+\section{Code of conduct for group
+work}\label{code-of-conduct-for-group-work}
+
+We are building an environment where everyone can contribute and learn.
+The following expectations apply in fact-to-face meetings, online
+spaces, and written communication.
+
+\subsection*{Expectations}\label{expectations}
+\addcontentsline{toc}{subsection}{Expectations}
+
+\begin{itemize}
+\tightlist
+\item
+  Treat everyone with respect by listen actively and being punctual and
+  prepared.
+\item
+  Strive to collaborate effetively by sharing mathematical tasks fairly
+  and rotating group roles.
+\item
+  Communicate openly: ask questions, summarise decisions, and record
+  actions.
+\item
+  Raise issues early with your group and, if needed, speak to the
+  teaching team.
+\item
+  Value diversity and create a welcoming environment for all.
+\end{itemize}
+
+\subsection{Unacceptable behaviours}\label{unacceptable-behaviours}
+
+\begin{itemize}
+\tightlist
+\item
+  Discriminatory or belittling comments; inappropriate or hostile
+  language.
+\item
+  Intimidation, bullying, or repeated dismissive interruptions.
+\item
+  Unwanted physical contact or attention.
+\item
+  Recording or sharing images/audio of others without consent.
+\item
+  Plagiarism or misrepresenting someone else's work as your own.
+\end{itemize}
+
+If problems arise, use the active bystander toolkit below and, when
+appropriate, inform the teaching team.
+
+\section{Be an active bystander}\label{be-an-active-bystander}
+
+We do not anticipate problems in this module, but learning how to
+respond to poor behaviour is a professional skill you can carry into
+labs, workplaces, and public life. Figure~\ref{fig-4ds} presents four
+actions (the 4Ds) that you can take to call out innapropriate behviour.
+The aim of these actions is to reduce harm, support those affected, and
+uphold a respectful learning environment.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=4.08in,height=2.85in]{12-teamwork_files/figure-latex/mermaid-figure-1.png}
+
+}
+
+\caption{\label{fig-4ds}The 4Ds of the active bystander toolkit: four
+strategies for supporting active bystander interventions.}
+
+\end{figure}%
+
+The 4Ds are options to help you act in ways that are safe and
+proportionate. Choose what D fits the situation. If a situation feels
+unsafe or escalates, prioritise \emph{Delegation} and \emph{Delay}.
+After any incident, note what happened, support those affected, and, if
+appropriate, follow up with someone with responsibility or authority.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Support}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+We want you to know that the teaching team for this module will support
+you in being an active bystander.
+
+\end{tcolorbox}
+
+\subsection{Direct action}\label{direct-action}
+
+\begin{quote}
+Address the behaviour immediately.
+\end{quote}
+
+This strategy is useful when you feel safe, the issue is clear, and a
+simple prompt can reset the tone. It is important to name the behaviour,
+set a boundary, and say why it matters for the group. Avoid sarcasm,
+public shaming, or debating motives. Focus on impact and the group norm.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example phrases}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+``Please let them finish. Everyone gets a turn to speak because we need
+all ideas.''
+
+\end{tcolorbox}
+
+\subsection{Distraction}\label{distraction}
+
+\begin{quote}
+Change the focus to defuse tension.
+\end{quote}
+
+This strategy is useful when direct confrontation may escalate things or
+could embarrass someone. To use this strategy, interrupt the pattern
+with a task, a process check, or a role switch.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example phrases}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+``Let's pause and check the task list'' or ``Can we look at the data for
+a minute?'' or ``Could you summarise the next step?''
+
+\end{tcolorbox}
+
+\subsection{Delay}\label{delay}
+
+\begin{quote}
+Check in afterwards, then follow up.
+\end{quote}
+
+This strategy is useful when the moment has passed, you are unsure what
+happened, or it felt unsafe to intervene live. Speak privately to the
+person affected, describe what you noticed, ask what support they want,
+and agree a next step. Avoid promising actions you cannot take or
+sharing details widely.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example phrases}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+After the session: ``Are you OK with what happened?'' or ``I noticed
+\ldots; how would you like me to help?'' or ``Would you like me to raise
+it with the lecturer?''
+
+\end{tcolorbox}
+
+\subsection{Delegation}\label{delegation}
+
+\begin{quote}
+Involve someone with responsibility or authority.
+\end{quote}
+
+Use this strategy when safety is a concern, behaviour persists, or power
+dynamics make self-intervention hard. Do this by giving a concise,
+factual account to a tutor or lecturer, including what happened, when,
+and who was present. Avoid diagnosing motives or assigning labels;
+report behaviours and impact.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example phrases}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Quietly inform a tutor or lecturer about a pattern of interruptions or
+exclusion: ``I'm concerned about repeated interruptions in our group.
+Here is what I observed and when.''
+
+\end{tcolorbox}
+
+\chapter{Technical Writing}\label{sec-technical-writing}
+
+\begin{quote}
+``Verbosity to hide ignorance will not be rewarded.''
+
+-- Max Mintz (personal communication)
+\end{quote}
+
+The following short, practical guide will help you meet the expectations
+set out in the technical writing rubric used in this module. The rubric
+focuses on six criteria: narrative, self-consistency, reproducibility,
+logical flow/coherency, structure, and attribution.
+
+\section{Narrative}\label{sec-writing-narrative}
+
+\subsection{Goal: tell a clear story}\label{goal-tell-a-clear-story}
+
+Motivate the task, explain the approach, interpret the results, and
+connect every calculation, figure, or table to what it shows and why it
+matters.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Narrative implies writing}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Note that narrative involves putting \emph{words} on paper (not just
+equations) to explain, e.g., quantities and figures are connected to
+ideas.
+
+\end{tcolorbox}
+
+\subsection{How to do it}\label{how-to-do-it}
+
+\subsubsection{Build using focused and readable
+parts}\label{build-using-focused-and-readable-parts}
+
+Keep your overall narrative tight by building it from focused, readable
+parts. For each subsection, follow the simple progression in
+Figure~\ref{fig-focused-readable}. The reader first needs to know what
+you are trying to find (the Question), then how you set about finding it
+(the Method), what you obtained (the Result), and finally why it matters
+(the Meaning). Repeating this pattern makes your writing predictable,
+easier to assess, and simpler to debug when numbers or logic do not line
+up. In longer pieces, this mini-cycle scales up to shape the overall
+structure of your document (see Section~\ref{sec-writing-structure}).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=6.57in,height=0.73in]{13-technical-writing_files/figure-latex/mermaid-figure-1.png}
+
+}
+
+\caption{\label{fig-focused-readable}To build focused and readable
+narratives progress from question to method to result to meaning.}
+
+\end{figure}%
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{A problem: Delivery van ETA}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Estimate a delivery van's arrival time from app data that includes
+previous deliveries and a map. The van is roughly \(4.5\,\mathrm{km}\)
+away.
+
+\end{tcolorbox}
+
+Begin each subsection by stating the Question plainly, with enough
+context to be meaningful. Consider what quantity or claim are you after,
+under which conditions, and why is it useful. For example: ``We aim to
+calculate the average velocity of the van so we can estimate the arrival
+time.'' Next, move to the Method, naming the model or relationship you
+will use, the assumptions that make it reasonable, and the inputs. Show
+the key equation or algorithm and define symbols and units; mention
+tools if relevant. For instance: ``From the app we see the van covered
+\(d=3.0~\mathrm{km}\) in \(t=12~\mathrm{min}\); assuming roughly
+constant speed we use \(v=d/t\).'' Then present the Result succinctly.
+This will typically be a numerical or symbolic outcome, with correct
+units and sensible significant figures, and a brief note on uncertainty
+if appropriate. For example, ``The calculation gives
+\[v=\frac{3.0~\mathrm{km}}{12~\mathrm{min}}=0.25~\mathrm{km\,min}^{-1}\approx 15~\mathrm{km\,h}^{-1}\]
+(about \(4.2~\mathrm{m\,s}^{-1}\)).'' Close with the Meaning. This
+involves interpreting the result relative to the question, compare it
+with an expectation or limit, note any limitations, and point to
+supporting figures or tables: ``At this pace the remaining
+\(4.5~\mathrm{km}\) will take
+\[\frac{4.5}{15}\,\text{h}=0.3\,\mathrm{h}\approx 18~\mathrm{min}\,,\]
+which is reasonable and below local speed limits.''
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Variants}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+For a proof-style task, ``Result'' may be a statement proved and
+``Meaning'' explains how the lemma/theorem advances the overall goal.
+For a coding task, ``Method'' should include algorithm steps and
+parameters; ``Result'' should include the output and a brief performance
+or accuracy note; ``Meaning'' comments on whether the output is
+reasonable and how it supports the objective.
+
+\end{tcolorbox}
+
+\subsubsection{Captions}\label{captions}
+
+Every figure or table answers a question you pose in the text. Include
+the answer in the caption (not just a label).
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Consider the following plot of a the height of a falling ball, subject
+to gravity, over time together with a fit to a quadratic curve.
+
+\begin{figure}[H]
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{13-technical-writing_files/figure-pdf/fig-falling-ball-1.pdf}}
+
+}
+
+\caption{\label{fig-falling-ball}Height vs time for a falling ball;
+fitting \(h(t) = h_0 + v_0 t - \frac{1}{2} gt^2\) to the data yields
+\(g \approx 9.7~\mathrm{m\,s^{-2}}\), about \(1\%\) below the standard
+\(9.81~\mathrm{m\,s^{-2}}\).}
+
+\end{figure}%
+
+The caption above in Figure~\ref{fig-falling-ball} provides context
+(describes what the figure is showing) and emphasises the importance of
+the figure (the mismatch between the experimental observations and
+expectations).
+
+\end{tcolorbox}
+
+\subsubsection{Interpret}\label{interpret}
+
+After equations or code outputs, explain \emph{what the numbers mean}
+relative to the question.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Example}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+``Using \(F=kx\) with \(k=200~\mathrm{N\,m^{-1}}\) and
+\(x=0.03~\mathrm{m}\), the force is \(6~\mathrm{N}\), \emph{which is
+enough to hold the mass in place.}''
+
+The emphasized text above helps to explain the practical significance of
+the calculation.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Don't dump!}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Avoid the urge to provide superfluous information and make sure that
+equations, figures, and tables are necessary to support the narrative.
+
+\end{tcolorbox}
+
+\section{Self-consistency}\label{sec-writing-self-consistency}
+
+\subsection{Goal: make everything
+agree}\label{goal-make-everything-agree}
+
+Calculations, figures, tables, and symbols should all match with the
+textual narrative, and any units and definitions should be used
+consistently throughout the text. Ensure that equations and figures
+\emph{support} your narrative.
+
+\subsection{A small checklist}\label{a-small-checklist}
+
+Consider the following points when reviewing a text for
+self-consistency.
+
+\begin{itemize}
+\tightlist
+\item
+  Symbols: Define once, and use consistently (for example, \(v\) is
+  always speed; do not switch to \(u\) later).
+\item
+  Units: Use SI units, unless there is a compelling reason not to. When
+  typesetting, use a non-breaking space between number and unit (for
+  example,
+  \texttt{3.2\textbackslash{},\textbackslash{}mathrm\{m\}\textbackslash{},\textbackslash{}mathrm\{s\}\^{}\{-1\}}
+  in LaTeX). Avoid writing ``3.2m/s'' in a formal piece of writing (it
+  is fine for scratchwork).
+\item
+  Significant figures: Reflect measurement precision and propagate
+  appropriately. Do not over-round at intermediate steps.
+\item
+  Figure axes: Units and symbols on every axis (for example, \emph{Time,
+  \(t\) (s)}). Match variable names to the text.
+\item
+  Tables: Include units in headers, not in every cell.
+\item
+  Numerical agreement: Values quoted in text equal those shown in
+  figures/tables (including the same rounding).
+\end{itemize}
+
+\subsection{Style conventions}\label{style-conventions}
+
+Style conventions are very important when \emph{typesetting} technical
+documents using LaTeX. Pick a style and use it throughout your piece of
+text. For example, common style conventions are:
+
+\begin{itemize}
+\tightlist
+\item
+  Scalars/variables: italic (\(x, t, E\)); vectors: bold
+  (\(\mathbf{v}\)); matrices: bold caps (\(\mathbf{A}\)).
+\item
+  Functions/operators (\(\sin, \cos, \exp\)) upright; units upright
+  (\(\mathrm{m},\,\mathrm{s}\)).
+\item
+  Population vs estimates (statistics): many styles are possible, such
+  as using Greek letters for population parameters
+  (\(\mu, \sigma, \rho\)) and Roman letters for corresponding estimates
+  (\(m, s, r\)), or decorating corresponding estimates with hats
+  (\(\hat{\mu}, \hat{\sigma}, \hat{\rho}\)).
+\end{itemize}
+
+\section{Reproducibility}\label{sec-writing-reproducibility}
+
+\subsection{\texorpdfstring{Goal: ensure \emph{someone else} can verify
+your
+findings}{Goal: ensure someone else can verify your findings}}\label{goal-ensure-someone-else-can-verify-your-findings}
+
+Provide enough detail (steps, parameters, tools) so that someone else
+can replicate your results and findings. This includes defining notation
+when first used in a text and including units as appropriate.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Reproducibility crisis}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+As a future mathematician or physicist, please promote positive
+behaviours and avoid contributing to the reproducibility crisis in
+science {[}Ioannidis (\citeproc{ref-Ioannidis:2005rc}{2005}){]}.
+
+\end{tcolorbox}
+
+\subsection{Minimum to include}\label{minimum-to-include}
+
+\begin{itemize}
+\tightlist
+\item
+  Method steps: Numbered steps for key procedures or algorithms.
+\item
+  Parameters and inputs: List parameter values, initial conditions, and
+  data sources. State any random seeds.\footnote{We will use simulation
+    in later modules, such as MA22004; stating the seed lets others
+    reproduce your numbers exactly when including (pseudo)random draws.}
+\item
+  Tools: Name software and versions, for example, ``Python 3.11, NumPy
+  1.26; plots made in Jupyter''.
+\item
+  Data and code access: If provided, give file names or appendix
+  listings; if not, describe how data were generated, for example,
+  ``Measured height with a meter rule'' or ``three repeated measurements
+  per subject''.
+\item
+  Assumptions and approximations: State and justify, for example,
+  ``Neglect air resistance'' or ``small-angle approximation valid for
+  \(\theta<10^\circ\)''.
+\end{itemize}
+
+\subsection{Notation discipline}\label{notation-discipline}
+
+Define all symbols when first introduced.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Bad Example}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+This is an example of what \emph{not} to do.
+
+\begin{quote}
+From \(kx = F\) we found 6, so \(k = 200\) and then we used \(u=kx\).
+\end{quote}
+
+Problems: symbols are introduced without definitions, units are missing
+or informal, and the symbol switches from \(k\) to \(u\)
+mid-calculation.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Good Example}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+This is an exmaple of good practice.
+
+\begin{quote}
+Let \(k\) denote the spring constant (\(\mathrm{N\,m^{-1}}\)). By
+Hooke's law, \[F = k x \,,\] where \(F\) is the force (\(\mathrm{N}\))
+and \(x\) is the extension from equilibrium (\(\mathrm{m}\)).
+\end{quote}
+
+Notice how all notation is defined and units are provided.
+
+\end{tcolorbox}
+
+\section{Logical flow/coherency}\label{sec-writing-coherency}
+
+\subsection{Goal: guide the reader}\label{goal-guide-the-reader}
+
+Organise your work so each step follows naturally from the last, and use
+brief transitions to steer the reader between equations and ideas rather
+than leaving logical jumps.
+
+\subsection{Structure each section with
+transitions}\label{structure-each-section-with-transitions}
+
+To demonstrate that you meet expectations against this goal, use words
+or phrases to guide transitions between steps in your calculations. This
+includes explaining how each result shapes the argument and, for
+example, why one line follows from the next. When you present
+calculations, explain how the method yields numbers. Be sure to follow
+results with interpretation so the reader understands what the results
+mean.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-warning-color-frame, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Avoid common flow breakers}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+It is easy to break the logical flow of a piece of technical writing.
+Some common pitfalls to avoid are:
+
+\begin{itemize}
+\tightlist
+\item
+  Introducing symbols in a figure without defining them in text.
+\item
+  Presenting equations with no statement of purpose.
+\item
+  Jumping from raw data to conclusions without intermediate reasoning.
+\item
+  Switching units or symbols mid-way (for example, metres to centimetres
+  without saying so).
+\end{itemize}
+
+\end{tcolorbox}
+
+\section{Structure}\label{sec-writing-structure}
+
+\subsection{Goal: headings, sentences,
+captions}\label{goal-headings-sentences-captions}
+
+Use full sentences and informative headings to structure your document.
+Include labels for equations, figures, and tables as appropriate. Be
+sure that any numbered equation and figure/table is referenced in the
+text narrative.
+
+\subsection{Suggested problem solution
+outline}\label{suggested-problem-solution-outline}
+
+Adapt this suggested outline for short pieces of writing, such as
+solutions to module problems, as needed. Below we list a part or section
+of the report and what it should contain. Note how this structure
+mirrors the problem solving framework introduced in
+Chapter~\ref{sec-problems}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Problem statement}: rewrite the problem in your own words.
+  Provide context, objective, and a brief roadmap of the solution.
+\item
+  \textbf{Method}: state the model/assumptions, derivations, algorithm,
+  and parameters used. Indicate which \emph{heuristic} guides the
+  method.
+\item
+  \textbf{Solution}: provide the result with a short interpretation.
+\item
+  \textbf{Conclusion and Discussion}: explain what the results mean,
+  note limitations or possible generalisations, and reflect on why the
+  heuristic worked (or why others did not).
+\end{itemize}
+
+\subsection{Suggested lab report
+outline}\label{suggested-lab-report-outline}
+
+Adapt this suggested outline for a lab report or longer piece of writing
+as needed. Below we list a part or section of the report and what it
+should contain. Not all parts are equal. Titles should be short and
+snappy; a method section should be as long as needed to ensure
+reproducibility.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Title}: concise and informative
+\item
+  \textbf{Abstract (3--5 sentences)}: problem, method, key result,
+  implication
+\item
+  \textbf{Introduction}: context, objective, roadmap of the report
+\item
+  \textbf{Method}: model/assumptions, derivations, algorithm, parameters
+\item
+  \textbf{Results}: tables/figures with brief interpretation
+\item
+  \textbf{Discussion}: what the results mean, limitations, sensitivity
+\item
+  \textbf{Conclusion}: answer the question and outline next steps
+\item
+  \textbf{References}: consistent style (for example, author-year or
+  numbered)
+\item
+  \textbf{Appendix}: code listings, extended derivations, raw data
+  description
+\end{itemize}
+
+\section{Attribution}\label{sec-writing-attribution}
+
+\subsection{Goal: give credit and highlight your
+contributions}\label{goal-give-credit-and-highlight-your-contributions}
+
+Cite sources of ideas, data, figures, and methods. Be sure that someone
+reading the document can distinguish your work from external material.
+
+\subsection{Practical rules}\label{practical-rules}
+
+\begin{itemize}
+\tightlist
+\item
+  Cite where used: immediately after the relevant sentence/equation, for
+  example, ``Using Hooke's law {[}1{]} \ldots{}''.
+\item
+  Quoting vs paraphrase: prefer paraphrase with a citation. Quote
+  sparingly with quotation marks and a page number where appropriate.
+\item
+  Your contribution: signal it explicitly, for example, ``We implement
+  the method of {[}2{]} and add a sensitivity analysis''.
+\item
+  Figure reuse: if reusing or altering a figure, state the source and
+  permission status.
+\item
+  Reference style: use one consistent style and include all necessary
+  metadata so that someone reading your text can easily find the source.
+\end{itemize}
+
+\chapter{Presentation}\label{sec-presentation}
+
+\chapter{Ethics}\label{sec-ethics}
+
+\begin{quote}
+``A mathematician does something on a piece of paper \& then lo \&
+behold a big explosion may occur.''
+
+-- Stanislaw Ulam, scribbled in the drawer of his desk at Los
+Alamos\footnote{See Clark (\citeproc{ref-Clark:2017la}{2017}).}
+\end{quote}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={science}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+The systematic study of the structure and behaviour of the physical and
+natural world through observation, experimentation, and the testing of
+theories against the evidence obtained
+(\citeproc{ref-ODE:2010}{\emph{Oxford Dictionary of English} 2010}
+s.v.~``science'').
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={ethics}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Moral principles that govern a person's behaviour or the conducting of
+an activity (\citeproc{ref-ODE:2010}{\emph{Oxford Dictionary of English}
+2010} s.v.~``ethics'').
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={big science}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Scientific research that is expensive and involves large teams of
+scientists (\citeproc{ref-ODE:2010}{\emph{Oxford Dictionary of English}
+2010} s.v.~``big science'').
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={blue-sky}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Creative or visionary and unconstrained by practicalities
+(\citeproc{ref-ODE:2010}{\emph{Oxford Dictionary of English} 2010}
+s.v.~``blue-sky'').
+
+\end{tcolorbox}
+
+\section{Two guiding questions}\label{two-guiding-questions}
+
+Ethical issues in scientific work tend to cluster around two questions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  what science should be conducted and
+\item
+  how science should be conducted.
+\end{enumerate}
+
+The first question asks about purpose and proportionality. We weigh the
+value of the knowledge against the costs and risks, including the
+possibility of misuse. In mathematics and physics this often means
+checking whether a model, algorithm, or optimisation method could be
+applied in ways we did not intend, thereby steering policy, finance,
+surveillance, or defence. If unintended consequences are identified,
+then one must decide what safeguards or limits on release are
+appropriate. It also asks who benefits, who bears burdens, and whether
+scarce time and resources are being directed fairly.
+
+The second question focuses on conduct: about integrity and care in
+everyday practice. As professional mathematicians and physicists, we
+commit to honesty in analysis and reporting; clear attribution of ideas,
+data, and tools; and enough transparency that a peer can retrace our
+steps. In quantitative work, this includes stating assumptions, limits
+of validity, and uncertainty; keeping a reproducible trail for
+computations; and avoiding exaggerated claims. Good conduct extends to
+collaboration, such as fair authorship, respectful review, prompt
+correction of errors, and to communication, where we present results
+responsibly without hype.
+
+These two questions, what and how, form a habit: pause before starting,
+and reflect before sharing. They help keep powerful methods pointed
+toward good ends, and they keep trust in our work intact.
+
+\section{What work should be done}\label{what-work-should-be-done}
+
+Big scientific programmes raise questions of priority and fairness. Big
+Science projects (costly, long-horizon efforts run by large teams)
+promise major advances, but they also centralise decisions about which
+fields get funded and who gets to participate, including whether
+researchers in the developing world can share equitably in the work and
+its benefits.
+
+By contrast, Blue-Sky research pursues ideas with no immediate payoff.
+Such research can look speculative in the moment yet prove foundational
+later. For example, the early laser was famously dismissed as ``a
+solution looking for a problem,'' before becoming ubiquitous in science,
+medicine, and communications. The ethical question is whether we sustain
+such inquiry despite uncertain returns, and how we justify that choice
+to the public.
+
+To weigh these options, one should use ethical lenses: a virtue
+perspective asks what kind of scientific character we cultivate; a
+Kantian view tests duties we owe regardless of outcomes; a utilitarian
+calculus weighs overall consequences. Importantly, for any ethical
+decision, one must guard against hindsight bias: as Herodotus reminds
+us, a decision should be judged by the evidence available when it was
+made, not by how it turned out.\footnote{Cf. Solon's advice to Croesus:
+  \emph{``{[}c{]}all him, however, until he die, not happy but
+  fortunate''} (\citeproc{ref-Herodotus:440BCE}{Herodotus (transl.
+  George Rawlinson) 2009, bk. 1});} This keeps the evaluation of risks
+anchored in reasoned judgment rather than outcome luck.
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-tip-color-frame, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{A quick ethics checklist}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+The following ethical considerations might be taken into account for
+most research projects.
+
+\begin{itemize}
+\tightlist
+\item
+  Purpose \& stakes: Who benefits? Who could be harmed?\\
+\item
+  Scope \& assumptions: Where does your result \textbf{not} apply?\\
+\item
+  Uncertainty: What's the error budget/sensitivity?\\
+\item
+  Transparency: Can a peer reproduce your work?\\
+\item
+  Attribution: Have you credited data/code/ideas?\\
+\item
+  Dual-use: Could this be misapplied, and how will you mitigate?
+\end{itemize}
+
+\end{tcolorbox}
+
+\section{How we conduct ourselves}\label{how-we-conduct-ourselves}
+
+Not all errors are equal (\citeproc{ref-Hamner:1992et}{Hamner 1992}).
+Some errors are reputable errors; these are mistakes, made in
+good-faith, that are documented, reproducible, and fixable. These
+represent a deviation from methodological norms and include
+\emph{negligence}, such as sloppy methods or record-keeping that breach
+methodological standards even without intent. On the other hand, some
+errors are disreputable, such as fabrication, falsification, and
+plagiarism. These represent a deviation from moral norms. The practical
+ethic is to design your workflow so that reputable error is possible and
+correctable (clear notes, version control, open materials) and
+disreputable error is impossible (independent checks, audit trails,
+explicit authorship and citation norms).
+
+\subsection{Moral norms}\label{moral-norms}
+
+Robert K. Merton's classic account of the scientific ethos names four
+ideals: universalism, communality, disinterestedness, and organized
+skepticism. His essay on these moral norms first appeared in 1942 and
+has been reprinted with revised titles reflect changing values in the
+scientific community (\citeproc{ref-Merton:1973et}{Merton 1973}). The
+current resource frames openness and research transparency today. Think
+of these norms as routine habits that counter the very pressures that
+produce negligence and fraud.
+
+\begin{itemize}
+\tightlist
+\item
+  Universalism: judge claims by impersonal criteria, not by who makes
+  them.
+\item
+  Communality: treat knowledge as a shared good, circulated with credit.
+\item
+  Disinterestedness: organize work so private interests and biases do
+  not distort it.
+\item
+  Organized skepticism: subject claims to systematic, critical scrutiny
+  before acceptance.
+\end{itemize}
+
+\section{For discussion}\label{for-discussion}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Draw a line}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Where's the line between negligence and misconduct in simulation-heavy
+mathematics/physics?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Together or alone?}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+How do Merton's norms play out in a large collaboration vs a solo proof?
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, opacitybacktitle=0.6, toprule=.15mm, breakable, toptitle=1mm, colframe=quarto-callout-important-color-frame, colbacktitle=quarto-callout-important-color!10!white, left=2mm, rightrule=.15mm, bottomtitle=1mm, titlerule=0mm, title={Prioritising resrouces}, arc=.35mm, leftrule=.75mm, colback=white, coltitle=black, opacityback=0]
+
+Should limited resources prioritise Big Science or Blue-Sky Research,
+and who decides?
+
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\begingroup
+\raggedright
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Clark:2017la}
+Clark, Carol A. 2017. {``Manhattan Project Unsung Hero: Mathematician
+Ulam.''} December 16, 2017.
+\url{https://ladailypost.com/manhattan-project-unsung-hero-mathematician-ulam/}.
+
+\bibitem[\citeproctext]{ref-Halmos:1980ps}
+Halmos, P. R. 1980. {``The Heart of Mathematics.''} \emph{The American
+Mathematical Monthly} 87 (7): 519--24.
+\url{https://doi.org/10.2307/2321415}.
+
+\bibitem[\citeproctext]{ref-Hamner:1992et}
+Hamner, Vincent N. 1992. {``Misconduct in Science: Do Scientists Need a
+Professional Code of Ethics?''} {Virginia Polytechnic Institute and
+State University}. 1992.
+\url{https://web.archive.org/web/20090605080153/http://www.files.chem.vt.edu/chem-ed/ethics/vinny/www_ethx.html}.
+
+\bibitem[\citeproctext]{ref-Herodotus:440BCE}
+Herodotus (transl. George Rawlinson). 2009. \emph{The History of
+Herodotus}. MIT.
+\url{https://classics.mit.edu/Herodotus/history.1.i.html}.
+
+\bibitem[\citeproctext]{ref-Ioannidis:2005rc}
+Ioannidis, John P. A. 2005. {``Why Most Published Research Findings Are
+False.''} \emph{PLOS Medicine} 2 (8): e124.
+\url{https://doi.org/10.1371/journal.pmed.0020124}.
+
+\bibitem[\citeproctext]{ref-Lehrer:1953lobachevsky}
+Lehrer, Tom. 1953. \emph{Lobachevsky}. Lehrer Records.
+\url{https://en.wikipedia.org/wiki/File:1-06_Lobachevsky.mp3}.
+
+\bibitem[\citeproctext]{ref-MacTutor:Polya}
+MacTutor. 2025a. {``Quotations by George {P}{ó}lya.''} University of St
+Andrews. 2025.
+\url{https://mathshistory.st-andrews.ac.uk/Biographies/Polya/quotations}.
+
+\bibitem[\citeproctext]{ref-MacTutor:Kovalevskaya}
+---------. 2025b. {``Quotations by Sofia Kovalevskaya.''} University of
+St Andrews. 2025.
+\url{https://mathshistory.st-andrews.ac.uk/Biographies/Kovalevskaya/quotations}.
+
+\bibitem[\citeproctext]{ref-Mahajan:2010ps}
+Mahajan, Sanjoy. 2010. \emph{Street-Fighting Mathematics: The Art of
+Educated Guessing and Opportunistic Problem Solving}. Cambridge, MA: The
+MIT Press. \url{https://doi.org/10.7551/mitpress/7728.001.0001}.
+
+\bibitem[\citeproctext]{ref-Merton:1973et}
+Merton, Robert K. 1973. {``The Normative Structure of Science.''} In
+\emph{The Sociology of Science: Theoretical and Empirical
+Investigations}, edited by Norman W. Storer, 267--78. Chicago:
+University of Chicago Press.
+
+\bibitem[\citeproctext]{ref-MichalewiczFogel:2004hu}
+Michalewicz, Zbigniew, and David B. Fogel. 2004. \emph{{How to Solve It:
+Modern Heuristics}}. 2nd ed. Berlin, Heidelberg: Springer.
+\url{https://doi.org/10.1007/978-3-662-07807-5}.
+
+\bibitem[\citeproctext]{ref-Newton:1676sg}
+Newton, Isaac. 1676. {``Letter to Robert Hooke.''} In \emph{The
+Correspondence of Isaac Newton}, edited by H. W. Turnbull, 1:416.
+Cambridge: Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-ODE:2010}
+\emph{Oxford Dictionary of English}. 2010. Oxford: Oxford University
+Press.
+
+\bibitem[\citeproctext]{ref-OED:1989ps}
+\emph{Oxford English Dictionary}. 1989. 2nd ed. Oxford: Oxford
+University Press.
+
+\bibitem[\citeproctext]{ref-Plato:347BCE}
+Plato (transl. Benjamin Jowett). 2009. \emph{Apology}. MIT.
+\url{https://classics.mit.edu/Plato/apology.html}.
+
+\bibitem[\citeproctext]{ref-Polya:1945hu}
+Pólya, George. 1945. \emph{{How to Solve It}}. Princeton, NJ: Princeton
+University Press.
+
+\bibitem[\citeproctext]{ref-Polya:1954oi}
+---------. 1954a. \emph{Mathematics and Plausible Reasoning, Volume 1:
+Induction and Analogy in Mathematics}. Princeton, NJ: Princeton
+University Press.
+
+\bibitem[\citeproctext]{ref-Polya:1954ii}
+---------. 1954b. \emph{Mathematics and Plausible Reasoning, Volume 2:
+Logic, Symbolic and Mathematical}. Princeton, NJ: Princeton University
+Press.
+
+\bibitem[\citeproctext]{ref-Schoenfeld:1985ps}
+Schoenfeld, Alan H. 1985. \emph{Mathematical Problem Solving}. Orlando,
+FL: Academic Press. \url{https://doi.org/10.1016/C2013-0-05012-8}.
+
+\bibitem[\citeproctext]{ref-Zeitz:2016ps}
+Zeitz, Paul. 2016. \emph{The Art and Craft of Problem Solving}. 3rd ed.
+Hoboken, NJ: Wiley.
+
+\end{CSLReferences}
+
+\endgroup
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Appendices}
+\appendix
+
+\chapter{Rubrics}\label{rubrics}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{rubric-problem-solving.pdf}{Problem solving rubric}
+\item
+  \href{rubric-writing.pdf}{Technical writing rubric}
+\end{itemize}
+
+\includepdf[pages=-]{rubric-problem-solving.pdf}
+\includepdf[pages=-]{rubric-writing.pdf}
+
+
+
+
+\end{document}

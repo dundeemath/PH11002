@@ -1,21 +1,17 @@
 ```{r setup, include=FALSE}
 # packages
 library(RColorBrewer)
-library(viridis)
 library(scales)
 library(readr)
+library(dplyr)
 library(ggplot2)
-library(tidyverse)
-library(reshape2)
 library(latex2exp)
 library(svglite)
 library(knitr)
 library(kableExtra)
-library(formattable)
-library(flextable)
-library(dplyr)
 
-options(knitr.kable.NA = '')
+options(kableExtra.latex.load_packages = FALSE)
+options(width = 90, knitr.kable.NA = '')
 
 # ggplot theme
 if (knitr::is_html_output()){
@@ -25,10 +21,4 @@ if (knitr::is_html_output()){
   theme_set(theme_bw(base_size = 10))
   knitr::opts_chunk$set(echo = TRUE, fig.asp = 0.7143)
 }
-theme_ur <- theme(legend.justification = c(1,1), legend.position = c(0.9,0.9), legend.box.margin = margin(c(4, 4, 4, 4), unit = "pt"))
-theme_lr <- theme(legend.justification = c(0.9,0), legend.position = c(0.9,0), legend.box.margin = margin(c(4, 4, 4, 4), unit = "pt"))
-options(width = 90, knitr.kable.NA = '')
-
-lsz <- 1.0
-tsz <- 4
 ```

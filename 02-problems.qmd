@@ -8,7 +8,7 @@
 
 Problems often involve more complexity than straightforward _exercises_ in that the method of solution is not proscribed. We will differentiate between two  types of problems and present a general framework, introduced by Pólya in a series of monographs [@Polya:1945hu; @Polya:1954oi; @Polya:1954ii], for understanding problem solving.[^polya] This framework is intended to serve as a foundation for analysing your approach to problem solving.
 
-[^polya]: George Pólya is a Hungarian-American mathematician who made contributions to probability theory, combinatorics, number theory, and numerical analysis. More information about his life and work can be found at the MacTutor Archive: [https://mathshistory.st-andrews.ac.uk/Biographies/Polya/](https://mathshistory.st-andrews.ac.uk/Biographies/Polya/).
+[^polya]: George Pólya was a Hungarian-American mathematician who made contributions to probability theory, combinatorics, number theory, and numerical analysis. More information about his life and work can be found at the MacTutor Archive: [https://mathshistory.st-andrews.ac.uk/Biographies/Polya/](https://mathshistory.st-andrews.ac.uk/Biographies/Polya/).
 
 ## Two Types of Problems
 
@@ -18,7 +18,7 @@ We distinguish between different types of problems based on the desired goal. Th
 
 The task is to produce or create an object (often a mathematical object or an idea)[^not-engineers] that satisfies specified conditions, which may include a number, function, construction, example, counterexample, or algorithm. Common prompts for these tasks include terms such as determine, compute, construct, and classify. The success of these endeavors is evaluated based on criteria such as correctness, completeness, and in some cases, optimality or uniqueness.
 
-[^not-engineers]: We are not engineers 😉.
+[^not-engineers]: We are not engineers ;).
 
 :::{.callout-note}
 ## Example of a problem to find
@@ -88,7 +88,15 @@ The phases are roughly as follows. First, **understand the problem**: identify d
 
 ## Phases of problem solving {#sec-phases}
 
-Use Table @tbl-phases as a working checklist and a reflection guide, not a rigid recipe. As you tackle an open-ended problem, you might find that you are "stuck". First, don't panic! Decide which phase of the problem solving framework you are in and scan the prompts in that row. Answering the prompt may lead to a concrete next action. Reflect on this new action for a few minutes; if it stalls, return to the table, pick a different prompt, or take a break. Over time, the prompts will become more familiar and the process of solving an open-ended problme will be less daunting. 
+Use @tbl-phases as a working checklist and a reflection guide, not a rigid recipe. As you tackle an open-ended problem, you might find that you are "stuck". First, don't panic! Decide which phase of the problem solving framework you are in and scan the prompts in that row. Answering the prompt may lead to a concrete next action. Reflect on this new action for a few minutes; if it stalls, return to the table, pick a different prompt, or take a break. Over time, the prompts will become more familiar and the process of solving an open-ended problme will be less daunting. 
+
+:::{.content-visible when-format="pdf"}
+```{=latex}
+\clearpage
+\newgeometry{margin=25mm} 
+\thispagestyle{empty}
+```
+:::
 
 ```{r}
 #| label: tbl-phases
@@ -96,22 +104,24 @@ Use Table @tbl-phases as a working checklist and a reflection guide, not a rigid
 #| echo: false
 #| message: false
 #| warning: false
-library(readr)
-library(knitr)
-library(kableExtra)
 df <- read_csv("data/phases_table.csv")
 if (knitr::is_latex_output()) {
-  # PDF: LaTeX table with fixed column widths and wrapping
-  kbl(df, format = "latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
-  align = c("p{0.18\\linewidth}", "p{0.22\\linewidth}", "p{0.30\\linewidth}", "p{0.30\\linewidth}")) |>
-  landscape()
+  kableExtra::kbl(df, format = "latex", booktabs = TRUE, longtable = TRUE, escape = FALSE,
+  align = c("p{0.1\\linewidth}", "p{0.2\\linewidth}", "p{0.28\\linewidth}", "p{0.28\\linewidth}")) |>
+    landscape()
 } else {
-  # HTML: widths in CSS units
-  kbl(df, format = "html", escape = FALSE) |>
-    kable_styling(full_width = TRUE, bootstrap_options = c("striped", "condensed")) |>
-    column_spec(1, width = "12em") |>
-    column_spec(2, width = "16em") |>
-    column_spec(3, width = "24em") |>
-    column_spec(4, width = "24em")
+  # HTML
+  kableExtra::kbl(df, "html", escape = FALSE) |>
+    kableExtra::kable_styling(full_width = TRUE, bootstrap_options = c("striped","condensed")) |>
+    kableExtra::column_spec(1, width = "12em") |>
+    kableExtra::column_spec(2, width = "16em") |>
+    kableExtra::column_spec(3, width = "24em") |>
+    kableExtra::column_spec(4, width = "24em")
 }
 ```
+
+:::{.content-visible when-format="pdf"}
+```{=latex}
+\restoregeometry
+```
+:::

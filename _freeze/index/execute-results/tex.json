@@ -1,11 +1,9 @@
 {
-  "hash": "557cbaa75fa1ac9a89f667b673d8eb55",
+  "hash": "9f811397c959aeaf8ebe2d22dcb16866",
   "result": {
     "engine": "knitr",
-    "markdown": "\n\n\n# Introduction {-}\n\nWelcome to PH11002 Problem Solving and Professional Skills at the University of Dundee.\n\nThese notes are available at [dundeemath.github.io/PH11002/](https://dundeemath.github.io/PH11002/) as HTML and also as a PDF. \n\n## Licence\n\n![](https://i.creativecommons.org/l/by-nc/4.0/88x31.png){alt=\"Creative Commons License\" style=\"float:left;padding-right:30px;border-width:0\"}\n\nThis work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).",
-    "supporting": [
-      "index_files"
-    ],
+    "markdown": "\n\n\n# Introduction {-}\n\n:::{.content-visible only-format=\"pdf\"}\nThis manuscript contains notes for PH11002 - Problem Solving and Professional Skills, a first year module about problem solving at the University of Dundee.\n:::\n\nAn up-to-date version of these notes are available at [dundeemath.github.io/PH11002/](https://dundeemath.github.io/PH11002/) as HTML and also as a PDF. \n\n:::{.content-visible only-format=\"pdf\"}\n\\section*{Publication data}\n\nFirst published 2025-09-20\n<!-- Updated  -->\n\n\\bigskip\nAuthors: \n\n\\bigskip\nDr Eric Hall, University of Dundee\n\nDr Paula Stella Teixeira, University of Dundee\n\n\\bigskip \n\\bigskip\n:::\n\nAny questions or comments about these notes can be directed to Dr Eric Hall ([ehall001@dundee.ac.uk](mailto:ehall001@dundee.ac.uk)).\n\n:::{.content-visible only-format=\"pdf\"}\n```{=latex}\n\\vfill\n```\n:::\n\n## Licence\n\n![](https://i.creativecommons.org/l/by-nc/4.0/88x31.png){alt=\"Creative Commons License\" style=\"float:left;padding-right:30px;border-width:0\"}\n\nThis work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).\n\n:::{.content-visible only-format=\"pdf\"}\nCopyright 2025, Eric Hall (University of Dundee).\n:::\n",
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

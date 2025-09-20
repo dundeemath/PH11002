@@ -1,0 +1,1 @@
+options(kableExtra.latex.load_packages = FALSE)

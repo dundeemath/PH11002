@@ -15,19 +15,17 @@ Begin by matching structure to strategy. Let the problem's cues choose the metho
 
 Then commit to a strategy, but keep your course of action time-bound. Choose one plan and pursue it deliberately for a few minutes. Set a concrete checkpoint in advance so the decision to switch is not emotional or driven by frustration ("If I cannot determine the number of cases in twenty minutes, I will try another approach.").
 
-Finally, watch for traction. You are on the right track if relations clarify, expressions simplify, or the number of cases shrinks. If instead the algebra gets tedious, cases proliferate, or your reasoning seems circular: stop, reframe the problem, and select a different strategy. 
-
-## Still stuck?
+Finally, you are on the right track if relations clarify, expressions simplify, or the number of cases shrinks. If instead the algebra gets tedious, cases proliferate, or your reasoning seems circular: stop, reframe the problem, and select a different strategy. 
 
 :::{.callout-important}
-## Try answering these questions:
+## Still stuck?
+
+Try answering these questions [see @Schoenfeld:1985ps]:
 
   - What exactly are you doing? 
   - Can you describe what you are aiming to do precisely?
   - Why are you doing it? How does it fit into the solution?
   - How does what your are doing help you solve the problem at hand? 
   - What will you do with the outcome when you obtain it?
-
-[see @Schoenfeld:1985ps].
 
 :::
