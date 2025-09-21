@@ -9,6 +9,7 @@
 :::{.content-visible when-format="pdf"}
 - Problem solving rubric
 - Technical writing rubric
+- Presentation rubric
 ```{=latex}
 \includepdf[pages=-]{rubric-problem-solving.pdf}
 \includepdf[pages=-]{rubric-writing.pdf}
