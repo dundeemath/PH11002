@@ -1,8 +1,9 @@
-# Rubrics
+# Rubrics {#sec-rubrics}
 
 :::{.content-visible when-format="html"}
 - [Problem solving rubric](rubric-problem-solving.pdf)
 - [Technical writing rubric](rubric-writing.pdf)
+- [Presentation rubric](rubric-presentation.pdf)
 :::
 
 :::{.content-visible when-format="pdf"}
@@ -11,5 +12,6 @@
 ```{=latex}
 \includepdf[pages=-]{rubric-problem-solving.pdf}
 \includepdf[pages=-]{rubric-writing.pdf}
+\includepdf[pages=-]{rubric-presentation.pdf}
 ```
 :::

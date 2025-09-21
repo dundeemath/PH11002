@@ -84,6 +84,26 @@ Robert K. Merton's classic account of the scientific ethos names four ideals: un
 * Disinterestedness: organize work so private interests and biases do not distort it.
 * Organized skepticism: subject claims to systematic, critical scrutiny before acceptance.
 
+### Practical ethic
+
+A practical ethic turns values into routine habits. A few examples of designing workflows to ensure that ethical values are maintained are given below. These approaches make reputable error easy to detect and fix and make misconduct hard to hide.
+
+::: {.callout-note}
+## FAIR data
+
+FAIR is a professional baseline for sharing data: **F**indable (rich metadata with persistent identifiers), **A**ccessible (clear access terms with stable links), **I**nteroperable (open formats with standard vocabularies), and **R**eusable (licensing with provenance and a data dictionary). If data cannot be shared, publish a metadata-only record and a safe exemplar. See GO FAIR's concise guidance and checklists at [https://www.gofair.foundation/](https://www.gofair.foundation/).
+:::
+
+::: {.callout-note}
+## Reproducible Quarto reports
+
+Quarto supports ethical practice by bundling narrative, code, and outputs in a single code that can be used to generate many types of documents (HTML, PDF, EPUB, etc.). This code captures parameters, seeds, and environments thereby making analyses auditable. Rendering the document from a clean clone[^clone] verifies that results do not depend on a private setup and sharing the source code provides an explicit trail for peer scrutiny. Learn more at [https://quarto.org/](https://quarto.org/).[^quarto]
+:::
+
+[^clone]: A clean copy of a git repository; git is a type of distributed version control system that tracks file changes.
+
+[^quarto]: These notes are authored with quarto. You can view the code at [https://github.com/dundeemath/PH11002/](https://github.com/dundeemath/PH11002/). 
+
 ## For discussion
 
 ::: {.callout-important icon=false collapse="true"}

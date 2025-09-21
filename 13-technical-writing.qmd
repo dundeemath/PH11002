@@ -6,7 +6,7 @@
 >
 > -- Max Mintz (personal communication)
 
-The following short, practical guide will help you meet the expectations set out in the technical writing rubric used in this module. The rubric focuses on six criteria: narrative, self-consistency, reproducibility, logical flow/coherency, structure, and attribution.
+The following short, practical guide will help you meet the expectations set out in the technical writing rubric used in this module (see @sec-rubrics). The rubric focuses on six criteria: narrative, self-consistency, reproducibility, logical flow/coherency, structure, and attribution.
 
 ## Narrative {#sec-writing-narrative}
 

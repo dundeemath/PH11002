@@ -26,9 +26,9 @@ The painting _Der Wanderer über dem Nebelmeer_ (Wanderer above the Sea of Fog) 
 \includegraphics[width=.8\linewidth]{assets/images/cover_small.jpg}
 \end{wrapfigure}
 
-The painting _Der Wanderer über dem Nebelmeer_ (Wanderer above the Sea of Fog) by Caspar David Friedrich, c. 1818, is part of the collection of the Hamburger Kunsthalle, Hamburg. 
+The painting _Der Wanderer über dem Nebelmeer_ (Wanderer above the Sea of Fog) by Caspar David Friedrich, c. 1818, is part of the collection of the Hamburger Kunsthalle, Hamburg.[^sea-fog]
 
-"The hiker stands as a back figure in the center of the composition. He looks down on an almost impenetrable sea of fog in the midst of a rocky landscape - a metaphor for life as an ominous journey into the unknown."[^sea-fog] 
+"The hiker stands as a back figure in the center of the composition. He looks down on an almost impenetrable sea of fog in the midst of a rocky landscape - a metaphor for life as an ominous journey into the unknown."
 \bigskip
 
 [^sea-fog]: [https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg)

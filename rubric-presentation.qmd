@@ -1,0 +1,44 @@
+---
+title: "Presentation Rubric"
+subtitle: "PH11002 Problem Solving and Professional Skills"
+format: dundee-handout-pdf
+engine: knitr
+---
+
+Student Name: \framebox[0.33\linewidth][l]{\rule{0pt}{2.6ex}}\hfill Student ID: \framebox[0.33\linewidth][l]{\rule{0pt}{2.6ex}}
+
+\bigskip 
+Examiner: \makebox[0.38\linewidth][l]{\hrulefill} \hfill
+Date: \makebox[0.35\linewidth][l]{\hrulefill}
+
+## Rubric
+
+::: {.rubric tbl-colwidths="[18,36,15,17,8,15,8]"}
+| Criteria | Expectations | Excellent | Very Good | Good | Sufficient | Fail |
+|:--|:--|:--:|:--:|:--:| :--:|:--:|
+| **Context** | Aim is clear, motivated, and grounded in relevant background. | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| **Structure** | Content flows logically (e.g., background → method → result → conclusion), with a clear narrative. | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| **Accuracy** | Material presented is factually correct (including physics and mathematics concepts). | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| **Visual Aids** | Visuals are purposeful, clear at suitable distance, and accessible. | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| **Pacing** | Content is tailored to the audience, scope fits the allocated time/space, and information density allows comprehension. | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+| **Attribution** | Sources of ideas are cited with clear distinctions between own work and external material. | $\square$ | $\square$ | $\square$ | $\square$ | $\square$ |
+:::
+
+## Feedback
+
+Plus (strongest move): \hrulefill
+
+\hrulefill
+
+\hrulefill
+
+Delta (one change to try): \hrulefill
+
+\hrulefill
+
+\hrulefill
+
+
+::: {.filehistorybottom}
+Dr Eric Hall (ehall001@dundee.ac.uk), last updated: `{r} format(Sys.time(), '%Y-%m-%d')`, commit: `{r} substr(git2r::branch_target(git2r::repository_head(getwd())), 1, 10)`. 
+:::

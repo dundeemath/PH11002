@@ -4,6 +4,7 @@ project:
   resources:
     - rubric-problem-solving.pdf
     - rubric-writing.pdf
+    - rubric-presentation.pdf
 
 book: 
   title: "Problem Solving and Professional Skills"
@@ -34,6 +35,7 @@ book:
         - "02-problems.qmd"
         - "03-heuristics.qmd"
         - "04-attitudes.qmd"
+        - "05-meta-reflection.qmd"
     - part: "Professional Skills"
       chapters:
         - "11-academic-integrity.qmd"

@@ -1,0 +1,15 @@
+{
+  "hash": "d8788e699c6dfbcb039924fcd915e4b7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "\n\n\n# Reflection {#sec-reflection}\n\nSee @sec-rubrics\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

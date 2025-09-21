@@ -1,3 +1,183 @@
 {{< include preamble.qmd >}}
 
 # Presentation {#sec-presentation}
+
+> Proof by Intimidation[^intimidation]
+
+[^intimidation]: Or _argumentum verbosum_, is a humorous phrase used in mathematics and physics to describe an attempt to advance an argument or proof based on jargon, obscure results, or by insisting that the conclusion is obvious or trivial. Associated phrases include: "Clearly...", "It is trivial that...", "It is evident that...", or (a favourite) "it is left as an exercise for the reader." 
+
+Presentations exist to present and persuade. In life, you will be judged not only on the quality of your ideas, but on how clearly you communicate them. In @sec-technical-writing, we provided a guide for technical writing. This section gives a short guide to presentations, aligned with the module presentation rubric (see @sec-rubrics). In mathematics and physics you will typically give two kinds of presentations: oral talks (usually accompanied by slides or other visual aids[^chalk]) and scientific posters. As you progress through your programme of study, you will have further learning opportunities looking at each specific format. In this module, we will cover very general criteria for presentations that apply to both oral presentations and posters. The criteria below apply to both, with small format-specific tips.
+
+[^chalk]: Mathematicians are still fans of blackboards --- for both talks and laying down ideas [see @Wynne:2021dn]. 
+
+::::{.callout-tip collapse="true"}
+## How to Speak
+
+The lecture _How to Speak_, by Patrick Winston at MIT, is a fantastic introduction to giving a talk. 
+
+:::{.content-visible when-format="html"}
+
+<div class="ratio ratio-16x9"> <iframe src="https://www.youtube-nocookie.com/embed/Unzc731iCUY" title="How to Speak — Patrick Winston (MIT OCW)" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> </div>
+
+_How to Speak_, Patrick H. Winston (MIT OpenCourseWare 2018), licensed CC BY-NC-SA 4.0.
+:::
+
+:::{.content-visible when-format="pdf"}
+See: Patrick H. Winston, _How to Speak_ (MIT OpenCourseWare 2018): [https://www.youtube.com/watch?v=Unzc731iCUY](https://www.youtube.com/watch?v=Unzc731iCUY)  
+(CC BY-NC-SA 4.0).
+:::
+::::
+
+## Context {#sec-pres-context}
+
+### Goal: make your purpose clear and worth caring about
+
+Prominently and clearly state the aim or purpose of your presentation and ensure that the purpose is motivated and grounded in relevant background. 
+
+### How to
+
+To motivate your presentation, explain why the issue or result is important by highlighting its impact or relevance to the audience, that is, provide _context_.  Context provides the "hook" that links your message to the audience thereby making the purpose of your presentation clear and worth caring about. It ensures your message is well-structured, compelling, and leaves a lasting impression.
+
+:::{.callout-note collapse="true"}
+## Talk Context 
+
+Open with the question that you will answer, e.g.,
+
+> "What is an actuary? In this talk I will provide an overview of the actuarial career path".
+
+When providing additional background, define key terms you will use later on but avoid tangents.
+::: 
+
+:::{.callout-note collapse="true"}
+## Poster Context 
+
+Place a small "Objectives" or "Motivation" box at the top-left of your poster. Keep background information to content that is strictly necessary for understanding the results.
+::: 
+
+
+## Structure {#sec-pres-structure}
+
+### Goal: guide the audience through a simple story
+
+Follow a logial path (e.g., background → method → result → conclusion) that supports a clear narrative. 
+
+### How to
+
+Start with a short roadmap (usually labelled "Overview" or "Outline") and then move through the sections in the promised order. Try to keep to one idea per slide or section, use brief verbal signposts to mark transitions, and avoid introducing notation or terms before they are defined. End by returning to the original aim and stating the single takeaway the audience should remember (this might be a "Conclusions" slide/section).
+
+:::{.callout-note collapse="true"}
+## Talk Structure
+
+Show a one-slide roadmap and use short verbal signposts like "First... Next... Therefore...". Try to keep to one idea per slide. 
+
+_Pro tip:_ For longer talks, try to stick to fewer than three key messages (one if you can achieve it).
+::: 
+
+:::{.callout-note collapse="true"}
+## Poster Structure
+
+Use headings that mirror the narrative. Arrange columns so the eye flows left to right, top to bottom. Place a single-sentence takeaway near the title.
+
+_Pro tip:_ Consider using the "Better Poster Template" available at [https://osf.io/6ua4k](https://osf.io/6ua4k). 
+
+::: {.content-visible when-format="html"}
+<div class="ratio ratio-16x9"> <iframe src="https://www.youtube-nocookie.com/embed/SYk29tnxASs" title="How to create a better research poster in less time" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> </iframe> </div>
+_How to create a better research poster in less time_, Mike Morrison (2020), licensed CC BY. 
+::: 
+
+::: {.content-visible when-format="pdf"}
+A video describing the "Better Poster Template" ethos is available. See: Mike Morrison, _How to create a better research poster in less time_ (2020): [https://www.youtube.com/watch?v=SYk29tnxASs](https://www.youtube.com/watch?v=SYk29tnxASs) (CC BY).
+::: 
+:::
+
+## Accuracy {#sec-pres-accuracy}
+
+### Goal: ensure claims match evidence
+
+Ensure that material presented is factually accurate. This includes details of mathematical and physical content, such as correctness and consistency, but also extends to background information such as historical details.
+
+### How to
+
+Check facts against your sources and ensure equations, numbers, units, and symbols are used correctly. Define symbols once and use them consistently in text, equations, and figures. If you simplify a derivation (for example, by not discussing all details or steps), say so plainly and try to state the nature of the simplification. Run a quick sense check ("smell test") so magnitudes and trends align with established knowledge.
+
+:::{.callout-note collapse="true"}
+## Talk Accuracy
+
+Avoid exagerating. It is sometimes necessary to simplify a complicated argument or generalise details (note that a talk is not written report). If you do simplify an argument, say so briefly.
+::: 
+
+:::{.callout-note collapse="true"}
+## Poster Accuracy
+
+Write precise figure captions that state the finding. Include units on axes and in table headers. Consider adding a brief "Limitations" section.
+::: 
+
+## Visual Aids {#sec-pres-visual-aids}
+
+### Goal: make visuals do the work and keep them accessible
+
+Any visuals used should be purposeful (i.e., have a clear meaning that links to the narrative),
+be legibile at a suitable distance, and accessible. 
+
+### How to 
+Design for distance by using large, legible type and a clear a visual hierarchy. Let figures carry the message with short, declarative titles and succinct captions that state what to notice. Avoid relying only on colour to distinguish elements by adding other aesthetics to plots such as shape, line style, or annotation. In online notes, add concise alt text so figures remain accessible.
+
+:::{.callout-note collapse="true"}
+## Talk Visual Aids
+
+In slides, use a large text (24 pt or larger), few lines per slide, and plots/images that illustrate the point you are speaking about. Avoid slides that are a "wall of text"; the staged reaveal of information on a slide can sometimes mitigate this.
+::: 
+
+:::{.callout-note collapse="true"}
+## Poster Visual Aids
+
+Ensure that your title is readable at quite a distance away (about 2–3 metres). Body text should be readable at about 1 metre away. Use clear figure titles that state what the viewer should notice. Provide brief captions so the poster stands alone.
+::: 
+
+## Pacing {#sec-pres-pacing}
+
+### Goal: be mindful of audience and match scope to time/space
+
+Ensure that content is tailored to the audience, that the scope fits the allocated time/space, and that the information density allows comprehension.
+
+### How to
+
+Be mindful of your audience --- this should be a primary consideration when giving a presentation. You may need to adapt content for different audiences. To ensure that the scope fits the allocated time/space, try to finish your talk on time and avoid cramming additional information into a poster by reducing the text size. Information density should allow for comprehension; this means different things in differnet contexts. For example, a short talk should focus on a single message, but a longer talk might include three related messages; try to keep to one idea per slide or section; avoid presenting a poster that is a "wall of text".
+
+
+:::{.callout-note collapse="true"}
+## Talk Pacing
+
+Rehearse: practice giving your talk (to ensure that the message and details are clear in your mind), but avoid memorising a speech. Keep in mind that you might speak faster when nervous. Prefer fewer, clearer slides. Stop when the message is delivered, not when the clock forces you.
+::: 
+
+:::{.callout-note collapse="true"}
+## Poster Pacing
+
+Make the main story scannable in a few minutes. Offer optional depth with small callouts or a QR link to a written manuscript, rather than dense blocks of text.
+::: 
+
+## Attribution {#sec-pres-attribution}
+
+### Goal: give credit and show what is yours
+
+Sources of ideas should be cited with clear distinctions between own work and external material.
+
+### How to
+
+Cite sources at the point of use and add a short references section for completeness. Credit images and datasets directly on the slide or figure. Typically, it will be assumed that anything that is not cited is your own original contribution; ensure that this is the case. It is generally a good idea to acknowledge collaborators, supervisors, and funding in a closing note/section.
+
+
+:::{.callout-note collapse="true"}
+## Talk Attribution
+
+Add in-slide credits for borrowed visuals or data. References can be added in-slide xor[^xor] in a short references slide (this should be done consistently). Acknowledge collaborators and funding.
+::: 
+
+[^xor]: "Exclusive or" (one or the other, but not both).
+
+:::{.callout-note collapse="true"}
+## Poster Attribution
+
+Use inline numbered citations or author-year near the relevant text. Credit images under the figure. Include a small "Acknowledgements" section.
+::: 

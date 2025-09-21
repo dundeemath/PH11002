@@ -1,0 +1,97 @@
+{{< include preamble.qmd >}}
+
+# Meta Reflection {#sec-meta-reflection}
+
+> Knowing how to think empowers you far beyond those who know only what to think.
+>
+> -- Neil deGrasse Tyson (\@neiltyson), 19 May 2012[^ndgt] 
+
+[^ndgt]: [https://x.com/neiltyson/status/203925128483053568](https://x.com/neiltyson/status/203925128483053568)
+
+This section highlights the problem-solving rubric that we will use to foster meta reflection (see @sec-rubrics).[^meta] The rubric will be used to encourage reflection on the quality of your problem solving so that habits become visible and improvable.
+
+Peer review will strengthen the process of self-reflection. Reading a classmate's solution through the lens of a shared rubric will help you notice alternative approaches and common pitfalls, and will sharpen your ability to justify each step. The aim is for you to use the peer review rubric regularly so that, toward the end of the module, you can compare several reviews and see concrete growth in clarity, correctness, and method. All peer review activities will be undertaken with regard to our code of conduct for groupwork (see @sec-teamwork-code), and feedback from peer-review will only be used in a formative capacity. 
+
+[^meta]: A reflection on reflection (_meta reflection_).
+
+## Problem statement 
+
+### Goal: clarify the problem being asked
+
+Restate the task or prolbem being asked in your own words. This includes listing data or "givens", unknowns, and conditions or constraints, and specifying any assumptions and how they relate to the problem statement.
+
+### How to
+
+Begin by paraphrasing the question in one or two sentences so the aim is unambiguous. It is often the case that a 'problem to find' is not complete in a mathematical sense; you may need to do quite a bit of work to translate facts and ideas into mathematical concepts. This is essential part of clarifying the problem being asked. 
+
+List the information you are permitted to use, identify the quantity you must determine, and record any conditions that limit or constraint the solution space. Make your assumptions explicit and justify why they are reasonable in this context. If a definition or theorem is essential to proceed (particularly for a 'problem to solve'), name it and state the form you will use so the reader can see the foundation you are building on.
+
+## Heuristics 
+
+### Goal: demonstrate knowledge of strategies
+
+Select at least one heuristic and explain or justify why it is suitable.
+
+### How to
+
+Choose a strategy that fits the structure of the problem and say why it fits. You might draw a picture, define variables to formalise the situation, work backwards from the goal, test special cases to find a pattern, look for invariants, exploit symmetry, use dimensional analysis, or reduce to a simpler related problem (i.e., consider the strategies in @sec-heuristics). State in plain language how the chosen heuristic narrows the search or reveals a possible path forward, then commit to it before you start detailed calculations. collecting data, or performing an experiment.
+
+## Plan quality 
+
+### Goal: demonstrate ability to select reasonable strategies
+
+Present ordered steps and clearly define any notation needed to proceed.
+
+### How to
+
+Write a short roadmap that names the main steps, in sequence, and defines the symbols and notation you will use before they appear. Keep each step focused on one action that advances the solution. The plan should read like a set of instructions that a careful reader could follow without guessing your intent (i.e., so that they might reproduce your plan).
+
+## Plan execution 
+
+### Goal: demonstrate ability to apply stretegies
+
+Execute steps that are technically correct and monitored through checks.
+
+### How to
+
+Carry out the steps as planned _while watching for errors_. After each substantive manipulation in a calculation or step in an experiment, perform a small check such as confirming units, verifying a limiting case, or substituting an easy number to see if the trend makes sense. If a check fails, pause to locate the error and either correct it or revise the plan. Keep the narrative clear by explaining why each step is valid and how it follows from the previous one. 
+
+:::{.callout-tip}
+## Example: Checking solutions
+
+For example, when solving a an algebriac or differential equation, one can 'plug' the solution back into the equation to verify an intermediate step. 
+
+Similarly, one may often check the units of an intermediate step, to verify that the solution is the right type of object. 
+:::
+
+## Representations
+
+### Goal: translate facts into mathematical representations
+
+Choose helpful representations, such as diagrams, tables, and equations, and link them to the narrative.
+
+### How to
+
+Use diagrams, tables, or equations when they clarify structure or reveal relationships that are hard to see in prose. In figures and diagrams, be sure to use informative label diagrams, include units, and keep symbols consistent with the text. Each representation should be introduced with a sentence that explains what to notice and should be followed by a sentence that interprets what the representation shows. Prune (remove) any figure or table that does not earn its place in advancing the argument.[^prune]
+
+[^prune]: Pruning is often a difficult, but necessary step. 
+
+## Reflection 
+
+### Goal: demonstrate ability to 'look back'
+
+Verify the result using units, bounds, or special cases, and note generalisations or limitations.
+
+### How to
+
+Check that the result has the correct units and reasonable magnitude, lies within known bounds, and behaves sensibly in special or limiting cases (you should be doing this sort of 'monitoring' for intermediate steps, and it should equally be applied to the whole solution). Explain what the solution tells you about the original question and record any conditions under which it holds (or fails to hold). Try noting any ways in which the solution method could generalise to a wider class of problems and any limitations that would require a different approach. Capture at least one lesson about your process that you intend to apply next time.
+
+:::{.callout-note}
+## Peer review across the module
+
+The peer review rubric asks you to record a short "Plus" and "Delta" for each peer solution that you review. That is, record one thing that you considered to be a strength of the solution or approach to problem solving and one thing that you would consider doing differnetly from the stated solution or approach. 
+
+The rubric asks you to write a short self-reflection *based on the feedback that you receive for your solution*. This is to demonstrate that you have engaged with the feedback you received from your peer review.  
+
+_Pro tip:_ At the end of the module, read an early review beside a more recent one and compare your personal growth.
+:::

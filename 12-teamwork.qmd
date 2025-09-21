@@ -11,7 +11,7 @@ Working well in a team is a core professional skill in mathematics and physics. 
 In this module you will work with different groups of peers on different tasks. Start by agreeing a clear goal and a short plan for how you will reach it. Share tasks fairly (especially mathematical tasks) and rotate roles where helpful (chair, scribe, checker, presenter). Communicate openly and early with the teaching team if you are stuck or need help. After each activity, take a minute to reflect on group dynamics including what worked and what you would consider changing next time. The aim is not only a good solution, but a good way of working that you can carry into future study and employment.
 
 
-## Code of conduct for group work
+## Code of conduct for group work {#sec-teamwork-code}
 
 We are building an environment where everyone can contribute and learn. The following expectations apply in fact-to-face meetings, online spaces, and written communication.
 
