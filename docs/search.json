@@ -568,14 +568,25 @@
     ]
   },
   {
-    "objectID": "appendix.html",
-    "href": "appendix.html",
+    "objectID": "appendix-rubrics.html",
+    "href": "appendix-rubrics.html",
     "title": "Appendix A — Rubrics",
     "section": "",
-    "text": "Problem solving rubric\nTechnical writing rubric\nPresentation rubric\n\n\nB Field Trips\n\nData Collection and Analysis / UoD Botanic Gardens",
+    "text": "Problem solving rubric\nTechnical writing rubric\nPresentation rubric",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Rubrics</span>"
+    ]
+  },
+  {
+    "objectID": "appendix-activities.html",
+    "href": "appendix-activities.html",
+    "title": "Appendix B — Experiential Learning",
+    "section": "",
+    "text": "Experiential learning activities are hands-on experiences that provide an opportunity to learn through direct engagement and reflection. The following additional materials related to such activities.\n\nData Collection and Analysis / Field Trip University Botanic Garden",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Experiential Learning</span>"
     ]
   }
 ]

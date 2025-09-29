@@ -1,0 +1,14 @@
+# Experiential Learning {#sec-activities}
+
+Experiential learning activities are hands-on experiences that provide an opportunity to learn through direct engagement and reflection. The following additional materials related to such activities. 
+
+:::{.content-visible when-format="html"}
+- [Data Collection and Analysis / Field Trip University Botanic Garden](botanics.pdf)
+:::
+
+:::{.content-visible when-format="pdf"}
+- Data Collection and Analysis / Field Trip University Botanic Gardens
+```{=latex}
+\includepdf[pages=-]{botanics.pdf}
+```
+:::

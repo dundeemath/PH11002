@@ -44,7 +44,8 @@ book:
         - "15-ethics.qmd"
     - "99-references.qmd"
   appendices: 
-    - appendix.qmd
+    - appendix-rubrics.qmd
+    - appendix-activities.qmd
   # margin-header: "Header Text"
   sidebar:
     alignment: left

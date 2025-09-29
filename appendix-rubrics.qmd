@@ -16,16 +16,3 @@
 \includepdf[pages=-]{rubric-presentation.pdf}
 ```
 :::
-
-# Field Trips {#sec-field-trips}
-
-:::{.content-visible when-format="html"}
-- [Data Collection and Analysis / UoD Botanic Gardens](botanics.pdf)
-:::
-
-:::{.content-visible when-format="pdf"}
-- Data Collection and Analysis / UoD Botanic Gardens
-```{=latex}
-\includepdf[pages=-]{botanics.pdf}
-```
-:::
