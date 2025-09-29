@@ -1,0 +1,4 @@
+specimen, petal.width, petal.width.unc, petal.length, petal.length.unc, aperture, aperture.unc, color
+1, 6, 0.5, 14, 0.5, 5, 0.5, pink
+2, 5, 0.5, 13, 0.5, 6, 0.5, white
+..., ..., ..., ..., ..., ..., ..., ...

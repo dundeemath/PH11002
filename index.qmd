@@ -3,7 +3,7 @@
 # Introduction {-}
 
 :::{.content-visible only-format="pdf"}
-This manuscript contains notes for PH11002 - Problem Solving and Professional Skills, a first year module about problem solving at the University of Dundee.
+This manuscript contains notes for PH11002, a first year module for mathematics and physics students about problem solving and professional skills at the University of Dundee.
 :::
 
 An up-to-date version of these notes are available at [dundeemath.github.io/PH11002/](https://dundeemath.github.io/PH11002/) as HTML and also as a PDF. 

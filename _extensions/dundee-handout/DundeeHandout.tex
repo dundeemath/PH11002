@@ -1,5 +1,8 @@
 % load packages
 \usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{eso-pic}
 \usepackage{fancyhdr}
@@ -7,6 +10,8 @@
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
 
 %% Set page size with a wider right margin
 \geometry{a4paper, total={170mm,257mm}, left=20mm, top=20mm, bottom=15mm, right=50mm}
@@ -44,8 +49,9 @@
 \chapterfont{\color{dark}\fontsize{20}{16.8}\selectfont}
 \sectionfont{\color{dark}\fontsize{20}{16.8}\selectfont}
 \subsectionfont{\color{dark}\fontsize{14}{16.8}\selectfont}
+% Use the correct counter label for subsections
 \titleformat{\subsection}
-  {\sffamily\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+  {\sffamily\Large\bfseries}{\thesubsection}{1em}{}[{\titlerule[0.8pt]}]
 
 \makeatletter
 \renewcommand{\maketitle}{%

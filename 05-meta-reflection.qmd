@@ -2,7 +2,7 @@
 
 # Meta Reflection {#sec-meta-reflection}
 
-> Knowing how to think empowers you far beyond those who know only what to think.
+> "Knowing how to think empowers you far beyond those who know only what to think."
 >
 > -- Neil deGrasse Tyson (\@neiltyson), 19 May 2012[^ndgt] 
 

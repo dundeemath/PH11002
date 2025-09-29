@@ -12,9 +12,8 @@ book:
     - "Dr Eric Hall"
     - "Dr Paula Stella Teixeira"
   description: |
-     Notes for PH11002 - Problem Solving and Professional Skills, 
-     a first year module about problem solving at 
-     the University of Dundee.
+     Notes for PH11002, a first year module for mathematics and physics students 
+     about problem solving and professional skills at the University of Dundee.
   site-url: https://dundeemath.github.io/PH11002
   repo-url: https://github.com/dundeemath/PH11002/
   repo-branch: master
@@ -45,7 +44,7 @@ book:
         - "15-ethics.qmd"
     - "99-references.qmd"
   appendices: 
-    - appendix-rubrics.qmd
+    - appendix.qmd
   # margin-header: "Header Text"
   sidebar:
     alignment: left

@@ -250,9 +250,9 @@ Adapt this suggested outline for a lab report or longer piece of writing as need
 * **Title**: concise and informative
 * **Abstract (3–5 sentences)**: problem, method, key result, implication
 * **Introduction**: context, objective, roadmap of the report
-* **Method**: model/assumptions, derivations, algorithm, parameters
-* **Results**: tables/figures with brief interpretation
-* **Discussion**: what the results mean, limitations, sensitivity
+* **Methods**: list of equipment/materials used, step-by-step description of experiment, description of data acquisition process, model/assumptions, derivations, algorithm, parameters; 
+* **Results**: tables/figures with brief interpretation of raw and processed data
+* **Analysis and Discussion**: use processed data to test hypotheses or compare with theory, describe what the results mean, limitations, sensitivity
 * **Conclusion**: answer the question and outline next steps
 * **References**: consistent style (for example, author-year or numbered)
 * **Appendix**: code listings, extended derivations, raw data description
